@@ -53,18 +53,16 @@
     .current-weather {
         grid-column: 1 / -1;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;  /* Changed from center to flex-start */
         align-items: center;
         gap: 30px;
-        padding: 40px;
-        background: rgba(255, 255, 255, 0.1);
-        border-radius: 15px;
+        padding: 40px 20px;  /* Reduced padding */
         margin-bottom: 20px;
     }
     
     .weather-icon {
-        width: 120px;
-        height: 120px;
+        width: 180px;  /* Increased from 120px */
+        height: 180px;  /* Increased from 120px */
     }
     
     .temperature {
@@ -73,13 +71,15 @@
     }
     
     .temp-number {
-        font-size: 72px;
+        font-size: 120px;  /* Increased from 72px */
         font-weight: 700;
+        text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);  /* Added shadow for better visibility */
     }
     
     .temp-unit {
-        font-size: 32px;
+        font-size: 48px;  /* Increased from 32px */
         margin-left: 10px;
+        font-weight: 300;
     }
     
     .stats-section {
@@ -142,17 +142,25 @@
         }
         
         .current-weather {
+            justify-content: center;  /* Center on mobile */
             flex-direction: column;
             text-align: center;
+            padding: 20px 10px;
+        }
+        
+        .weather-icon {
+            width: 140px;  /* Slightly smaller on mobile */
+            height: 140px;
         }
         
         .temp-number {
-            font-size: 48px;
+            font-size: 80px;  /* Smaller on mobile */
         }
         
         .temp-unit {
-            font-size: 24px;
+            font-size: 36px;  /* Smaller on mobile */
         }
+
     }
     </style>
 </head>
