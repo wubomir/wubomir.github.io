@@ -417,11 +417,6 @@
                 document.getElementById('common-wind').textContent = 
                     getValue('Most Common Wind Direction');
 
-                // Update sky condition text
-                const condition = skyCondition.split('.')[0].replace(/_/g, ' ');
-                document.getElementById('curr-sky').textContent = 
-                    condition.charAt(0).toUpperCase() + condition.slice(1);
-
                 // Update UTC time and last update
                 const utcTime = formatUTCDateTime(new Date());
                 document.getElementById('utc-time').textContent = utcTime;
