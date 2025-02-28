@@ -322,7 +322,7 @@
             }
         }
 
-        async function fetchindex() {
+        async function fetchWeatherStats() {
             try {
                 const response = await fetch('summary.csv?t=' + new Date().getTime());
                 if (!response.ok) throw new Error('Network response was not ok');
