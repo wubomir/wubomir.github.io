@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Medvode Weather</title>
+    <title>Dynamic Weather Dashboard</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
@@ -222,7 +222,9 @@
     <div class="overlay"></div>
     <div class="dashboard">
         <div class="header">
-            <div class="location">Medvode</div>
+            <div class="user-info">User: wubomir</div>
+            <div class="location">Weather Station</div>
+            <div class="utc-time" id="utc-time">2025-02-28 14:58:49</div>
         </div>
 
         <div class="current-weather">
@@ -304,8 +306,99 @@
             </div>
         </div>
 
-        <div class="update-status" id="update-status">Last updated: 2025-02-28 11:24:05</div>
+        <div class="update-status" id="update-status">Last updated: 2025-02-28 14:58:49</div>
     </div>
+
+    <script>
+        function formatUTCDateTime(date) {
+            return date.getUTCFullYear() + '-' + 
+                   String(date.getUTCMonth() + 1).padStart(2, '0') + '-' +
+                   String(date.getUTCDate()).padStart(2, '0') + ' ' +
+                   String(date.getUTCHours()).padStart(2, '0') + ':' +
+                   String(date.getUTCMinutes()).padStart(2, '0') + ':' +
+                   String(date.getUTCSeconds()).padStart(2, '0');
+        }
+
+        function setBackgroundBasedOnCondition(imageName, temperature) {
+            let backgroundImage = "";
+
+            if (imageName === "partly_cloudy.gif" || imageName === "mostly_cloudy.gif") {
+                if (temperature <= 0) {
+                    backgroundImage = "partly_cloudy_frost.jpg";
+                } else {
+                    backgroundImage = "partly_cloudy.jpg";
+                }
+            } else if (imageName === "sunny.gif" || imageName === "mostly_sunny.gif") {
+                backgroundImage = "sunny.jpg";
+            } else if (imageName === "cloudy.gif") {
+                if (temperature <= 0) {
+                    backgroundImage = "cloudy_frost.jpg";
+                } else {
+                    backgroundImage = "cloudy.jpg";
+                }
+            } else if (imageName === "rain_light.gif" || 
+                      imageName === "rain_moderate.gif" || 
+                      imageName === "rain_heavy.gif") {
+                backgroundImage = "cloudy_rain.jpg";
+            } else if (imageName === "night.gif") {
+                if (temperature <= 0) {
+                    backgroundImage = "night_frost.jpg";
+                } else {
+                    backgroundImage = "night.jpg";
+                }
+            }
+
+            if (backgroundImage) {
+                document.body.style.backgroundImage = `url('${backgroundImage}')`;
+            }
+        }
+
+        async function fetchWeatherStats() {
+            try {
+                const response = await fetch('summary.csv?t=' + new Date().getTime());
+                if (!response.ok) throw new Error('Network response was not ok');
+
+                const csvText = await response.text();
+                const rows = csvText.split('\n').filter(row => row.trim() !== '');
+                if (rows.length < 2) throw new Error('Not enough data in CSV');
+
+                const headers = rows[0].split(',').map(h => h.trim());
+                const data = rows[1].split(',').map(c => c.trim());
+
+                const getValue = header => {
+                    const index = headers.indexOf(header);
+                    return index !== -1 ? data[index] : 'N/A';
+                };
+
+                const currentTemp = parseFloat(getValue('Current Temperature (°C)'));
+                const skyCondition = getValue('Current Sky Condition');
+
+                // Update background based on condition and temperature
+                setBackgroundBasedOnCondition(skyCondition, currentTemp);
+
+                // Update weather icon
+                if (skyCondition) {
+                    document.getElementById('weather-icon').src = skyCondition;
+                }
+
+                // Update temperature (now split into number and unit)
+                document.getElementById('curr-temp').textContent = currentTemp;
+
+                // Update all other values
+                document.getElementById('curr-humidity').textContent = `${getValue('Current Humidity (%)')}%`;
+                document.getElementById('curr-pressure').textContent = `${getValue('Current Pressure (hPa)')} hPa`;
+                document.getElementById('curr-wind').textContent = `${getValue('Current Wind Gust (km/h)')} km/h`;
+                
+                // Wind direction
+                const windDirection = getValue('Current Wind Direction');
+                const directionAngles = {
+                    'N': 0, 'NNE': 22.5, 'NE': 45, 'ENE': 67.5,
+                    'E': 90, 'ESE': 112.5, 'SE': 135, 'SSE': 157.5,
+                    'S': 180, 'SSW': 202.5, 'SW': 225, 'WSW': 247.5,
+                    'W': 270, 'WNW': 292.5, 'NW': 315, 'NNW': 337.5
+                };
+                document.getElementById('wind-arrow').style.transform = 
+                    `rotate(${dir
 
     <script>
         function formatUTCDateTime(date) {
