@@ -439,7 +439,7 @@ async function fetchWeatherStats() {
             getValue('Most Common Wind Direction');
 
         // Update last update time
-        const utcTime = formatCETDateTime(new Date());
+        const cetTime = formatCETDateTime(new Date());
         document.getElementById('update-status').textContent =
             `Updated: ${cetTime}`;
 
