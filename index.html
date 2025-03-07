@@ -438,10 +438,37 @@ async function fetchWeatherStats() {
         document.getElementById('common-wind').textContent =
             getValue('Most Common Wind Direction');
 
-        // Update last update time
-        const utcTime = formatUTCDateTime(new Date());
-        document.getElementById('update-status').textContent =
-            `Updated: ${utcTime}`;
+function formatCETDateTime(date) {
+    const options = {
+        timeZone: 'Europe/Ljubljana',
+        year: 'numeric',
+        month: '2-digit',
+        day: '2-digit',
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit'
+    };
+    
+    const formatter = new Intl.DateTimeFormat('en-GB', options);
+    const parts = formatter.formatToParts(date);
+    
+    // Extract individual parts
+    const day = parts.find(p => p.type === 'day').value;
+    const month = parts.find(p => p.type === 'month').value;
+    const year = parts.find(p => p.type === 'year').value;
+    const hour = parts.find(p => p.type === 'hour').value;
+    const minute = parts.find(p => p.type === 'minute').value;
+    const second = parts.find(p => p.type === 'second').value;
+
+    return `${year}-${month}-${day} ${hour}:${minute}:${second}`;
+}
+
+        // In the fetchWeatherStats function, replace:
+        // const utcTime = formatUTCDateTime(new Date());
+        // With:
+        const cetTime = formatCETDateTime(new Date());
+        document.getElementById('update-status').textContent = `Updated: ${cetTime}`;        
+        
 
     } catch (error) {
         console.error('Error fetching weather stats:', error);
