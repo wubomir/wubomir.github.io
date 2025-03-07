@@ -1,7 +1,5 @@
 timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,imedvode1_precipitation_today,imedvode1_pressure,imedvode1_relative_humidity,imedvode1_solar_radiation,imedvode1_temperature,imedvode1_uv_index,imedvode1_wind_chill,imedvode1_wind_direction_degrees,windCardinals,imedvode1_wind_gust,imedvode1_wind_speed,condition1,condition2,visibility,condition3,sky,max_solar_radiation,image_name
-2025-03-06 12:06,4.4,14.4,0.0,0.0,1028.89,51.0,458.4,14.4,3.0,14.4,157.0,SE,3.6,3.6,DRY,,9999.0,,Sunny,523.8384954052648,sunny.gif
-2025-03-06 12:11,3.2,14.4,0.0,0.0,1028.78,47.0,458.4,14.4,3.0,14.4,107.0,E,7.2,5.8,DRY,,9999.0,,Sunny,524.1882306366191,sunny.gif
-2025-03-06 12:16,3.5,14.4,0.0,0.0,1028.51,48.0,458.2,14.4,3.0,14.4,164.0,S,5.4,4.3,DRY,,9999.0,,Sunny,524.2142109588817,sunny.gif
+2025-03-06 12:16,3.5,14.9,0.0,0.0,1028.51,48.0,458.2,14.9,3.0,14.9,164.0,S,5.4,4.3,DRY,,9999.0,,Sunny,524.2142109588817,sunny.gif
 2025-03-06 12:21,3.1,14.9,0.0,0.0,1028.41,45.0,456.8,14.9,3.0,14.9,110.0,E,1.8,0.4,DRY,,9999.0,,Sunny,523.9164293931802,sunny.gif
 2025-03-06 12:26,2.7,14.8,0.0,0.0,1028.41,44.0,457.0,14.8,3.0,14.8,143.0,SE,3.6,3.6,DRY,,9999.0,,Sunny,523.295046471223,sunny.gif
 2025-03-06 12:31,3.0,14.8,0.0,0.0,1028.41,45.0,453.8,14.8,3.0,14.8,153.0,SE,7.2,6.5,DRY,,9999.0,,Sunny,522.3503902446699,sunny.gif
@@ -284,3 +282,5 @@ timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,i
 2025-03-07 11:51,0.0,12.9,0.0,0.0,1024.69,41.0,466.5,12.9,4.0,12.9,122.0,SE,3.6,3.2,DRY,,9999.0,,Sunny,526.1513452089162,sunny.gif
 2025-03-07 11:56,0.3,13.3,0.0,0.0,1024.59,41.0,468.9,13.3,4.0,13.3,124.0,SE,3.6,3.6,DRY,,9999.0,,Sunny,527.4562364685643,sunny.gif
 2025-03-07 12:01,0.0,13.7,0.0,0.0,1024.69,39.0,470.1,13.7,4.0,13.7,156.0,SE,5.4,4.0,DRY,,9999.0,,Sunny,528.438091908327,sunny.gif
+2025-03-07 12:06,-0.4,13.6,0.0,0.0,1024.59,38.0,461.8,13.6,4.0,13.6,69.0,E,1.8,0.4,DRY,,9999.0,,Sunny,529.0964106898878,sunny.gif
+2025-03-07 12:11,-0.7,13.7,0.0,0.0,1024.42,37.0,472.4,13.7,4.0,13.7,156.0,SE,3.6,2.2,DRY,,9999.0,,Sunny,529.4308593246242,sunny.gif
