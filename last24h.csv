@@ -1,8 +1,6 @@
 timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,imedvode1_precipitation_today,imedvode1_pressure,imedvode1_relative_humidity,imedvode1_solar_radiation,imedvode1_temperature,imedvode1_uv_index,imedvode1_wind_chill,imedvode1_wind_direction_degrees,windCardinals,imedvode1_wind_gust,imedvode1_wind_speed,visibility,condition1,condition2,condition3,sky,max_solar_radiation,image_name
-2025-03-08 17:56,0.7,14.5,0.0,0.0,1016.09,40.0,4.5,14.5,0.0,14.5,210.0,SW,1.8,1.8,9999.0,DRY,,,Sunny,1.6321820594499963,sunny.gif
-2025-03-08 18:01,0.6,14.0,0.0,0.0,1016.29,40.0,2.6,14.0,0.0,14.0,231.0,SW,1.8,1.8,9999.0,DRY,,,Twilight,0.0,cloudy.gif
-2025-03-08 18:06,0.6,13.6,0.0,0.0,1016.19,41.0,1.4,13.6,0.0,13.6,250.0,W,3.6,3.6,9999.0,DRY,,,Twilight,0.0,cloudy.gif
-2025-03-08 18:11,0.6,13.2,0.0,0.0,1016.19,42.0,0.6,13.2,0.0,13.2,231.0,SW,5.4,4.3,9999.0,DRY,,,Twilight,0.0,cloudy.gif
+2025-03-08 18:06,0.0,13.6,0.0,0.0,1016.19,41.0,1.4,13.6,0.0,13.6,250.0,W,3.6,3.6,9999.0,DRY,,,Twilight,0.0,cloudy.gif
+2025-03-08 18:11,0.0,13.2,0.0,0.0,1016.19,42.0,0.6,13.2,0.0,13.2,231.0,SW,5.4,4.3,9999.0,DRY,,,Twilight,0.0,cloudy.gif
 2025-03-08 18:16,0.0,13.3,0.0,0.0,1016.09,40.0,0.2,13.3,0.0,13.3,227.0,SW,9.4,6.5,9999.0,DRY,,,Twilight,0.0,cloudy.gif
 2025-03-08 18:21,0.2,13.5,0.0,0.0,1016.19,40.0,0.1,13.5,0.0,13.5,239.0,SW,3.6,2.9,9999.0,DRY,,,Twilight,0.0,cloudy.gif
 2025-03-08 18:26,0.0,13.3,0.0,0.0,1016.19,40.0,0.0,13.3,0.0,13.3,218.0,SW,7.2,6.8,9999.0,DRY,,,Twilight,0.0,cloudy.gif
@@ -288,3 +286,5 @@ timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,i
 2025-03-09 17:43,2.9,14.0,0.0,0.0,1012.8,47.0,6.8,14.0,0.0,14.0,224.0,SW,5.4,5.0,9999.0,DRY,,,Mostly Cloudy,22.64501042228636,mostly_cloudy.gif
 2025-03-09 17:48,3.0,14.1,0.0,0.0,1012.8,47.0,4.8,14.1,0.0,14.1,309.0,NW,5.4,3.6,9999.0,DRY,,,Mostly Cloudy,15.101714771534912,mostly_cloudy.gif
 2025-03-09 17:53,2.9,13.7,0.0,0.0,1013.0,48.0,3.5,13.7,0.0,13.7,220.0,SW,5.4,5.0,9999.0,DRY,,,Partly Cloudy,7.784280019975513,partly_cloudy.gif
+2025-03-09 17:58,2.9,13.7,0.0,0.0,1012.9,48.0,2.4,13.7,0.0,13.7,236.0,SW,5.4,2.5,9999.0,DRY,,,Cloudy,0.8028901361119618,cloudy.gif
+2025-03-09 18:03,2.9,13.7,0.0,0.0,1013.0,48.0,1.5,13.7,0.0,13.7,201.0,S,7.2,5.4,9999.0,DRY,,,Twilight,0.0,cloudy.gif
