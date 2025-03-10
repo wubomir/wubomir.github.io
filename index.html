@@ -12,7 +12,6 @@
         padding: 0;
         box-sizing: border-box;
     }
-    
     body {
         font-family: 'Poppins', sans-serif;
         background: #1a1a1a;
@@ -21,7 +20,6 @@
         position: relative;
         overflow-x: hidden;
     }
-    
     .overlay {
         position: fixed;
         top: 0;
@@ -31,7 +29,6 @@
         background: rgba(0, 0, 0, 0.3);
         z-index: -1;
     }
-    
     .dashboard {
         max-width: 1200px;
         margin: 0 auto;
@@ -40,7 +37,6 @@
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
     }
-    
     /* Header Section */
     .header {
         grid-column: 1 / -1;
@@ -52,13 +48,10 @@
         border-radius: 1px;
         backdrop-filter: blur(0px);
     }
-    
     .location {
         font-size: 40px;
         font-weight: 500;
     }
-    
-       
     /* Current Weather Section */
     .current-weather {
         grid-column: 1 / -1;
@@ -66,33 +59,43 @@
         align-items: center;
         padding: 20px;
         margin: 20px 0;
+        gap: 30px;
+        flex-wrap: wrap;
     }
-    
     .weather-icon {
         width: 180px;
         height: 180px;
-        margin-right: 30px;
         filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.2));
     }
-    
     .temperature {
         display: flex;
         align-items: baseline;
     }
-    
     .temp-number {
         font-size: 120px;
         font-weight: 700;
         line-height: 1;
         text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
     }
-    
     .temp-unit {
         font-size: 48px;
         margin-left: 10px;
         font-weight: 300;
     }
-    
+    .wind-direction {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+    .wind-arrow {
+        width: 40px;
+        height: 40px;
+        transform-origin: center;
+    }
+    .wind-speed {
+        font-size: 24px;
+        font-weight: 500;
+    }
     /* Stats Sections */
     .stats-section {
         background: rgba(255, 255, 255, 0.1);
@@ -101,14 +104,12 @@
         backdrop-filter: blur(5px);
         height: fit-content;
     }
-    
     .stats-section h3 {
         color: #4CAF50;
         margin-bottom: 15px;
         font-size: 18px;
         font-weight: 500;
     }
-    
     .stat-item {
         display: flex;
         justify-content: space-between;
@@ -116,39 +117,23 @@
         padding: 12px 0;
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
-    
     .stat-item:last-child {
         border-bottom: none;
     }
-    
     .stat-label {
         display: flex;
         align-items: center;
         gap: 10px;
         font-weight: 300;
     }
-    
     .stat-label i {
         color: #4CAF50;
         width: 20px;
         text-align: center;
     }
-    
     .stat-value {
         font-weight: 500;
     }
-    
-    .wind-direction {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-    }
-    
-    .wind-arrow {
-        width: 20px;
-        height: 20px;
-    }
-    
     .update-status {
         grid-column: 1 / -1;
         text-align: center;
@@ -159,15 +144,16 @@
         backdrop-filter: blur(5px);
         font-size: 0.9rem;
     }
-    
     /* Tablet Responsive Design */
     @media (max-width: 1024px) {
         .dashboard {
             grid-template-columns: repeat(2, 1fr);
             padding: 15px;
         }
+        .current-weather {
+            gap: 20px;
+        }
     }
-    
     /* Mobile Responsive Design */
     @media (max-width: 768px) {
         .dashboard {
@@ -175,81 +161,47 @@
             padding: 10px;
             gap: 15px;
         }
-    
-        .header {
-            flex-direction: column;
-            gap: 5px;
-            text-align: center;
-            padding: 12px;
-        }
-    
-        .location {
-            font-size: 20px;
-        }
-    
-        .utc-time {
-            font-size: 16px;
-        }
-    
         .current-weather {
             flex-direction: column;
             text-align: center;
             margin: 10px 0;
+            gap: 15px;
         }
-    
         .weather-icon {
             width: 140px;
             height: 140px;
-            margin: 0 0 15px 0;
         }
-    
         .temperature {
             justify-content: center;
         }
-    
         .temp-number {
             font-size: 80px;
         }
-    
         .temp-unit {
             font-size: 36px;
         }
-    
-        .stats-section {
-            padding: 15px;
+        .wind-direction {
+            flex-direction: column;
+            align-items: center;
         }
-    
-        .stat-item {
-            padding: 10px 0;
+        .wind-arrow {
+            width: 30px;
+            height: 30px;
         }
-    
-        .update-status {
-            font-size: 0.8rem;
-            margin-top: 10px;
+        .wind-speed {
+            font-size: 18px;
         }
     }
-    
     /* Small Mobile Responsive Design */
     @media (max-width: 380px) {
-        .dashboard {
-            padding: 8px;
-            gap: 10px;
-        }
-    
         .temp-number {
             font-size: 60px;
         }
-    
         .temp-unit {
             font-size: 28px;
         }
-    
-        .stats-section h3 {
+        .wind-speed {
             font-size: 16px;
-        }
-    
-        .stat-label, .stat-value {
-            font-size: 0.9rem;
         }
     }
     </style>
@@ -260,15 +212,23 @@
         <div class="header">
             <div class="location">Medvode</div>
         </div>
-
+        
         <div class="current-weather">
             <img id="weather-icon" class="weather-icon" src="" alt="Weather Icon">
-            <div class="temperature">
-                <span class="temp-number" id="curr-temp">--</span>
-                <span class="temp-unit">°C</span>
+            
+            <div class="temperature-container">
+                <div class="temperature">
+                    <span class="temp-number" id="curr-temp">--</span>
+                    <span class="temp-unit">°C</span>
+                </div>
+                
+                <div class="wind-direction">
+                    <img id="wind-arrow" class="wind-arrow" src="arrow.png" alt="Wind Arrow">
+                    <span class="wind-speed" id="curr-wind">-- km/h</span>
+                </div>
             </div>
         </div>
-
+        
         <div class="stats-section">
             <h3>Current Conditions</h3>
             <div class="stat-item">
@@ -279,15 +239,8 @@
                 <span class="stat-label"><i class="fas fa-tachometer-alt"></i> Pressure</span>
                 <span class="stat-value" id="curr-pressure">-- hPa</span>
             </div>
-            <div class="stat-item">
-                <span class="stat-label"><i class="fas fa-wind"></i> Wind</span>
-                <div class="wind-direction">
-                    <img id="wind-arrow" class="wind-arrow" src="arrow.png" alt="Wind Arrow">
-                    <span class="stat-value" id="curr-wind">-- km/h</span>
-                </div>
-            </div>
         </div>
-
+        
         <div class="stats-section">
             <h3>Temperature Analysis</h3>
             <div class="stat-item">
@@ -315,7 +268,7 @@
                 <span class="stat-value" id="dew-point">--°C</span>
             </div>
         </div>
-
+        
         <div class="stats-section">
             <h3>Environmental Data</h3>
             <div class="stat-item">
@@ -339,147 +292,116 @@
                 <span class="stat-value" id="common-wind">--</span>
             </div>
         </div>
-
+        
         <div class="update-status" id="update-status">Last updated: 2025-02-28 11:24:05</div>
     </div>
-        
-
+    
     <script>
-function formatUTCDateTime(date) {
-    return date.getUTCFullYear() + '-' +
-        String(date.getUTCMonth() + 1).padStart(2, '0') + '-' +
-        String(date.getUTCDate()).padStart(2, '0') + ' ' +
-        String(date.getUTCHours()).padStart(2, '0') + ':' +
-        String(date.getUTCMinutes()).padStart(2, '0') + ':' +
-        String(date.getUTCSeconds()).padStart(2, '0');
-}
-
-function setBackgroundBasedOnCondition(imageName, temperature) {
-    let backgroundImage = "";
-
-    if (imageName === "partly_cloudy.gif" || imageName === "mostly_cloudy.gif") {
-        backgroundImage = temperature <= 0 ? "partly_cloudy_frost.jpg" : "partly_cloudy.jpg";
-    } else if (imageName === "sunny.gif" || imageName === "mostly_sunny.gif") {
-        backgroundImage = "sunny.jpg";
-    } else if (imageName === "cloudy.gif") {
-        backgroundImage = temperature <= 0 ? "cloudy_frost.jpg" : "cloudy.jpg";
-    } else if (["rain_light.gif", "rain_moderate.gif", "rain_heavy.gif"].includes(imageName)) {
-        backgroundImage = "cloudy_rain.jpg";
-    } else if (imageName === "night.gif") {
-        backgroundImage = temperature <= 0 ? "night_frost.jpg" : "night.jpg";
+    function formatUTCDateTime(date) {
+        return date.getUTCFullYear() + '-' +
+            String(date.getUTCMonth() + 1).padStart(2, '0') + '-' +
+            String(date.getUTCDate()).padStart(2, '0') + ' ' +
+            String(date.getUTCHours()).padStart(2, '0') + ':' +
+            String(date.getUTCMinutes()).padStart(2, '0') + ':' +
+            String(date.getUTCSeconds()).padStart(2, '0');
     }
 
-    if (backgroundImage) {
-        document.body.style.backgroundImage = `url('${backgroundImage}')`;
-    }
-}
-
-async function fetchWeatherStats() {
-    try {
-        const response = await fetch('summary.csv?t=' + new Date().getTime());
-        if (!response.ok) throw new Error('Network response was not ok');
-
-        const csvText = await response.text();
-        const rows = csvText.split('\n').filter(row => row.trim() !== '');
-        if (rows.length < 2) throw new Error('Not enough data in CSV');
-
-        const headers = rows[0].split(',').map(h => h.trim());
-        const data = rows[1].split(',').map(c => c.trim());
-
-        const getValue = header => {
-            const index = headers.indexOf(header);
-            return index !== -1 ? data[index] : 'N/A';
-        };
-
-        const currentTemp = parseFloat(getValue('Current Temperature (°C)'));
-        const skyCondition = getValue('Current Sky Condition');
-
-        // Update background based on condition and temperature
-        setBackgroundBasedOnCondition(skyCondition, currentTemp);
-
-        // Update weather icon
-        if (skyCondition) {
-            document.getElementById('weather-icon').src = skyCondition;
+    function setBackgroundBasedOnCondition(imageName, temperature) {
+        let backgroundImage = "";
+        if (imageName === "partly_cloudy.gif" || imageName === "mostly_cloudy.gif") {
+            backgroundImage = temperature <= 0 ? "partly_cloudy_frost.jpg" : "partly_cloudy.jpg";
+        } else if (imageName === "sunny.gif" || imageName === "mostly_sunny.gif") {
+            backgroundImage = "sunny.jpg";
+        } else if (imageName === "cloudy.gif") {
+            backgroundImage = temperature <= 0 ? "cloudy_frost.jpg" : "cloudy.jpg";
+        } else if (["rain_light.gif", "rain_moderate.gif", "rain_heavy.gif"].includes(imageName)) {
+            backgroundImage = "cloudy_rain.jpg";
+        } else if (imageName === "night.gif") {
+            backgroundImage = temperature <= 0 ? "night_frost.jpg" : "night.jpg";
         }
-
-        // Update all values
-        document.getElementById('curr-temp').textContent = currentTemp;
-        document.getElementById('curr-humidity').textContent = `${getValue('Current Humidity (%)')}%`;
-        document.getElementById('curr-pressure').textContent = `${getValue('Current Pressure (hPa)')} hPa`;
-        document.getElementById('curr-wind').textContent = `${getValue('Current Wind Gust (km/h)')} km/h`;
-
-        // Wind direction
-        const windDirection = getValue('Current Wind Direction');
-        const directionAngles = {
-            'N': 0, 'NNE': 22.5, 'NE': 45, 'ENE': 67.5,
-            'E': 90, 'ESE': 112.5, 'SE': 135, 'SSE': 157.5,
-            'S': 180, 'SSW': 202.5, 'SW': 225, 'WSW': 247.5,
-            'W': 270, 'WNW': 292.5, 'NW': 315, 'NNW': 337.5
-        };
-        document.getElementById('wind-arrow').style.transform =
-            `rotate(${directionAngles[windDirection] || 0}deg)`;
-
-        // Temperature stats
-        document.getElementById('min-temp').textContent = `${getValue('Min Temperature (°C)')}°C`;
-        document.getElementById('max-temp').textContent = `${getValue('Max Temperature (°C)')}°C`;
-        document.getElementById('avg-temp').textContent = `${getValue('Avg Temperature (°C)')}°C`;
-        document.getElementById('heat-index').textContent = `${getValue('Current Heat Index (°C)')}°C`;
-        document.getElementById('wind-chill').textContent = `${getValue('Current Wind Chill (°C)')}°C`;
-        document.getElementById('dew-point').textContent = `${getValue('Current Dew Point (°C)')}°C`;
-
-        // Environmental data
-        document.getElementById('uv-index').textContent = getValue('Current UV Index');
-        document.getElementById('solar-rad').textContent =
-            `${getValue('Current Solar Radiation (W/m²)')} W/m²`;
-        document.getElementById('rainfall').textContent =
-            `${getValue('Today\'s Rain (mm)')} mm`;
-        document.getElementById('visibility').textContent =
-            `${getValue('Current Visibility (km)')} km`;
-        document.getElementById('common-wind').textContent =
-            getValue('Most Common Wind Direction');
-
-function formatCETDateTime(date) {
-    const options = {
-        timeZone: 'Europe/Ljubljana',
-        year: 'numeric',
-        month: '2-digit',
-        day: '2-digit',
-        hour: '2-digit',
-        minute: '2-digit',
-        second: '2-digit'
-    };
-    
-    const formatter = new Intl.DateTimeFormat('en-GB', options);
-    const parts = formatter.formatToParts(date);
-    
-    // Extract individual parts
-    const day = parts.find(p => p.type === 'day').value;
-    const month = parts.find(p => p.type === 'month').value;
-    const year = parts.find(p => p.type === 'year').value;
-    const hour = parts.find(p => p.type === 'hour').value;
-    const minute = parts.find(p => p.type === 'minute').value;
-    const second = parts.find(p => p.type === 'second').value;
-
-    return `${year}-${month}-${day} ${hour}:${minute}:${second}`;
-}
-
-        // In the fetchWeatherStats function, replace:
-        // const utcTime = formatUTCDateTime(new Date());
-        // With:
-        const cetTime = formatCETDateTime(new Date());
-        document.getElementById('update-status').textContent = `Updated: ${cetTime}`;        
-        
-
-    } catch (error) {
-        console.error('Error fetching weather stats:', error);
-        document.getElementById('update-status').textContent =
-            'Error updating data. Retrying...';
+        if (backgroundImage) {
+            document.body.style.backgroundImage = `url('${backgroundImage}')`;
+        }
     }
-}
 
-// Initial setup
-fetchWeatherStats();
-setInterval(fetchWeatherStats, 300000); // Refresh every 5 minutes
-</script>
+    async function fetchWeatherStats() {
+        try {
+            const response = await fetch('summary.csv?t=' + new Date().getTime());
+            if (!response.ok) throw new Error('Network response was not ok');
+            const csvText = await response.text();
+            const rows = csvText.split('\n').filter(row => row.trim() !== '');
+            if (rows.length < 2) throw new Error('Not enough data in CSV');
+            
+            const headers = rows[0].split(',').map(h => h.trim());
+            const data = rows[1].split(',').map(c => c.trim());
+            const getValue = header => {
+                const index = headers.indexOf(header);
+                return index !== -1 ? data[index] : 'N/A';
+            };
+
+            const currentTemp = parseFloat(getValue('Current Temperature (°C)'));
+            const skyCondition = getValue('Current Sky Condition');
+            
+            // Update background based on condition and temperature
+            setBackgroundBasedOnCondition(skyCondition, currentTemp);
+            
+            // Update weather icon
+            if (skyCondition) {
+                document.getElementById('weather-icon').src = skyCondition;
+            }
+
+            // Update temperature and wind
+            document.getElementById('curr-temp').textContent = currentTemp;
+            document.getElementById('curr-wind').textContent = getValue('Current Wind Gust (km/h)');
+            
+            // Update wind direction
+            const windDirection = getValue('Current Wind Direction');
+            const directionAngles = {
+                'N': 0, 'NNE': 22.5, 'NE': 45, 'ENE': 67.5,
+                'E': 90, 'ESE': 112.5, 'SE': 135, 'SSE': 157.5,
+                'S': 180, 'SSW': 202.5, 'SW': 225, 'WSW': 247.5,
+                'W': 270, 'WNW': 292.5, 'NW': 315, 'NNW': 337.5
+            };
+            document.getElementById('wind-arrow').style.transform = 
+                `rotate(${directionAngles[windDirection] || 0}deg)`;
+
+            // Update other stats
+            document.getElementById('curr-humidity').textContent = `${getValue('Current Humidity (%)')}%`;
+            document.getElementById('curr-pressure').textContent = `${getValue('Current Pressure (hPa)')} hPa`;
+            document.getElementById('min-temp').textContent = `${getValue('Min Temperature (°C)')}°C`;
+            document.getElementById('max-temp').textContent = `${getValue('Max Temperature (°C)')}°C`;
+            document.getElementById('avg-temp').textContent = `${getValue('Avg Temperature (°C)')}°C`;
+            document.getElementById('heat-index').textContent = `${getValue('Current Heat Index (°C)')}°C`;
+            document.getElementById('wind-chill').textContent = `${getValue('Current Wind Chill (°C)')}°C`;
+            document.getElementById('dew-point').textContent = `${getValue('Current Dew Point (°C)')}°C`;
+            document.getElementById('uv-index').textContent = getValue('Current UV Index');
+            document.getElementById('solar-rad').textContent = `${getValue('Current Solar Radiation (W/m²)')} W/m²`;
+            document.getElementById('rainfall').textContent = `${getValue('Today\'s Rain (mm)')} mm`;
+            document.getElementById('visibility').textContent = `${getValue('Current Visibility (km)')} km`;
+            document.getElementById('common-wind').textContent = getValue('Most Common Wind Direction');
+
+            // Update timestamp
+            const cetTime = new Intl.DateTimeFormat('en-GB', {
+                timeZone: 'Europe/Ljubljana',
+                year: 'numeric',
+                month: '2-digit',
+                day: '2-digit',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit'
+            }).format(new Date());
+            
+            document.getElementById('update-status').textContent = `Updated: ${cetTime.replace(',', '')}`;
+            
+        } catch (error) {
+            console.error('Error fetching weather stats:', error);
+            document.getElementById('update-status').textContent = 'Error updating data. Retrying...';
+        }
+    }
+
+    // Initial setup
+    fetchWeatherStats();
+    setInterval(fetchWeatherStats, 300000); // Refresh every 5 minutes
+    </script>
 </body>
 </html>
