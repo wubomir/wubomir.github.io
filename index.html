@@ -58,6 +58,7 @@
         font-weight: 500;
     }
     
+       
     /* Current Weather Section */
     .current-weather {
         grid-column: 1 / -1;
@@ -65,7 +66,6 @@
         align-items: center;
         padding: 20px;
         margin: 20px 0;
-        gap: 40px;
     }
     
     .weather-icon {
@@ -91,25 +91,6 @@
         font-size: 48px;
         margin-left: 10px;
         font-weight: 300;
-    }
-    
-    .wind-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 30px;
-    }
-
-    .wind-direction {
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    }
-
-    .wind-arrow {
-    width: 40px; /* Increased from 20px */
-    height: 40px; /* Increased from 20px */
-    transition: transform 0.3s ease;
     }
     
     /* Stats Sections */
@@ -214,17 +195,6 @@
             flex-direction: column;
             text-align: center;
             margin: 10px 0;
-            gap: 20px;
-        }
-
-        .wind-info {
-        margin-left: 0;
-        margin-top: 15px;
-        }
-
-        .wind-arrow {
-        width: 30px;
-        height: 30px;
         }
     
         .weather-icon {
@@ -297,13 +267,6 @@
                 <span class="temp-number" id="curr-temp">--</span>
                 <span class="temp-unit">°C</span>
             </div>
-            <!-- New Wind Section -->
-            <div class="wind-info">
-                <div class="wind-direction">
-                    <img id="wind-arrow" class="wind-arrow" src="arrow.png" alt="Wind Arrow">
-                    <span class="stat-value" id="curr-wind">-- km/h</span>
-                </div>
-            </div>
         </div>
 
         <div class="stats-section">
@@ -316,11 +279,14 @@
                 <span class="stat-label"><i class="fas fa-tachometer-alt"></i> Pressure</span>
                 <span class="stat-value" id="curr-pressure">-- hPa</span>
             </div>
-            <!-- Removed Wind Section from Here -->
+            <div class="stat-item">
+                <span class="stat-label"><i class="fas fa-wind"></i> Wind</span>
+                <div class="wind-direction">
+                    <img id="wind-arrow" class="wind-arrow" src="arrow.png" alt="Wind Arrow">
+                    <span class="stat-value" id="curr-wind">-- km/h</span>
+                </div>
+            </div>
         </div>
-
-        <!-- ... (rest of the HTML remains the same) ... -->
-    </div>
 
         <div class="stats-section">
             <h3>Temperature Analysis</h3>
