@@ -1,8 +1,6 @@
 timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,imedvode1_precipitation_today,imedvode1_pressure,imedvode1_relative_humidity,imedvode1_solar_radiation,imedvode1_temperature,imedvode1_uv_index,imedvode1_wind_chill,imedvode1_wind_direction_degrees,windCardinals,imedvode1_wind_gust,imedvode1_wind_speed,condition1,condition2,visibility,condition3,sky,max_solar_radiation,image_name
-2025-03-10 17:38,6.9,12.4,0.0,0.0,1009.79,68.0,13.0,12.4,1.0,12.4,316.0,NW,3.6,1.8,DRY,,9999.0,,Partly Cloudy,32.51639543225638,partly_cloudy.gif
-2025-03-10 17:43,6.5,12.2,0.0,0.0,1009.52,68.0,9.5,12.2,1.0,12.2,352.0,N,0.0,0.0,DRY,,9999.0,,Partly Cloudy,24.792648485527607,partly_cloudy.gif
-2025-03-10 17:48,6.5,11.8,0.0,0.0,1009.58,70.0,6.4,11.8,1.0,11.8,12.0,N,1.8,1.1,DRY,,9999.0,,Partly Cloudy,17.191981303416608,partly_cloudy.gif
-2025-03-10 17:53,6.5,11.4,0.0,0.0,1009.79,72.0,4.5,11.4,1.0,11.4,13.0,N,1.8,0.7,DRY,,9999.0,,Partly Cloudy,9.7926202744429,partly_cloudy.gif
+2025-03-10 17:48,6.4,11.8,0.0,0.0,1009.58,70.0,6.4,11.8,1.0,11.8,12.0,N,1.8,1.1,DRY,,9999.0,,Partly Cloudy,17.191981303416608,partly_cloudy.gif
+2025-03-10 17:53,6.4,11.4,0.0,0.0,1009.79,72.0,4.5,11.4,1.0,11.4,13.0,N,1.8,0.7,DRY,,9999.0,,Partly Cloudy,9.7926202744429,partly_cloudy.gif
 2025-03-10 17:58,6.4,11.7,0.0,0.0,1009.69,70.0,3.1,11.7,1.0,11.7,162.0,S,1.8,1.4,DRY,,9999.0,,Sunny,2.6979488270733523,sunny.gif
 2025-03-10 18:03,6.8,11.5,0.0,0.0,1009.79,73.0,1.7,11.5,1.0,11.5,88.0,E,5.4,4.0,DRY,,9999.0,,Twilight,0.0,cloudy.gif
 2025-03-10 18:08,6.5,10.0,0.0,0.0,1009.79,79.0,0.9,10.0,1.0,10.0,79.0,E,1.8,1.4,DRY,,9999.0,,Twilight,0.0,cloudy.gif
@@ -270,3 +268,5 @@ timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,i
 2025-03-11 17:24,5.1,12.7,0.0,0.51,1006.81,60.0,29.8,12.7,0.0,12.7,224.0,SW,11.2,7.9,DRY,,9999.0,,Partly Cloudy,56.68817007588497,partly_cloudy.gif
 2025-03-11 17:29,5.0,12.6,0.0,0.51,1007.01,60.0,25.6,12.6,0.0,12.6,177.0,S,13.0,10.1,DRY,,9999.0,,Partly Cloudy,48.80999434886868,partly_cloudy.gif
 2025-03-11 17:34,5.3,12.6,0.0,0.51,1007.11,61.0,21.4,12.6,0.0,12.6,272.0,W,5.4,3.6,DRY,,9999.0,,Partly Cloudy,40.95867712062235,partly_cloudy.gif
+2025-03-11 17:39,5.0,12.6,0.0,0.51,1007.11,60.0,18.0,12.6,0.0,12.6,206.0,SW,11.2,9.4,DRY,,9999.0,,Partly Cloudy,33.14843024793766,partly_cloudy.gif
+2025-03-11 17:44,5.3,12.6,0.0,0.51,1007.21,61.0,12.3,12.6,0.0,12.6,160.0,S,3.6,1.8,DRY,,9999.0,,Partly Cloudy,25.406202884600404,partly_cloudy.gif
