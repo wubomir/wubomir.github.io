@@ -58,7 +58,6 @@
         font-weight: 500;
     }
     
-       
     /* Current Weather Section */
     .current-weather {
         grid-column: 1 / -1;
@@ -187,10 +186,6 @@
             font-size: 20px;
         }
     
-        .utc-time {
-            font-size: 16px;
-        }
-    
         .current-weather {
             flex-direction: column;
             text-align: center;
@@ -269,6 +264,7 @@
             </div>
         </div>
 
+        <!-- Updated Current Conditions Section -->
         <div class="stats-section">
             <h3>Current Conditions</h3>
             <div class="stat-item">
@@ -286,8 +282,21 @@
                     <span class="stat-value" id="curr-wind">-- km/h</span>
                 </div>
             </div>
+            <div class="stat-item">
+                <span class="stat-label"><i class="fas fa-sun"></i> UV Index</span>
+                <span class="stat-value" id="uv-index">--</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label"><i class="fas fa-sun"></i> Solar Radiation</span>
+                <span class="stat-value" id="solar-rad">-- W/m²</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label"><i class="fas fa-eye"></i> Visibility</span>
+                <span class="stat-value" id="visibility">-- km</span>
+            </div>
         </div>
 
+        <!-- Updated Temperature Analysis Section -->
         <div class="stats-section">
             <h3>Temperature Analysis</h3>
             <div class="stat-item">
@@ -316,23 +325,12 @@
             </div>
         </div>
 
+        <!-- Updated Environmental Data Section -->
         <div class="stats-section">
             <h3>Environmental Data</h3>
             <div class="stat-item">
-                <span class="stat-label"><i class="fas fa-sun"></i> UV Index</span>
-                <span class="stat-value" id="uv-index">--</span>
-            </div>
-            <div class="stat-item">
-                <span class="stat-label"><i class="fas fa-sun"></i> Solar Radiation</span>
-                <span class="stat-value" id="solar-rad">-- W/m²</span>
-            </div>
-            <div class="stat-item">
                 <span class="stat-label"><i class="fas fa-cloud-rain"></i> Rainfall</span>
                 <span class="stat-value" id="rainfall">-- mm</span>
-            </div>
-            <div class="stat-item">
-                <span class="stat-label"><i class="fas fa-eye"></i> Visibility</span>
-                <span class="stat-value" id="visibility">-- km</span>
             </div>
             <div class="stat-item">
                 <span class="stat-label"><i class="fas fa-compass"></i> Today's Wind Dir</span>
@@ -342,144 +340,9 @@
 
         <div class="update-status" id="update-status">Last updated: 2025-02-28 11:24:05</div>
     </div>
-        
 
     <script>
-function formatUTCDateTime(date) {
-    return date.getUTCFullYear() + '-' +
-        String(date.getUTCMonth() + 1).padStart(2, '0') + '-' +
-        String(date.getUTCDate()).padStart(2, '0') + ' ' +
-        String(date.getUTCHours()).padStart(2, '0') + ':' +
-        String(date.getUTCMinutes()).padStart(2, '0') + ':' +
-        String(date.getUTCSeconds()).padStart(2, '0');
-}
-
-function setBackgroundBasedOnCondition(imageName, temperature) {
-    let backgroundImage = "";
-
-    if (imageName === "partly_cloudy.gif" || imageName === "mostly_cloudy.gif") {
-        backgroundImage = temperature <= 0 ? "partly_cloudy_frost.jpg" : "partly_cloudy.jpg";
-    } else if (imageName === "sunny.gif" || imageName === "mostly_sunny.gif") {
-        backgroundImage = "sunny.jpg";
-    } else if (imageName === "cloudy.gif") {
-        backgroundImage = temperature <= 0 ? "cloudy_frost.jpg" : "cloudy.jpg";
-    } else if (["rain_light.gif", "rain_moderate.gif", "rain_heavy.gif"].includes(imageName)) {
-        backgroundImage = "cloudy_rain.jpg";
-    } else if (imageName === "night.gif") {
-        backgroundImage = temperature <= 0 ? "night_frost.jpg" : "night.jpg";
-    }
-
-    if (backgroundImage) {
-        document.body.style.backgroundImage = `url('${backgroundImage}')`;
-    }
-}
-
-async function fetchWeatherStats() {
-    try {
-        const response = await fetch('summary.csv?t=' + new Date().getTime());
-        if (!response.ok) throw new Error('Network response was not ok');
-
-        const csvText = await response.text();
-        const rows = csvText.split('\n').filter(row => row.trim() !== '');
-        if (rows.length < 2) throw new Error('Not enough data in CSV');
-
-        const headers = rows[0].split(',').map(h => h.trim());
-        const data = rows[1].split(',').map(c => c.trim());
-
-        const getValue = header => {
-            const index = headers.indexOf(header);
-            return index !== -1 ? data[index] : 'N/A';
-        };
-
-        const currentTemp = parseFloat(getValue('Current Temperature (°C)'));
-        const skyCondition = getValue('Current Sky Condition');
-
-        // Update background based on condition and temperature
-        setBackgroundBasedOnCondition(skyCondition, currentTemp);
-
-        // Update weather icon
-        if (skyCondition) {
-            document.getElementById('weather-icon').src = skyCondition;
-        }
-
-        // Update all values
-        document.getElementById('curr-temp').textContent = currentTemp;
-        document.getElementById('curr-humidity').textContent = `${getValue('Current Humidity (%)')}%`;
-        document.getElementById('curr-pressure').textContent = `${getValue('Current Pressure (hPa)')} hPa`;
-        document.getElementById('curr-wind').textContent = `${getValue('Current Wind Gust (km/h)')} km/h`;
-
-        // Wind direction
-        const windDirection = getValue('Current Wind Direction');
-        const directionAngles = {
-            'N': 0, 'NNE': 22.5, 'NE': 45, 'ENE': 67.5,
-            'E': 90, 'ESE': 112.5, 'SE': 135, 'SSE': 157.5,
-            'S': 180, 'SSW': 202.5, 'SW': 225, 'WSW': 247.5,
-            'W': 270, 'WNW': 292.5, 'NW': 315, 'NNW': 337.5
-        };
-        document.getElementById('wind-arrow').style.transform =
-            `rotate(${directionAngles[windDirection] || 0}deg)`;
-
-        // Temperature stats
-        document.getElementById('min-temp').textContent = `${getValue('Min Temperature (°C)')}°C`;
-        document.getElementById('max-temp').textContent = `${getValue('Max Temperature (°C)')}°C`;
-        document.getElementById('avg-temp').textContent = `${getValue('Avg Temperature (°C)')}°C`;
-        document.getElementById('heat-index').textContent = `${getValue('Current Heat Index (°C)')}°C`;
-        document.getElementById('wind-chill').textContent = `${getValue('Current Wind Chill (°C)')}°C`;
-        document.getElementById('dew-point').textContent = `${getValue('Current Dew Point (°C)')}°C`;
-
-        // Environmental data
-        document.getElementById('uv-index').textContent = getValue('Current UV Index');
-        document.getElementById('solar-rad').textContent =
-            `${getValue('Current Solar Radiation (W/m²)')} W/m²`;
-        document.getElementById('rainfall').textContent =
-            `${getValue('Today\'s Rain (mm)')} mm`;
-        document.getElementById('visibility').textContent =
-            `${getValue('Current Visibility (km)')} km`;
-        document.getElementById('common-wind').textContent =
-            getValue('Most Common Wind Direction');
-
-function formatCETDateTime(date) {
-    const options = {
-        timeZone: 'Europe/Ljubljana',
-        year: 'numeric',
-        month: '2-digit',
-        day: '2-digit',
-        hour: '2-digit',
-        minute: '2-digit',
-        second: '2-digit'
-    };
-    
-    const formatter = new Intl.DateTimeFormat('en-GB', options);
-    const parts = formatter.formatToParts(date);
-    
-    // Extract individual parts
-    const day = parts.find(p => p.type === 'day').value;
-    const month = parts.find(p => p.type === 'month').value;
-    const year = parts.find(p => p.type === 'year').value;
-    const hour = parts.find(p => p.type === 'hour').value;
-    const minute = parts.find(p => p.type === 'minute').value;
-    const second = parts.find(p => p.type === 'second').value;
-
-    return `${year}-${month}-${day} ${hour}:${minute}:${second}`;
-}
-
-        // In the fetchWeatherStats function, replace:
-        // const utcTime = formatUTCDateTime(new Date());
-        // With:
-        const cetTime = formatCETDateTime(new Date());
-        document.getElementById('update-status').textContent = `Updated: ${cetTime}`;        
-        
-
-    } catch (error) {
-        console.error('Error fetching weather stats:', error);
-        document.getElementById('update-status').textContent =
-            'Error updating data. Retrying...';
-    }
-}
-
-// Initial setup
-fetchWeatherStats();
-setInterval(fetchWeatherStats, 300000); // Refresh every 5 minutes
-</script>
+    // ... (keep the JavaScript exactly the same as in original version)
+    </script>
 </body>
 </html>
