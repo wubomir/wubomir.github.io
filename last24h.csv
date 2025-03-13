@@ -1,15 +1,13 @@
 timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,imedvode1_precipitation_today,imedvode1_pressure,imedvode1_relative_humidity,imedvode1_solar_radiation,imedvode1_temperature,imedvode1_uv_index,imedvode1_wind_chill,imedvode1_wind_direction_degrees,windCardinals,imedvode1_wind_gust,imedvode1_wind_speed,visibility,condition1,condition2,condition3,sky,max_solar_radiation,image_name
-2025-03-12 19:39,8.2,8.6,3.0,23.39,1002.61,96.0,0.1,8.6,1.0,8.6,209.0,SW,0.0,1.1,7000.0,RAIN,MODERATE,,Night,0.0,rain_moderate.gif
-2025-03-12 19:44,8.2,8.6,0.0,23.6,1002.71,96.0,0.1,8.6,1.0,8.6,228.0,SW,0.0,1.4,7000.0,RAIN,LIGHT,,Night,0.0,rain_light.gif
-2025-03-12 19:49,8.2,8.6,4.19,24.1,1002.61,96.0,0.1,8.6,1.0,8.6,256.0,W,0.0,1.1,7000.0,RAIN,MODERATE,,Night,0.0,rain_moderate.gif
-2025-03-12 19:54,8.2,8.6,4.8,24.41,1002.71,96.0,0.1,8.6,1.0,8.6,189.0,S,0.0,1.8,7000.0,RAIN,MODERATE,,Night,0.0,rain_moderate.gif
-2025-03-12 19:59,8.1,8.6,3.0,24.61,1002.61,96.0,0.1,8.6,1.0,8.6,176.0,S,0.0,0.0,7000.0,RAIN,MODERATE,,Night,0.0,rain_moderate.gif
-2025-03-12 20:04,8.1,8.6,4.19,25.1,1002.51,96.0,0.1,8.6,1.0,8.6,176.0,S,0.0,0.0,7000.0,RAIN,MODERATE,,Night,0.0,rain_moderate.gif
-2025-03-12 20:09,8.1,8.6,4.8,25.4,1002.3,96.0,0.1,8.6,1.0,8.6,176.0,S,0.0,0.0,7000.0,RAIN,MODERATE,,Night,0.0,rain_moderate.gif
-2025-03-12 20:14,8.1,8.6,0.0,25.7,1002.3,96.0,0.1,8.6,1.0,8.6,176.0,S,0.0,0.0,7000.0,RAIN,LIGHT,,Night,0.0,rain_light.gif
-2025-03-12 20:19,8.1,8.6,3.0,25.91,1002.2,96.0,0.1,8.6,1.0,8.6,176.0,S,0.0,0.0,7000.0,RAIN,MODERATE,,Night,0.0,rain_moderate.gif
-2025-03-12 20:24,8.1,8.6,4.19,26.39,1002.1,96.0,0.1,8.6,1.0,8.6,258.0,W,1.8,1.1,7000.0,RAIN,MODERATE,,Night,0.0,rain_moderate.gif
-2025-03-12 20:29,8.2,8.6,4.8,26.7,1001.9,97.0,0.1,8.6,1.0,8.6,258.0,W,0.0,0.0,7000.0,RAIN,MODERATE,,Night,0.0,rain_moderate.gif
+2025-03-12 19:49,8.1,8.5,4.19,24.1,1002.61,96.0,0.1,8.5,1.0,8.5,256.0,W,0.0,1.1,7000.0,RAIN,MODERATE,,Night,0.0,rain_moderate.gif
+2025-03-12 19:54,8.1,8.5,4.8,24.41,1002.71,96.0,0.1,8.5,1.0,8.5,189.0,S,0.0,1.8,7000.0,RAIN,MODERATE,,Night,0.0,rain_moderate.gif
+2025-03-12 19:59,8.1,8.5,3.0,24.61,1002.61,96.0,0.1,8.5,1.0,8.5,176.0,S,0.0,0.0,7000.0,RAIN,MODERATE,,Night,0.0,rain_moderate.gif
+2025-03-12 20:04,8.1,8.5,4.19,25.1,1002.51,96.0,0.1,8.5,1.0,8.5,176.0,S,0.0,0.0,7000.0,RAIN,MODERATE,,Night,0.0,rain_moderate.gif
+2025-03-12 20:09,8.1,8.5,4.8,25.4,1002.3,96.0,0.1,8.5,1.0,8.5,176.0,S,0.0,0.0,7000.0,RAIN,MODERATE,,Night,0.0,rain_moderate.gif
+2025-03-12 20:14,8.1,8.5,0.0,25.7,1002.3,96.0,0.1,8.5,1.0,8.5,176.0,S,0.0,0.0,7000.0,RAIN,LIGHT,,Night,0.0,rain_light.gif
+2025-03-12 20:19,8.1,8.5,3.0,25.91,1002.2,96.0,0.1,8.5,1.0,8.5,176.0,S,0.0,0.0,7000.0,RAIN,MODERATE,,Night,0.0,rain_moderate.gif
+2025-03-12 20:24,8.1,8.5,4.19,26.39,1002.1,96.0,0.1,8.5,1.0,8.5,258.0,W,1.8,1.1,7000.0,RAIN,MODERATE,,Night,0.0,rain_moderate.gif
+2025-03-12 20:29,8.2,8.5,4.8,26.7,1001.9,97.0,0.1,8.5,1.0,8.5,258.0,W,0.0,0.0,7000.0,RAIN,MODERATE,,Night,0.0,rain_moderate.gif
 2025-03-12 20:34,8.1,8.5,4.19,26.9,1002.0,97.0,0.1,8.5,1.0,8.5,261.0,W,0.0,0.0,7000.0,RAIN,MODERATE,,Night,0.0,rain_moderate.gif
 2025-03-12 20:38,8.1,8.5,0.0,26.9,1002.0,97.0,0.1,8.5,1.0,8.5,261.0,W,0.0,0.0,7000.0,RAIN,LIGHT,,Night,0.0,rain_light.gif
 2025-03-12 20:39,8.1,8.5,5.99,27.71,1001.9,97.0,0.1,8.5,1.0,8.5,262.0,W,1.8,0.4,7000.0,RAIN,MODERATE,,Night,0.0,rain_moderate.gif
@@ -294,3 +292,5 @@ timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,i
 2025-03-13 19:24,6.4,7.2,3.0,26.59,1003.69,95.0,0.0,7.2,0.0,7.2,305.0,NW,3.6,2.2,9999.0,RAIN,MODERATE,,Night,0.0,rain_moderate.gif
 2025-03-13 19:29,6.1,7.1,5.99,27.1,1003.49,94.0,0.0,7.1,0.0,7.1,291.0,W,1.8,1.8,9999.0,RAIN,MODERATE,,Night,0.0,rain_moderate.gif
 2025-03-13 19:34,6.2,7.2,4.19,27.1,1003.49,94.0,0.0,7.2,0.0,7.2,290.0,W,0.0,0.0,9999.0,RAIN,MODERATE,,Night,0.0,rain_moderate.gif
+2025-03-13 19:39,6.5,7.3,0.0,27.1,1003.59,95.0,0.0,7.3,0.0,7.3,228.0,SW,1.8,1.4,9999.0,DRY,,,Night,0.0,night.gif
+2025-03-13 19:44,6.4,7.2,0.0,27.1,1003.79,95.0,0.0,7.2,0.0,7.2,178.0,S,1.8,1.1,9999.0,DRY,,,Night,0.0,night.gif
