@@ -1,7 +1,5 @@
 timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,imedvode1_precipitation_today,imedvode1_pressure,imedvode1_relative_humidity,imedvode1_solar_radiation,imedvode1_temperature,imedvode1_uv_index,imedvode1_wind_chill,imedvode1_wind_direction_degrees,windCardinals,imedvode1_wind_gust,imedvode1_wind_speed,visibility,condition1,condition2,condition3,sky,max_solar_radiation,image_name
-2025-03-12 14:09,9.3,11.3,1.8,0.0,1004.1,88.0,53.1,11.3,1.0,11.3,86.0,E,1.8,4.3,7000.0,DRY,,,Cloudy,469.0129815133127,cloudy.gif
-2025-03-12 14:14,9.3,11.3,0.0,0.0,1004.0,88.0,101.0,11.3,1.0,11.3,59.0,NE,1.8,1.1,7000.0,DRY,,,Cloudy,461.64153898962553,cloudy.gif
-2025-03-12 14:19,9.3,11.3,0.0,0.0,1003.89,88.0,105.6,11.3,1.0,11.3,66.0,NE,1.8,1.4,7000.0,DRY,,,Cloudy,453.9943053666896,cloudy.gif
+2025-03-12 14:19,9.3,11.3,0.0,0.0,1003.89,88.0,105.6,11.3,1.0,11.3,66.0,NE,3.6,1.4,7000.0,DRY,,,Cloudy,453.9943053666896,cloudy.gif
 2025-03-12 14:24,9.7,11.3,0.0,0.0,1003.69,90.0,146.5,11.3,1.0,11.3,50.0,NE,3.6,2.9,7000.0,DRY,,,Cloudy,446.075441985498,cloudy.gif
 2025-03-12 14:29,9.5,11.3,0.0,0.0,1003.69,89.0,116.2,11.3,1.0,11.3,62.0,NE,3.6,1.8,7000.0,DRY,,,Cloudy,437.8892874516332,cloudy.gif
 2025-03-12 14:34,9.3,11.3,1.19,16.99,1003.59,88.0,105.0,11.3,1.0,11.3,67.0,NE,3.6,2.5,7000.0,RAIN,LIGHT,,Cloudy,429.44036064994015,rain_light.gif
@@ -294,3 +292,5 @@ timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,i
 2025-03-13 13:54,6.4,11.9,0.0,21.11,1001.02,69.0,306.2,11.9,2.0,11.9,328.0,NW,5.4,3.6,9999.0,DRY,,,Partly Cloudy,494.1766912282953,partly_cloudy.gif
 2025-03-13 13:59,6.9,12.0,0.0,21.11,1000.91,71.0,788.4,12.0,7.0,12.0,303.0,NW,1.8,0.4,9999.0,DRY,,,Sunny,487.63602858305916,sunny.gif
 2025-03-13 14:04,7.0,12.5,0.0,21.11,1001.02,69.0,329.6,12.5,3.0,12.5,218.0,SW,7.2,6.5,9999.0,DRY,,,Mostly Sunny,480.80809426004345,mostly_sunny.gif
+2025-03-13 14:09,7.0,12.5,0.0,21.11,1001.02,69.0,206.6,12.5,2.0,12.5,297.0,NW,11.2,9.7,9999.0,DRY,,,Mostly Cloudy,473.6965322561905,mostly_cloudy.gif
+2025-03-13 14:14,6.9,12.0,0.0,21.11,1000.81,71.0,920.6,12.0,8.0,12.0,277.0,W,7.2,5.0,9999.0,DRY,,,Sunny,466.3051567244083,sunny.gif
