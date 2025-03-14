@@ -1,8 +1,6 @@
 timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,imedvode1_precipitation_today,imedvode1_pressure,imedvode1_relative_humidity,imedvode1_solar_radiation,imedvode1_temperature,imedvode1_uv_index,imedvode1_wind_chill,imedvode1_wind_direction_degrees,windCardinals,imedvode1_wind_gust,imedvode1_wind_speed,visibility,condition1,condition2,condition3,sky,max_solar_radiation,image_name
-2025-03-13 18:19,6.6,7.8,0.0,0.0,1003.29,92.0,0.3,7.8,1.0,7.8,287.0,W,3.6,2.2,8000.0,DRY,,,Twilight,0.0,cloudy.gif
-2025-03-13 18:24,6.6,7.8,0.0,0.0,1003.18,92.0,0.1,7.8,1.0,7.8,287.0,W,3.6,2.2,8000.0,DRY,,,Twilight,0.0,cloudy.gif
-2025-03-13 18:29,6.7,7.8,0.0,0.0,1003.29,93.0,0.0,7.8,1.0,7.8,327.0,NW,0.0,0.0,8000.0,DRY,,,Twilight,0.0,cloudy.gif
-2025-03-13 18:34,6.6,7.8,0.0,0.0,1003.29,92.0,0.0,7.8,1.0,7.8,327.0,NW,3.6,2.2,8000.0,DRY,,,Twilight,0.0,cloudy.gif
+2025-03-13 18:29,6.7,7.5,0.0,0.0,1003.29,93.0,0.0,7.5,1.0,7.5,327.0,NW,0.0,0.0,8000.0,DRY,,,Twilight,0.0,cloudy.gif
+2025-03-13 18:34,6.6,7.5,0.0,0.0,1003.29,92.0,0.0,7.5,1.0,7.5,327.0,NW,3.6,2.2,8000.0,DRY,,,Twilight,0.0,cloudy.gif
 2025-03-13 18:39,6.4,7.5,0.0,0.0,1003.12,93.0,0.0,7.5,1.0,7.5,10.0,N,3.6,3.6,8000.0,DRY,,,Night,0.0,night.gif
 2025-03-13 18:44,6.5,7.5,0.0,0.0,1003.39,94.0,0.0,7.5,1.0,7.5,17.0,N,5.4,4.0,8000.0,DRY,,,Night,0.0,night.gif
 2025-03-13 18:49,6.7,7.5,0.0,0.0,1003.29,95.0,0.0,7.5,1.0,7.5,12.0,N,3.6,3.6,8000.0,DRY,,,Night,0.0,night.gif
@@ -289,3 +287,5 @@ timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,i
 2025-03-14 18:00,6.2,6.7,0.0,43.89,1006.81,96.0,0.8,6.7,0.0,6.7,307.0,NW,0.0,0.0,9999.0,DRY,,,Cloudy,7.650694480744653,cloudy.gif
 2025-03-14 18:05,5.9,6.7,0.0,43.89,1006.71,95.0,0.5,6.7,0.0,6.7,263.0,W,0.0,0.0,9999.0,DRY,,,Cloudy,0.6496285169409611,cloudy.gif
 2025-03-14 18:10,5.9,6.7,0.0,43.89,1006.81,95.0,0.4,6.7,0.0,6.7,263.0,W,0.0,0.0,9999.0,DRY,,,Twilight,0.0,cloudy.gif
+2025-03-14 18:15,6.2,6.7,0.0,43.89,1006.6,96.0,0.3,6.7,0.0,6.7,263.0,W,0.0,0.0,9999.0,DRY,,,Twilight,0.0,cloudy.gif
+2025-03-14 18:20,6.2,6.7,0.0,43.89,1006.71,96.0,0.1,6.7,0.0,6.7,245.0,SW,0.0,0.0,9999.0,DRY,,,Twilight,0.0,cloudy.gif
