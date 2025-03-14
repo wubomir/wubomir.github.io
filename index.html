@@ -89,29 +89,6 @@
         margin-left: 10px;
         font-weight: 300;
     }
-
-   .feels-like {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        font-size: 1.2rem;
-        color: rgba(255, 255, 255, 0.9);
-    }
-    
-    .feels-like-label {
-        display: flex;
-        align-items: center;
-        gap: 5px;
-    }
-    
-    .feels-like-label i {
-        color: #4CAF50;
-        font-size: 1.1rem;
-    }
-    
-    .feels-like-value {
-        font-weight: 500;
-    }
     
     .stats-section {
         background: rgba(255, 255, 255, 0.1);
@@ -120,7 +97,7 @@
         backdrop-filter: blur(5px);
         height: fit-content;
     }
-
+    
     .stats-section h3 {
         color: #4CAF50;
         margin-bottom: 15px;
@@ -267,19 +244,19 @@
     </style>
 </head>
 <body>
-    <div class="current-weather">
-    <img id="weather-icon" class="weather-icon" src="" alt="Weather Icon">
-    <div class="temperature-container">
-        <div class="temperature">
-            <span class="temp-number" id="curr-temp">--</span>
-            <span class="temp-unit">°C</span>
+    <div class="overlay"></div>
+    <div class="dashboard">
+        <div class="header">
+            <div class="location">Medvode</div>
         </div>
-        <div class="feels-like">
-            <span class="feels-like-label">Feels Like</span>
-            <span class="feels-like-value" id="feels-like">--°C</span>
+
+        <div class="current-weather">
+            <img id="weather-icon" class="weather-icon" src="" alt="Weather Icon">
+            <div class="temperature">
+                <span class="temp-number" id="curr-temp">--</span>
+                <span class="temp-unit">°C</span>
+            </div>
         </div>
-    </div>
-</div>
 
         <div class="stats-section">
             <h3>Current Conditions</h3>
@@ -325,6 +302,14 @@
             <div class="stat-item">
                 <span class="stat-label"><i class="fas fa-thermometer-half"></i> Average</span>
                 <span class="stat-value" id="avg-temp">--°C</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label"><i class="fas fa-fire"></i> Heat Index</span>
+                <span class="stat-value" id="heat-index">--°C</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label"><i class="fas fa-snowflake"></i> Wind Chill</span>
+                <span class="stat-value" id="wind-chill">--°C</span>
             </div>
             <div class="stat-item">
                 <span class="stat-label"><i class="fas fa-tint"></i> Dew Point</span>
@@ -424,25 +409,6 @@
             const currentTemp = parseFloat(getValue('Current Temperature (°C)'));
             document.getElementById('curr-temp').textContent = isNaN(currentTemp) ? '--' : currentTemp.toFixed(1);
             
-            // Inside the fetchWeatherStats function, after getting currentTemp:
-            const heatIndexValue = getValue('Current Heat Index (°C)');
-            const windChillValue = getValue('Current Wind Chill (°C)');
-            
-            // Parse values or use current temp as fallback
-            const heatIndex = heatIndexValue !== '--' ? parseFloat(heatIndexValue) : currentTemp;
-            const windChill = windChillValue !== '--' ? parseFloat(windChillValue) : currentTemp;
-            
-            // Determine feels like temperature
-            let feelsLike = currentTemp;
-            if (heatIndex !== currentTemp) {
-                feelsLike = heatIndex;
-            } else if (windChill !== currentTemp) {
-                feelsLike = windChill;
-            }
-            
-            // Update Feels Like display
-            document.getElementById('feels-like').textContent = `${feelsLike.toFixed(1)}°C`;
-            
             const skyCondition = getValue('Current Sky Condition');
             if (skyCondition && skyCondition !== '--') {
                 document.getElementById('weather-icon').src = skyCondition;
@@ -474,6 +440,8 @@
             document.getElementById('min-temp').textContent = `${getValue('Min Temperature (°C)')}°C`;
             document.getElementById('max-temp').textContent = `${getValue('Max Temperature (°C)')}°C`;
             document.getElementById('avg-temp').textContent = `${getValue('Avg Temperature (°C)')}°C`;
+            document.getElementById('heat-index').textContent = `${getValue('Current Heat Index (°C)')}°C`;
+            document.getElementById('wind-chill').textContent = `${getValue('Current Wind Chill (°C)')}°C`;
             document.getElementById('dew-point').textContent = `${getValue('Current Dew Point (°C)')}°C`;
 
             // Update daily statistics
