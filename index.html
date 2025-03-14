@@ -404,6 +404,7 @@
             // Update current weather
             const currentTemp = parseFloat(getValue('Current Temperature (°C)'));
             document.getElementById('curr-temp').textContent = isNaN(currentTemp) ? '--' : currentTemp.toFixed(1);
+            
             // Inside the fetchWeatherStats function, after getting currentTemp:
             const heatIndexValue = getValue('Current Heat Index (°C)');
             const windChillValue = getValue('Current Wind Chill (°C)');
@@ -454,8 +455,6 @@
             document.getElementById('min-temp').textContent = `${getValue('Min Temperature (°C)')}°C`;
             document.getElementById('max-temp').textContent = `${getValue('Max Temperature (°C)')}°C`;
             document.getElementById('avg-temp').textContent = `${getValue('Avg Temperature (°C)')}°C`;
-            document.getElementById('heat-index').textContent = `${getValue('Current Heat Index (°C)')}°C`;
-            document.getElementById('wind-chill').textContent = `${getValue('Current Wind Chill (°C)')}°C`;
             document.getElementById('dew-point').textContent = `${getValue('Current Dew Point (°C)')}°C`;
 
             // Update daily statistics
