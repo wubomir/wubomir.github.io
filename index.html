@@ -244,19 +244,19 @@
     </style>
 </head>
 <body>
-    <div class="overlay"></div>
-    <div class="dashboard">
-        <div class="header">
-            <div class="location">Medvode</div>
+    <div class="current-weather">
+    <img id="weather-icon" class="weather-icon" src="" alt="Weather Icon">
+    <div class="temperature-container">
+        <div class="temperature">
+            <span class="temp-number" id="curr-temp">--</span>
+            <span class="temp-unit">°C</span>
         </div>
-
-        <div class="current-weather">
-            <img id="weather-icon" class="weather-icon" src="" alt="Weather Icon">
-            <div class="temperature">
-                <span class="temp-number" id="curr-temp">--</span>
-                <span class="temp-unit">°C</span>
-            </div>
+        <div class="feels-like">
+            <span class="feels-like-label">Feels Like</span>
+            <span class="feels-like-value" id="feels-like">--°C</span>
         </div>
+    </div>
+</div>
 
         <div class="stats-section">
             <h3>Current Conditions</h3>
