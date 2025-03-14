@@ -335,6 +335,10 @@
                 <span class="stat-label"><i class="fas fa-compass"></i> Today's Wind Dir</span>
                 <span class="stat-value" id="common-wind">--</span>
             </div>
+            <div class="stat-item">
+                <span class="stat-label"><i class="fas fa-cloud"></i> Today's Sky</span>
+                <span class="stat-value" id="common-sky">--</span>
+            </div>
         </div>
 
         <div class="update-status" id="update-status">Last updated: --</div>
@@ -445,6 +449,7 @@
             document.getElementById('max-wind-gust').textContent = `${getValue('Max Wind Gust (km/h)')} km/h`;
             document.getElementById('rainfall').textContent = `${getValue("Today's Rain (mm)")} mm`;
             document.getElementById('common-wind').textContent = getValue('Most Common Wind Direction');
+            document.getElementById('common-sky').textContent = getValue('Most Common Sky Condition');
 
             // Update timestamp
             document.getElementById('update-status').textContent = 
