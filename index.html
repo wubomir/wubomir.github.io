@@ -406,28 +406,28 @@
             document.getElementById('curr-temp').textContent = isNaN(currentTemp) ? '--' : currentTemp.toFixed(1);
 
             const heatIndexValue = getValue('Current Heat Index (°C)');
-const windChillValue = getValue('Current Wind Chill (°C)');
-
-// Parse values or use current temp as fallback
-const heatIndex = heatIndexValue !== '--' ? parseFloat(heatIndexValue) : currentTemp;
-const windChill = windChillValue !== '--' ? parseFloat(windChillValue) : currentTemp;
-
-// Determine feels like temperature
-let feelsLike = currentTemp;
-if (heatIndex !== currentTemp) {
-    feelsLike = heatIndex;
-} else if (windChill !== currentTemp) {
-    feelsLike = windChill;
-}
-
-// Update Feels Like display
-document.getElementById('feels-like').textContent = `${feelsLike.toFixed(1)}°C`;
+            const windChillValue = getValue('Current Wind Chill (°C)');
             
-            const skyCondition = getValue('Current Sky Condition');
-            if (skyCondition && skyCondition !== '--') {
-                document.getElementById('weather-icon').src = skyCondition;
-                setBackgroundBasedOnCondition(skyCondition, currentTemp);
+            // Parse values or use current temp as fallback
+            const heatIndex = heatIndexValue !== '--' ? parseFloat(heatIndexValue) : currentTemp;
+            const windChill = windChillValue !== '--' ? parseFloat(windChillValue) : currentTemp;
+            
+            // Determine feels like temperature
+            let feelsLike = currentTemp;
+            if (heatIndex !== currentTemp) {
+                feelsLike = heatIndex;
+            } else if (windChill !== currentTemp) {
+                feelsLike = windChill;
             }
+            
+            // Update Feels Like display
+            document.getElementById('feels-like').textContent = `${feelsLike.toFixed(1)}°C`;
+                        
+                        const skyCondition = getValue('Current Sky Condition');
+                        if (skyCondition && skyCondition !== '--') {
+                            document.getElementById('weather-icon').src = skyCondition;
+                            setBackgroundBasedOnCondition(skyCondition, currentTemp);
+                        }
 
             // Update current conditions
             document.getElementById('curr-humidity').textContent = `${getValue('Current Humidity (%)')}%`;
