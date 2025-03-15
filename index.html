@@ -95,7 +95,25 @@
         color: rgba(255, 255, 255, 0.8);
         margin-left: 20px;
         margin-top: 0.5rem;
-    }    
+    } 
+
+                /* Main temperature Celsius symbol */
+    .celsius-unit {
+        font-size: 0.6em;
+        vertical-align: super;
+    }
+        
+        /* Feels-like Celsius symbol */
+    .feels-like-unit {
+        font-size: 0.8em;
+        margin-left: 2px;
+    }
+        
+        /* Or style both together */
+     .celsius-unit,
+     .feels-like-unit {
+        color: #666;
+    }
     
     .stats-section {
         background: rgba(255, 255, 255, 0.1);
@@ -218,24 +236,6 @@
     
         .stat-item {
             padding: 10px 0;
-        }
-
-                /* Main temperature Celsius symbol */
-        .celsius-unit {
-            font-size: 0.6em;
-            vertical-align: super;
-        }
-        
-        /* Feels-like Celsius symbol */
-        .feels-like-unit {
-            font-size: 0.8em;
-            margin-left: 2px;
-        }
-        
-        /* Or style both together */
-        .celsius-unit,
-        .feels-like-unit {
-            color: #666;
         }
     
         .update-status {
