@@ -219,6 +219,24 @@
         .stat-item {
             padding: 10px 0;
         }
+
+                /* Main temperature Celsius symbol */
+        .celsius-unit {
+            font-size: 0.6em;
+            vertical-align: super;
+        }
+        
+        /* Feels-like Celsius symbol */
+        .feels-like-unit {
+            font-size: 0.8em;
+            margin-left: 2px;
+        }
+        
+        /* Or style both together */
+        .celsius-unit,
+        .feels-like-unit {
+            color: #666;
+        }
     
         .update-status {
             font-size: 0.8rem;
@@ -265,7 +283,7 @@
                     <span class="temp-unit">°C</span>
                 </div>
                 <div class="feels-like">
-                    Feels <span id="feels-like">--°C</span>
+                    Feels <span id="feels-like">--<span class="feels-like-unit">°C</span></span>
                 </div>
             </div>
         </div>
