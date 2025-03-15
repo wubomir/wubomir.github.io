@@ -1,7 +1,5 @@
 timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,imedvode1_precipitation_today,imedvode1_pressure,imedvode1_relative_humidity,imedvode1_solar_radiation,imedvode1_temperature,imedvode1_uv_index,imedvode1_wind_chill,imedvode1_wind_direction_degrees,windCardinals,imedvode1_wind_gust,imedvode1_wind_speed,visibility,condition1,condition2,condition3,sky,max_solar_radiation,image_name
-2025-03-14 13:55,4.8,5.9,0.0,0.0,1005.38,92.0,118.9,5.9,1.0,5.9,334.0,NW,3.6,2.9,6000.0,DRY,,,Cloudy,497.60400747558356,cloudy.gif
-2025-03-14 14:00,4.6,5.8,0.0,0.0,1005.59,92.0,217.6,5.8,2.0,5.8,357.0,N,3.6,3.6,6000.0,DRY,,,Mostly Cloudy,490.98587054935507,mostly_cloudy.gif
-2025-03-14 14:05,5.1,6.1,0.0,0.0,1005.59,94.0,114.7,6.1,1.0,6.1,307.0,NW,1.8,1.4,6000.0,DRY,,,Cloudy,484.081160534031,cloudy.gif
+2025-03-14 14:05,5.1,6.1,0.0,0.0,1005.49,94.0,114.7,6.1,1.0,6.1,307.0,NW,1.8,1.4,6000.0,DRY,,,Cloudy,484.081160534031,cloudy.gif
 2025-03-14 14:10,5.0,6.2,0.0,0.0,1005.49,92.0,103.7,6.2,1.0,6.2,334.0,NW,3.6,3.6,6000.0,DRY,,,Cloudy,476.893556642128,cloudy.gif
 2025-03-14 14:15,4.9,6.0,1.19,41.91,1005.89,93.0,146.8,6.0,1.0,5.1,323.0,NW,5.4,5.4,6000.0,RAIN,LIGHT,,Cloudy,469.4269076025815,rain_light.gif
 2025-03-14 14:20,5.0,6.1,0.0,41.91,1005.79,93.0,90.2,6.1,0.0,6.1,302.0,NW,1.8,1.8,6000.0,RAIN,LIGHT,,Cloudy,461.6852331456507,rain_light.gif
@@ -288,3 +286,5 @@ timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,i
 2025-03-15 13:40,5.1,6.6,4.8,23.7,1013.88,90.0,86.3,6.6,0.0,6.6,194.0,S,0.0,0.0,9999.0,RAIN,MODERATE,,Cloudy,520.4477268355741,rain_moderate.gif
 2025-03-15 13:45,5.2,6.7,4.19,23.9,1013.99,90.0,80.5,6.7,0.0,6.7,193.0,S,1.8,0.7,9999.0,RAIN,MODERATE,,Cloudy,514.6900933264891,rain_moderate.gif
 2025-03-15 13:50,5.2,6.7,0.0,24.41,1013.88,90.0,85.2,6.7,0.0,6.7,193.0,S,1.8,1.1,9999.0,RAIN,LIGHT,,Cloudy,508.63584988196203,rain_light.gif
+2025-03-15 13:55,5.2,6.5,4.8,24.69,1013.88,91.0,71.5,6.5,0.0,6.5,116.0,SE,1.8,0.4,9999.0,RAIN,MODERATE,,Cloudy,502.2881770909788,rain_moderate.gif
+2025-03-15 14:00,5.4,6.6,1.8,24.69,1013.88,92.0,100.2,6.6,0.0,6.6,116.0,SE,0.0,0.0,9999.0,RAIN,LIGHT,,Cloudy,495.6504215184658,rain_light.gif
