@@ -91,10 +91,29 @@
     }
         
     .feels-like {
+        display: flex;
+        align-items: baseline;
+        gap: 4px;
         font-size: 1.5rem;
         color: rgba(255, 255, 255, 0.8);
         margin-left: 20px;
         margin-top: 0.5rem;
+    }
+
+    .feels-label {
+        font-weight: 300;
+        margin-right: 4px;
+    }
+
+    .feels-value {
+        font-weight: 500;
+        color: #fff;
+    }
+
+    .feels-unit {
+        font-size: 0.85em;
+        opacity: 0.9;
+        margin-left: 2px;
     }    
     
     .stats-section {
@@ -269,7 +288,9 @@
                     <span class="temp-unit">°C</span>
                 </div>
                 <div class="feels-like">
-                    Feels <span id="feels-like">--°C</span>
+                    <span class="feels-label">Feels</span>
+                    <span class="feels-value" id="feels-value">--</span>
+                    <span class="feels-unit">°C</span>
                 </div>
             </div>
         </div>
@@ -433,7 +454,7 @@
             }
             
             // Update Feels Like display
-            document.getElementById('feels-like').textContent = `${feelsLike.toFixed(1)}°C`;
+            document.getElementById('feels-value').textContent = feelsLike.toFixed(1);
                         
                         const skyCondition = getValue('Current Sky Condition');
                         if (skyCondition && skyCondition !== '--') {
