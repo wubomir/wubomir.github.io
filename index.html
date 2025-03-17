@@ -483,12 +483,12 @@
             let pressureSymbol = '';
             if (currentPressure !== '--') {
                 if (pressureRate === 'rising') {
-                    pressureSymbol = '<i class="fas fa-arrow-up"></i>';
+                    pressureSymbol = '↑\u00A0';
                 } else if (pressureRate === 'falling') {
                     pressureSymbol = '↓\u00A0';
                 }
             }
-document.getElementById('curr-pressure').textContent = `${pressureSymbol}${currentPressure} hPa`;
+            document.getElementById('curr-pressure').textContent = `${pressureSymbol}${currentPressure} hPa`;
             document.getElementById('curr-wind').textContent = `${getValue('Current Wind Gust (km/h)')} km/h`;
             document.getElementById('uv-index').textContent = getValue('Current UV Index');
             document.getElementById('solar-rad').textContent = `${getValue('Current Solar Radiation (W/m²)')} W/m²`;
