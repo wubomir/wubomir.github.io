@@ -479,7 +479,17 @@
 
             // Update current conditions
             document.getElementById('curr-humidity').textContent = `${getValue('Current Humidity (%)')}%`;
-            document.getElementById('curr-pressure').textContent = `${getValue('Current Pressure (hPa)')} hPa`;
+            const currentPressure = getValue('Current Pressure (hPa)');
+            const pressureRate = getValue('Pressure Rate').toLowerCase();
+            let pressureSymbol = '';
+            if (currentPressure !== '--') {
+                if (pressureRate === 'rising') {
+                    pressureSymbol = '↑ ';
+                } else if (pressureRate === 'falling') {
+                    pressureSymbol = '↓ ';
+                }
+            }
+document.getElementById('curr-pressure').textContent = `${pressureSymbol}${currentPressure} hPa`;
             document.getElementById('curr-wind').textContent = `${getValue('Current Wind Gust (km/h)')} km/h`;
             document.getElementById('uv-index').textContent = getValue('Current UV Index');
             document.getElementById('solar-rad').textContent = `${getValue('Current Solar Radiation (W/m²)')} W/m²`;
