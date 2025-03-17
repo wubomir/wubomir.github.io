@@ -483,9 +483,9 @@
             let pressureSymbol = '';
             if (currentPressure !== '--') {
                 if (pressureRate === 'rising') {
-                    pressureSymbol = '↑\u00A0';
+                    pressureSymbol = '<i class="fas fa-arrow-up pressure-arrow"></i>';
                 } else if (pressureRate === 'falling') {
-                    pressureSymbol = '↓\u00A0';
+                    pressureSymbol = '<i class="fas fa-arrow-down pressure-arrow"></i>';
                 }
             }
             document.getElementById('curr-pressure').textContent = `${pressureSymbol}${currentPressure} hPa`;
