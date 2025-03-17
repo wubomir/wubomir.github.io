@@ -480,7 +480,7 @@
             // Update current conditions
             document.getElementById('curr-humidity').textContent = `${getValue('Current Humidity (%)')}%`;
             const currentPressure = getValue('Current Pressure (hPa)');
-            const pressureRate = getValue('Pressure Rate').toLowerCase();
+            const pressureRate = getValue('Pressure_Rate').toLowerCase();
             let pressureSymbol = '';
             if (currentPressure !== '--') {
                 if (pressureRate === 'rising') {
