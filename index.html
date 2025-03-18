@@ -57,6 +57,24 @@
         font-weight: 500;
     }
     
+    .sun-times {
+        font-size: 14px;
+        text-align: right;
+        line-height: 1.4;
+    }
+    
+    .sun-item {
+        display: inline-flex;
+        align-items: center;
+        margin-left: 20px;
+    }
+    
+    .sun-label {
+        color: rgba(255, 255, 255, 0.7);
+        margin: 0 8px 0 6px;
+        font-weight: 300;
+    }
+    
     .current-weather {
         grid-column: 1 / -1;
         display: flex;
@@ -231,7 +249,24 @@
         .location {
             font-size: 20px;
         }
-    
+
+        .sun-times {
+            text-align: center;
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+        
+        .sun-item {
+            margin-left: 0;
+            justify-content: center;
+        }
+        
+        .sun-label {
+            margin: 0 5px;
+        }
+        
         .current-weather {
             flex-direction: column;
             text-align: center;
@@ -303,6 +338,18 @@
     <div class="dashboard">
         <div class="header">
             <div class="location">Medvode</div>
+            <div class="sun-times">
+                <div class="sun-item">
+                    <i class="fas fa-sunrise"></i>
+                    <span class="sun-label">Sunrise:</span>
+                    <span id="sunrise">--:--</span>
+                </div>
+                <div class="sun-item">
+                    <i class="fas fa-sunset"></i>
+                    <span class="sun-label">Sunset:</span>
+                    <span id="sunset">--:--</span>
+                </div>
+    </div>
         </div>
 
         <div class="current-weather">
@@ -423,6 +470,28 @@
         return `${year}-${month}-${day} ${hour}:${minute}:${second}`;
     }
 
+    function fetchSunTimes() {
+        const lat = 46.1422;
+        const lng = 14.4342;
+        
+        fetch(`https://api.sunrise-sunset.org/json?lat=${lat}&lng=${lng}&formatted=0`)
+            .then(response => response.json())
+            .then(data => {
+                const options = {
+                    timeZone: 'Europe/Ljubljana',
+                    hour: '2-digit',
+                    minute: '2-digit'
+                };
+
+                const sunrise = new Date(data.results.sunrise).toLocaleTimeString('sl-SI', options);
+                const sunset = new Date(data.results.sunset).toLocaleTimeString('sl-SI', options);
+
+                document.getElementById('sunrise').textContent = sunrise;
+                document.getElementById('sunset').textContent = sunset;
+            })
+            .catch(error => console.error('Error fetching sun times:', error));
+    }
+    
     function setBackgroundBasedOnCondition(imageName, temperature) {
         const conditionMap = {
             'partly_cloudy.gif': temperature <= 0 ? 'partly_cloudy_frost.jpg' : 'partly_cloudy.jpg',
@@ -544,6 +613,7 @@
 
     // Initial setup
     fetchWeatherStats();
+    fetchSunTimes();
     setInterval(fetchWeatherStats, 300000); // Refresh every 5 minutes
     </script>
 </body>
