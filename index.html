@@ -60,12 +60,19 @@
     .sun-times {
         font-size: 14px;
         text-align: right;
-        color: rgba(255, 255, 255, 0.8);
         line-height: 1.4;
     }
-
-    .sun-times span {
-        margin-left: 8px;
+    
+    .sun-item {
+        display: inline-flex;
+        align-items: center;
+        margin-left: 20px;
+    }
+    
+    .sun-label {
+        color: rgba(255, 255, 255, 0.7);
+        margin: 0 8px 0 6px;
+        font-weight: 300;
     }
     
     .current-weather {
@@ -321,9 +328,17 @@
         <div class="header">
             <div class="location">Medvode</div>
             <div class="sun-times">
-                <span><i class="fas fa-sunrise"></i> <span id="sunrise">--:--</span></span>
-                <span><i class="fas fa-sunset"></i> <span id="sunset">--:--</span></span>
-            </div>
+                <div class="sun-item">
+                    <i class="fas fa-sunrise"></i>
+                    <span class="sun-label">Sunrise:</span>
+                    <span id="sunrise">--:--</span>
+                </div>
+                <div class="sun-item">
+                    <i class="fas fa-sunset"></i>
+                    <span class="sun-label">Sunset:</span>
+                    <span id="sunset">--:--</span>
+                </div>
+    </div>
         </div>
 
         <div class="current-weather">
