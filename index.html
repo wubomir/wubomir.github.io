@@ -472,34 +472,48 @@
         return `${year}-${month}-${day} ${hour}:${minute}:${second}`;
     }
 
-    function fetchSunTimes() {
+    async function fetchSunTimes() {
         const lat = 46.1422;
         const lng = 14.4342;
-        
-        fetch(`https://api.open-meteo.com/v1/astronomy?latitude=${lat}&longitude=${lng}&timezone=auto&daily=sunrise,sunset,moonrise,moonset,moon_phase`)
-            .then(response => response.json())
-            .then(data => {
-                const options = {
+        const date = new Date().toISOString().split('T')[0];
+    
+        try {
+            // First fetch for sun times
+            const sunResponse = await fetch(`https://api.sunrise-sunset.org/json?lat=${lat}&lng=${lng}&date=${date}&formatted=0`);
+            const sunData = await sunResponse.json();
+            
+            // Second fetch for moon data
+            const moonResponse = await fetch(`https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${lat},${lng}/${date}?unitGroup=metric&include=days&key=YG2U7DFBYDEHL7LYBJT3QDRMK&elements=moonset,moonphase,moonrise`);
+            const moonData = await moonResponse.json();
+    
+            // Common time formatting function
+            const formatTime = (dateString) => {
+                if (!dateString) return '--:--';
+                const date = new Date(dateString);
+                return date.toLocaleTimeString('sl-SI', {
                     timeZone: 'Europe/Ljubljana',
                     hour: '2-digit',
                     minute: '2-digit'
-                };
+                });
+            };
     
-                const sunrise = new Date(data.daily.sunrise[0]).toLocaleTimeString('sl-SI', options);
-                const sunset = new Date(data.daily.sunset[0]).toLocaleTimeString('sl-SI', options);
-                const moonrise = new Date(data.daily.moonrise[0]).toLocaleTimeString('sl-SI', options);
-                const moonset = new Date(data.daily.moonset[0]).toLocaleTimeString('sl-SI', options);
-                const moonPhase = formatMoonPhase(data.daily.moon_phase[0]);
+            // Update sun times
+            document.getElementById('sunrise').textContent = formatTime(sunData.results.sunrise);
+            document.getElementById('sunset').textContent = formatTime(sunData.results.sunset);
     
-                document.getElementById('sunrise').textContent = sunrise;
-                document.getElementById('sunset').textContent = sunset;
-                document.getElementById('moon-phase').textContent = moonPhase;
-                document.getElementById('moonrise').textContent = moonrise;
-                document.getElementById('moonset').textContent = moonset;
-            })
-            .catch(error => console.error('Error fetching astronomy data:', error));
+            // Update moon data
+            const moon = moonData.days[0];
+            document.getElementById('moon-phase').textContent = formatMoonPhase(moon.moonphase);
+            document.getElementById('moonrise').textContent = formatTime(moon.moonrise);
+            document.getElementById('moonset').textContent = formatTime(moon.moonset);
+    
+        } catch (error) {
+            console.error('Error fetching astronomy data:', error);
+            document.querySelectorAll('#moon-phase, #moonrise, #moonset').forEach(el => el.textContent = '--:--');
+        }
     }
     
+    // Keep the existing formatMoonPhase function
     function formatMoonPhase(phase) {
         if (phase < 0.125) return 'New Moon';
         if (phase < 0.25) return 'Waxing Crescent';
