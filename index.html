@@ -61,18 +61,16 @@
         font-size: 14px;
         text-align: right;
         line-height: 1.4;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: flex-end;
     }
     
     .sun-item {
-        display: inline-flex;
+        display: flex;
         align-items: center;
-        margin-left: 20px;
-    }
-    
-    .sun-label {
-        color: rgba(255, 255, 255, 0.7);
-        margin: 0 8px 0 6px;
-        font-weight: 300;
+        gap: 5px;
     }
     
     .current-weather {
@@ -251,20 +249,9 @@
         }
 
         .sun-times {
-            text-align: center;
-            margin-top: 10px;
-            display: flex;
             flex-direction: column;
+            align-items: center;
             gap: 4px;
-        }
-        
-        .sun-item {
-            margin-left: 0;
-            justify-content: center;
-        }
-        
-        .sun-label {
-            margin: 0 5px;
         }
         
         .current-weather {
@@ -340,6 +327,21 @@
             <div class="location">Medvode</div>
             <div class="sun-times">
                 <div class="sun-item">
+                    <i class="fas fa-moon"></i>
+                    <span class="sun-label">Moon Phase:</span>
+                    <span id="moon-phase">--</span>
+                </div>
+                <div class="sun-item">
+                    <i class="fas fa-arrow-up"></i>
+                    <span class="sun-label">Moonrise:</span>
+                    <span id="moonrise">--:--</span>
+                </div>
+                <div class="sun-item">
+                    <i class="fas fa-arrow-down"></i>
+                    <span class="sun-label">Moonset:</span>
+                    <span id="moonset">--:--</span>
+                </div>
+                <div class="sun-item">
                     <i class="fas fa-sunrise"></i>
                     <span class="sun-label">Sunrise:</span>
                     <span id="sunrise">--:--</span>
@@ -349,7 +351,7 @@
                     <span class="sun-label">Sunset:</span>
                     <span id="sunset">--:--</span>
                 </div>
-    </div>
+            </div>
         </div>
 
         <div class="current-weather">
@@ -474,7 +476,7 @@
         const lat = 46.1422;
         const lng = 14.4342;
         
-        fetch(`https://api.sunrise-sunset.org/json?lat=${lat}&lng=${lng}&formatted=0`)
+        fetch(`https://api.open-meteo.com/v1/astronomy?latitude=${lat}&longitude=${lng}&timezone=auto&daily=sunrise,sunset,moonrise,moonset,moon_phase`)
             .then(response => response.json())
             .then(data => {
                 const options = {
@@ -482,14 +484,31 @@
                     hour: '2-digit',
                     minute: '2-digit'
                 };
-
-                const sunrise = new Date(data.results.sunrise).toLocaleTimeString('sl-SI', options);
-                const sunset = new Date(data.results.sunset).toLocaleTimeString('sl-SI', options);
-
+    
+                const sunrise = new Date(data.daily.sunrise[0]).toLocaleTimeString('sl-SI', options);
+                const sunset = new Date(data.daily.sunset[0]).toLocaleTimeString('sl-SI', options);
+                const moonrise = new Date(data.daily.moonrise[0]).toLocaleTimeString('sl-SI', options);
+                const moonset = new Date(data.daily.moonset[0]).toLocaleTimeString('sl-SI', options);
+                const moonPhase = formatMoonPhase(data.daily.moon_phase[0]);
+    
                 document.getElementById('sunrise').textContent = sunrise;
                 document.getElementById('sunset').textContent = sunset;
+                document.getElementById('moon-phase').textContent = moonPhase;
+                document.getElementById('moonrise').textContent = moonrise;
+                document.getElementById('moonset').textContent = moonset;
             })
-            .catch(error => console.error('Error fetching sun times:', error));
+            .catch(error => console.error('Error fetching astronomy data:', error));
+    }
+    
+    function formatMoonPhase(phase) {
+        if (phase < 0.125) return 'New Moon';
+        if (phase < 0.25) return 'Waxing Crescent';
+        if (phase === 0.25) return 'First Quarter';
+        if (phase < 0.375) return 'Waxing Gibbous';
+        if (phase < 0.625) return 'Full Moon';
+        if (phase < 0.75) return 'Waning Gibbous';
+        if (phase === 0.75) return 'Last Quarter';
+        return 'Waning Crescent';
     }
     
     function setBackgroundBasedOnCondition(imageName, temperature) {
