@@ -487,25 +487,40 @@
             const moonData = await moonResponse.json();
     
             // Common time formatting function
-            const formatTime = (dateString) => {
-                if (!dateString) return '--:--';
-                const date = new Date(dateString);
-                return date.toLocaleTimeString('sl-SI', {
+            const formatTime = (datetime, time) => {
+                if (!time || time === '--') return '--:--';
+                try {
+                    // Combine date from API with moon time
+                    const fullDate = `${datetime}T${time}`;
+                    return new Date(fullDate).toLocaleTimeString('sl-SI', {
+                        timeZone: 'Europe/Ljubljana',
+                        hour: '2-digit',
+                        minute: '2-digit'
+                    });
+                } catch {
+                    return time.slice(0, 5); // Fallback to simple time format
+                }
+            };
+    
+            // Update sun times
+            document.getElementById('sunrise').textContent = 
+                new Date(sunData.results.sunrise).toLocaleTimeString('sl-SI', {
                     timeZone: 'Europe/Ljubljana',
                     hour: '2-digit',
                     minute: '2-digit'
                 });
-            };
-    
-            // Update sun times
-            document.getElementById('sunrise').textContent = formatTime(sunData.results.sunrise);
-            document.getElementById('sunset').textContent = formatTime(sunData.results.sunset);
+            document.getElementById('sunset').textContent = 
+                new Date(sunData.results.sunset).toLocaleTimeString('sl-SI', {
+                    timeZone: 'Europe/Ljubljana',
+                    hour: '2-digit',
+                    minute: '2-digit'
+                });
     
             // Update moon data
             const moon = moonData.days[0];
             document.getElementById('moon-phase').textContent = formatMoonPhase(moon.moonphase);
-            document.getElementById('moonrise').textContent = formatTime(moon.moonrise);
-            document.getElementById('moonset').textContent = formatTime(moon.moonset);
+            document.getElementById('moonrise').textContent = formatTime(moon.datetime, moon.moonrise);
+            document.getElementById('moonset').textContent = formatTime(moon.datetime, moon.moonset);
     
         } catch (error) {
             console.error('Error fetching astronomy data:', error);
