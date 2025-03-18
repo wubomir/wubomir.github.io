@@ -47,7 +47,9 @@
         justify-content: space-between;
         align-items: center;
         padding: 15px 20px;
-        gap: 15px;
+        background: rgba(255, 255, 255, 0.0);
+        border-radius: 1px;
+        backdrop-filter: blur(0px);
     }
     
     .location {
@@ -55,53 +57,10 @@
         font-weight: 500;
     }
     
-    .moon-data {
-        display: inline-flex;
-        align-items: center;
-        background: rgba(255, 255, 255, 0.05);
-        padding: 8px 12px;
-        border-radius: 10px;
-        backdrop-filter: blur(2px);
-    }
-    
-    .moon-item {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-    }
-    
-    .moon-phase {
-        font-size: 0.85em;
-        color: rgba(255, 255, 255, 0.9);
-        min-width: 100px;
-        margin-left: 8px;
-    }
-    
-    .moon-times {
-        display: flex;
-        flex-direction: column;
-        margin-left: 12px;
-        gap: 2px;
-    }
-    
-    .moon-time {
-        display: flex;
-        align-items: center;
-        gap: 5px;
-        font-size: 0.9em;
-    }
-    
-    .moon-rise { color: #4CAF50; }
-    .moon-set { color: #f44336; }
-    
     .sun-times {
         font-size: 14px;
         text-align: right;
         line-height: 1.4;
-        background: rgba(255, 255, 255, 0.05);
-        padding: 8px 12px;
-        border-radius: 10px;
-        backdrop-filter: blur(2px);
     }
     
     .sun-item {
@@ -233,11 +192,11 @@
     }
 
     #min-temp {
-        color: #6ba3ff;
+        color: #6ba3ff; /* Soft blue for minimum */
     }
 
     #max-temp {
-        color: #ffa500;
+        color: #ffa500; /* Soft orange for maximum */
     }
 
     .stat-value {
@@ -245,7 +204,7 @@
     }
 
     .pressure-arrow {
-        color: #4CAF50;
+        color: #4CAF50; /* Match other icon colors */
         margin-right: 8px;
         font-size: 0.9em;
         vertical-align: middle;
@@ -282,32 +241,19 @@
     
         .header {
             flex-direction: column;
+            gap: 5px;
+            text-align: center;
             padding: 12px;
         }
     
         .location {
             font-size: 20px;
-            margin-bottom: 10px;
         }
 
-        .moon-data,
         .sun-times {
-            width: 100%;
-            justify-content: center;
-            margin: 8px 0;
-        }
-        
-        .moon-item {
-            flex-wrap: wrap;
-        }
-        
-        .moon-times {
-            flex-direction: row;
-            gap: 15px;
-            margin-left: 0;
-        }
-        
-        .sun-times {
+            text-align: center;
+            margin-top: 10px;
+            display: flex;
             flex-direction: column;
             gap: 4px;
         }
@@ -315,6 +261,10 @@
         .sun-item {
             margin-left: 0;
             justify-content: center;
+        }
+        
+        .sun-label {
+            margin: 0 5px;
         }
         
         .current-weather {
@@ -327,6 +277,10 @@
             width: 140px;
             height: 140px;
             margin: 0 0 15px 0;
+        }
+    
+        .temperature {
+            justify-content: center;
         }
     
         .temp-number {
@@ -351,6 +305,7 @@
     
         .update-status {
             font-size: 0.8rem;
+            margin-top: 10px;
         }
     }
     
@@ -383,34 +338,18 @@
     <div class="dashboard">
         <div class="header">
             <div class="location">Medvode</div>
-            <div class="moon-data">
-                <div class="moon-item">
-                    <i class="fas fa-moon" id="moon-phase-icon"></i>
-                    <span class="moon-phase" id="moon-phase" title="Current moon phase">--</span>
-                    <div class="moon-times">
-                        <span class="moon-time">
-                            <i class="fas fa-arrow-up moon-rise"></i>
-                            <span id="moonrise" title="Moonrise time">--:--</span>
-                        </span>
-                        <span class="moon-time">
-                            <i class="fas fa-arrow-down moon-set"></i>
-                            <span id="moonset" title="Moonset time">--:--</span>
-                        </span>
-                    </div>
-                </div>
-            </div>
             <div class="sun-times">
                 <div class="sun-item">
                     <i class="fas fa-sunrise"></i>
                     <span class="sun-label">Sunrise:</span>
-                    <span id="sunrise" title="Sunrise time">--:--</span>
+                    <span id="sunrise">--:--</span>
                 </div>
                 <div class="sun-item">
                     <i class="fas fa-sunset"></i>
                     <span class="sun-label">Sunset:</span>
-                    <span id="sunset" title="Sunset time">--:--</span>
+                    <span id="sunset">--:--</span>
                 </div>
-            </div>
+    </div>
         </div>
 
         <div class="current-weather">
@@ -538,75 +477,38 @@
         fetch(`https://api.sunrise-sunset.org/json?lat=${lat}&lng=${lng}&formatted=0`)
             .then(response => response.json())
             .then(data => {
-                console.log('Sun/Moon API Response:', data);
-                
-                if (data.status !== "OK") {
-                    console.error("API Error:", data.status);
-                    return;
-                }
-
                 const options = {
                     timeZone: 'Europe/Ljubljana',
                     hour: '2-digit',
-                    minute: '2-digit',
-                    hour12: false
+                    minute: '2-digit'
                 };
 
-                const parseTime = (timeString, type) => {
-                    try {
-                        if (!timeString || timeString === 'N/A') return null;
-                        const date = new Date(timeString);
-                        return isNaN(date) ? null : date;
-                    } catch (e) {
-                        console.error(`Error parsing ${type} time:`, e);
-                        return null;
-                    }
-                };
+                const sunrise = new Date(data.results.sunrise).toLocaleTimeString('sl-SI', options);
+                const sunset = new Date(data.results.sunset).toLocaleTimeString('sl-SI', options);
 
-                const processTime = (time, elementId) => {
-                    const el = document.getElementById(elementId);
-                    if (time) {
-                        el.textContent = time.toLocaleTimeString('en-GB', options);
-                        el.title = `UTC: ${time.toISOString().split('T')[1].slice(0,5)}`;
-                    } else {
-                        el.textContent = '--:--';
-                        el.title = 'Time not available today';
-                    }
-                };
-
-                // Sun times
-                processTime(parseTime(data.results.sunrise, 'sunrise'), 'sunrise');
-                processTime(parseTime(data.results.sunset, 'sunset'), 'sunset');
-
-                // Moon times
-                processTime(parseTime(data.results.moonrise, 'moonrise'), 'moonrise');
-                processTime(parseTime(data.results.moonset, 'moonset'), 'moonset');
-
-                // Moon phase
-                const moonPhase = data.results.moon_phase || '--';
-                const moonPhaseElement = document.getElementById('moon-phase');
-                moonPhaseElement.textContent = moonPhase;
-                moonPhaseElement.title = `Moon phase: ${moonPhase}`;
-                
-                // Update moon icon color
-                const moonIcon = document.getElementById('moon-phase-icon');
-                moonIcon.style.color = getMoonPhaseColor(moonPhase);
+                document.getElementById('sunrise').textContent = sunrise;
+                document.getElementById('sunset').textContent = sunset;
             })
-            .catch(error => console.error('Error fetching times:', error));
+            .catch(error => console.error('Error fetching sun times:', error));
     }
-
-    function getMoonPhaseColor(phase) {
-        const phaseColors = {
-            'New Moon': '#444',
-            'Waxing Crescent': '#88a',
-            'First Quarter': '#aad',
-            'Waxing Gibbous': '#ccf',
-            'Full Moon': '#fff',
-            'Waning Gibbous': '#ccf',
-            'Last Quarter': '#aad',
-            'Waning Crescent': '#88a'
+    
+    function setBackgroundBasedOnCondition(imageName, temperature) {
+        const conditionMap = {
+            'partly_cloudy.gif': temperature <= 0 ? 'partly_cloudy_frost.jpg' : 'partly_cloudy.jpg',
+            'mostly_cloudy.gif': temperature <= 0 ? 'partly_cloudy_frost.jpg' : 'partly_cloudy.jpg',
+            'sunny.gif': 'sunny.jpg',
+            'mostly_sunny.gif': 'sunny.jpg',
+            'cloudy.gif': temperature <= 0 ? 'cloudy_frost.jpg' : 'cloudy.jpg',
+            'rain_light.gif': 'cloudy_rain.jpg',
+            'rain_moderate.gif': 'cloudy_rain.jpg',
+            'rain_heavy.gif': 'cloudy_rain.jpg',
+            'night.gif': temperature <= 0 ? 'night_frost.jpg' : 'night.jpg'
         };
-        return phaseColors[phase] || '#888';
+
+        const backgroundImage = conditionMap[imageName] || '';
+        if (backgroundImage) {
+            document.body.style.backgroundImage = `url('${backgroundImage}')`;
+        }
     }
 
     async function fetchWeatherStats() {
@@ -630,16 +532,29 @@
             const currentTemp = parseFloat(getValue('Current Temperature (°C)'));
             document.getElementById('curr-temp').textContent = isNaN(currentTemp) ? '--' : currentTemp.toFixed(1);
 
-            const heatIndex = parseFloat(getValue('Current Heat Index (°C)')) || currentTemp;
-            const windChill = parseFloat(getValue('Current Wind Chill (°C)')) || currentTemp;
-            const feelsLike = heatIndex !== currentTemp ? heatIndex : windChill;
-            document.getElementById('feels-value').textContent = feelsLike.toFixed(1);
-
-            const skyCondition = getValue('Current Sky Condition');
-            if (skyCondition && skyCondition !== '--') {
-                document.getElementById('weather-icon').src = skyCondition;
-                setBackgroundBasedOnCondition(skyCondition, currentTemp);
+            const heatIndexValue = getValue('Current Heat Index (°C)');
+            const windChillValue = getValue('Current Wind Chill (°C)');
+            
+            // Parse values or use current temp as fallback
+            const heatIndex = heatIndexValue !== '--' ? parseFloat(heatIndexValue) : currentTemp;
+            const windChill = windChillValue !== '--' ? parseFloat(windChillValue) : currentTemp;
+            
+            // Determine feels like temperature
+            let feelsLike = currentTemp;
+            if (heatIndex !== currentTemp) {
+                feelsLike = heatIndex;
+            } else if (windChill !== currentTemp) {
+                feelsLike = windChill;
             }
+            
+            // Update Feels Like display
+            document.getElementById('feels-value').textContent = feelsLike.toFixed(1);
+                        
+                        const skyCondition = getValue('Current Sky Condition');
+                        if (skyCondition && skyCondition !== '--') {
+                            document.getElementById('weather-icon').src = skyCondition;
+                            setBackgroundBasedOnCondition(skyCondition, currentTemp);
+                        }
 
             // Update current conditions
             document.getElementById('curr-humidity').textContent = `${getValue('Current Humidity (%)')}%`;
@@ -647,10 +562,11 @@
             const pressureRate = getValue('Pressure_Rate').toLowerCase();
             let pressureSymbol = '';
             if (currentPressure !== '--') {
-                pressureSymbol = pressureRate === 'rising' ? 
-                    '<i class="fas fa-arrow-up pressure-arrow"></i>' :
-                    pressureRate === 'falling' ?
-                    '<i class="fas fa-arrow-down pressure-arrow"></i>' : '';
+                if (pressureRate === 'rising') {
+                    pressureSymbol = '<i class="fas fa-arrow-up pressure-arrow"></i>';
+                } else if (pressureRate === 'falling') {
+                    pressureSymbol = '<i class="fas fa-arrow-down pressure-arrow"></i>';
+                }
             }
             document.getElementById('curr-pressure').innerHTML = `${pressureSymbol}<span>${currentPressure} hPa</span>`;
             document.getElementById('curr-wind').textContent = `${getValue('Current Wind Gust (km/h)')} km/h`;
@@ -695,29 +611,10 @@
         }
     }
 
-    function setBackgroundBasedOnCondition(imageName, temperature) {
-        const conditionMap = {
-            'partly_cloudy.gif': temperature <= 0 ? 'partly_cloudy_frost.jpg' : 'partly_cloudy.jpg',
-            'mostly_cloudy.gif': temperature <= 0 ? 'partly_cloudy_frost.jpg' : 'partly_cloudy.jpg',
-            'sunny.gif': 'sunny.jpg',
-            'mostly_sunny.gif': 'sunny.jpg',
-            'cloudy.gif': temperature <= 0 ? 'cloudy_frost.jpg' : 'cloudy.jpg',
-            'rain_light.gif': 'cloudy_rain.jpg',
-            'rain_moderate.gif': 'cloudy_rain.jpg',
-            'rain_heavy.gif': 'cloudy_rain.jpg',
-            'night.gif': temperature <= 0 ? 'night_frost.jpg' : 'night.jpg'
-        };
-        const backgroundImage = conditionMap[imageName] || '';
-        if (backgroundImage) {
-            document.body.style.backgroundImage = `url('${backgroundImage}')`;
-        }
-    }
-
     // Initial setup
     fetchWeatherStats();
     fetchSunTimes();
-    setInterval(fetchWeatherStats, 300000); // 5 minutes
-    setInterval(fetchSunTimes, 3600000); // 1 hour
+    setInterval(fetchWeatherStats, 300000); // Refresh every 5 minutes
     </script>
 </body>
 </html>
