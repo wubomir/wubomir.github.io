@@ -57,6 +57,17 @@
         font-weight: 500;
     }
     
+    .sun-times {
+        font-size: 14px;
+        text-align: right;
+        color: rgba(255, 255, 255, 0.8);
+        line-height: 1.4;
+    }
+
+    .sun-times span {
+        margin-left: 8px;
+    }
+    
     .current-weather {
         grid-column: 1 / -1;
         display: flex;
@@ -231,7 +242,13 @@
         .location {
             font-size: 20px;
         }
-    
+
+        .sun-times {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 13px;
+        }
+        
         .current-weather {
             flex-direction: column;
             text-align: center;
@@ -303,6 +320,10 @@
     <div class="dashboard">
         <div class="header">
             <div class="location">Medvode</div>
+            <div class="sun-times">
+                <span><i class="fas fa-sunrise"></i> <span id="sunrise">--:--</span></span>
+                <span><i class="fas fa-sunset"></i> <span id="sunset">--:--</span></span>
+            </div>
         </div>
 
         <div class="current-weather">
@@ -423,6 +444,28 @@
         return `${year}-${month}-${day} ${hour}:${minute}:${second}`;
     }
 
+    function fetchSunTimes() {
+        const lat = 46.1422;
+        const lng = 14.4342;
+        
+        fetch(`https://api.sunrise-sunset.org/json?lat=${lat}&lng=${lng}&formatted=0`)
+            .then(response => response.json())
+            .then(data => {
+                const options = {
+                    timeZone: 'Europe/Ljubljana',
+                    hour: '2-digit',
+                    minute: '2-digit'
+                };
+
+                const sunrise = new Date(data.results.sunrise).toLocaleTimeString('sl-SI', options);
+                const sunset = new Date(data.results.sunset).toLocaleTimeString('sl-SI', options);
+
+                document.getElementById('sunrise').textContent = sunrise;
+                document.getElementById('sunset').textContent = sunset;
+            })
+            .catch(error => console.error('Error fetching sun times:', error));
+    }
+    
     function setBackgroundBasedOnCondition(imageName, temperature) {
         const conditionMap = {
             'partly_cloudy.gif': temperature <= 0 ? 'partly_cloudy_frost.jpg' : 'partly_cloudy.jpg',
@@ -544,6 +587,7 @@
 
     // Initial setup
     fetchWeatherStats();
+    fetchSunTimes();
     setInterval(fetchWeatherStats, 300000); // Refresh every 5 minutes
     </script>
 </body>
