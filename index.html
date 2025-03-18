@@ -61,16 +61,18 @@
         font-size: 14px;
         text-align: right;
         line-height: 1.4;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-        justify-content: flex-end;
     }
     
     .sun-item {
-        display: flex;
+        display: inline-flex;
         align-items: center;
-        gap: 5px;
+        margin-left: 20px;
+    }
+    
+    .sun-label {
+        color: rgba(255, 255, 255, 0.7);
+        margin: 0 8px 0 6px;
+        font-weight: 300;
     }
     
     .current-weather {
@@ -249,9 +251,20 @@
         }
 
         .sun-times {
+            text-align: center;
+            margin-top: 10px;
+            display: flex;
             flex-direction: column;
-            align-items: center;
             gap: 4px;
+        }
+        
+        .sun-item {
+            margin-left: 0;
+            justify-content: center;
+        }
+        
+        .sun-label {
+            margin: 0 5px;
         }
         
         .current-weather {
@@ -327,21 +340,6 @@
             <div class="location">Medvode</div>
             <div class="sun-times">
                 <div class="sun-item">
-                    <i class="fas fa-moon"></i>
-                    <span class="sun-label">Moon Phase:</span>
-                    <span id="moon-phase">--</span>
-                </div>
-                <div class="sun-item">
-                    <i class="fas fa-arrow-up"></i>
-                    <span class="sun-label">Moonrise:</span>
-                    <span id="moonrise">--:--</span>
-                </div>
-                <div class="sun-item">
-                    <i class="fas fa-arrow-down"></i>
-                    <span class="sun-label">Moonset:</span>
-                    <span id="moonset">--:--</span>
-                </div>
-                <div class="sun-item">
                     <i class="fas fa-sunrise"></i>
                     <span class="sun-label">Sunrise:</span>
                     <span id="sunrise">--:--</span>
@@ -351,7 +349,7 @@
                     <span class="sun-label">Sunset:</span>
                     <span id="sunset">--:--</span>
                 </div>
-            </div>
+    </div>
         </div>
 
         <div class="current-weather">
@@ -472,72 +470,26 @@
         return `${year}-${month}-${day} ${hour}:${minute}:${second}`;
     }
 
-    async function fetchSunTimes() {
+    function fetchSunTimes() {
         const lat = 46.1422;
         const lng = 14.4342;
-        const date = new Date().toISOString().split('T')[0];
-    
-        try {
-            // First fetch for sun times
-            const sunResponse = await fetch(`https://api.sunrise-sunset.org/json?lat=${lat}&lng=${lng}&date=${date}&formatted=0`);
-            const sunData = await sunResponse.json();
-            
-            // Second fetch for moon data
-            const moonResponse = await fetch(`https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${lat},${lng}/${date}?unitGroup=metric&include=days&key=YG2U7DFBYDEHL7LYBJT3QDRMK&elements=moonset,moonphase,moonrise`);
-            const moonData = await moonResponse.json();
-    
-            // Common time formatting function
-            const formatTime = (datetime, time) => {
-                if (!time || time === '--') return '--:--';
-                try {
-                    // Combine date from API with moon time
-                    const fullDate = `${datetime}T${time}`;
-                    return new Date(fullDate).toLocaleTimeString('sl-SI', {
-                        timeZone: 'Europe/Ljubljana',
-                        hour: '2-digit',
-                        minute: '2-digit'
-                    });
-                } catch {
-                    return time.slice(0, 5); // Fallback to simple time format
-                }
-            };
-    
-            // Update sun times
-            document.getElementById('sunrise').textContent = 
-                new Date(sunData.results.sunrise).toLocaleTimeString('sl-SI', {
+        
+        fetch(`https://api.sunrise-sunset.org/json?lat=${lat}&lng=${lng}&formatted=0`)
+            .then(response => response.json())
+            .then(data => {
+                const options = {
                     timeZone: 'Europe/Ljubljana',
                     hour: '2-digit',
                     minute: '2-digit'
-                });
-            document.getElementById('sunset').textContent = 
-                new Date(sunData.results.sunset).toLocaleTimeString('sl-SI', {
-                    timeZone: 'Europe/Ljubljana',
-                    hour: '2-digit',
-                    minute: '2-digit'
-                });
-    
-            // Update moon data
-            const moon = moonData.days[0];
-            document.getElementById('moon-phase').textContent = formatMoonPhase(moon.moonphase);
-            document.getElementById('moonrise').textContent = formatTime(moon.datetime, moon.moonrise);
-            document.getElementById('moonset').textContent = formatTime(moon.datetime, moon.moonset);
-    
-        } catch (error) {
-            console.error('Error fetching astronomy data:', error);
-            document.querySelectorAll('#moon-phase, #moonrise, #moonset').forEach(el => el.textContent = '--:--');
-        }
-    }
-    
-    // Keep the existing formatMoonPhase function
-    function formatMoonPhase(phase) {
-        if (phase < 0.125) return 'New Moon';
-        if (phase < 0.25) return 'Waxing Crescent';
-        if (phase === 0.25) return 'First Quarter';
-        if (phase < 0.375) return 'Waxing Gibbous';
-        if (phase < 0.625) return 'Full Moon';
-        if (phase < 0.75) return 'Waning Gibbous';
-        if (phase === 0.75) return 'Last Quarter';
-        return 'Waning Crescent';
+                };
+
+                const sunrise = new Date(data.results.sunrise).toLocaleTimeString('sl-SI', options);
+                const sunset = new Date(data.results.sunset).toLocaleTimeString('sl-SI', options);
+
+                document.getElementById('sunrise').textContent = sunrise;
+                document.getElementById('sunset').textContent = sunset;
+            })
+            .catch(error => console.error('Error fetching sun times:', error));
     }
     
     function setBackgroundBasedOnCondition(imageName, temperature) {
