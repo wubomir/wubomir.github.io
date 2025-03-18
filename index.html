@@ -57,6 +57,49 @@
         font-weight: 500;
     }
     
+    .moon-data {
+        margin-right: 25px;
+        display: inline-flex;
+        align-items: center;
+    }
+    
+    .moon-item {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    
+    .moon-phase {
+        font-size: 0.9em;
+        color: rgba(255, 255, 255, 0.8);
+        min-width: 80px;
+    }
+    
+    .moon-times {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+    }
+    
+    .moon-time {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    
+    .moon-rise { color: #4CAF50; }
+    .moon-set { color: #f44336; }
+    
+    /* Moon Phase Icons */
+    .fa-moon[data-phase="New Moon"] { color: #666; }
+    .fa-moon[data-phase="Waxing Crescent"] { color: #888; }
+    .fa-moon[data-phase="First Quarter"] { color: #aaa; }
+    .fa-moon[data-phase="Waxing Gibbous"] { color: #ccc; }
+    .fa-moon[data-phase="Full Moon"] { color: #fff; }
+    .fa-moon[data-phase="Waning Gibbous"] { color: #ccc; }
+    .fa-moon[data-phase="Last Quarter"] { color: #aaa; }
+    .fa-moon[data-phase="Waning Crescent"] { color: #888; }
+    
     .sun-times {
         font-size: 14px;
         text-align: right;
@@ -250,6 +293,24 @@
             font-size: 20px;
         }
 
+        .moon-data {
+            margin-right: 0;
+            margin-bottom: 10px;
+            width: 100%;
+            justify-content: center;
+        }
+        
+        .moon-item {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .moon-times {
+            flex-direction: row;
+            gap: 15px;
+            margin-left: 0;
+        }
+        
         .sun-times {
             text-align: center;
             margin-top: 10px;
@@ -338,6 +399,22 @@
     <div class="dashboard">
         <div class="header">
             <div class="location">Medvode</div>
+            <div class="moon-data">
+                <div class="moon-item">
+                    <i class="fas fa-moon" id="moon-phase-icon"></i>
+                    <span class="moon-phase" id="moon-phase"></span>
+                    <div class="moon-times">
+                        <span class="moon-time">
+                            <i class="fas fa-arrow-up moon-rise"></i>
+                            <span id="moonrise">--:--</span>
+                        </span>
+                        <span class="moon-time">
+                            <i class="fas fa-arrow-down moon-set"></i>
+                            <span id="moonset">--:--</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
             <div class="sun-times">
                 <div class="sun-item">
                     <i class="fas fa-sunrise"></i>
@@ -483,6 +560,19 @@
                     minute: '2-digit'
                 };
 
+                const moonrise = new Date(data.results.moonrise).toLocaleTimeString('sl-SI', options);
+                const moonset = new Date(data.results.moonset).toLocaleTimeString('sl-SI', options);
+                const moonPhase = data.results.moon_phase;
+                
+                document.getElementById('moonrise').textContent = moonrise;
+                document.getElementById('moonset').textContent = moonset;
+                document.getElementById('moon-phase').textContent = moonPhase;
+                
+                // Set moon phase icon
+                const moonIcon = document.getElementById('moon-phase-icon');
+                moonIcon.className = getMoonPhaseIcon(moonPhase);
+                moonIcon.setAttribute('data-phase', moonPhase);
+
                 const sunrise = new Date(data.results.sunrise).toLocaleTimeString('sl-SI', options);
                 const sunset = new Date(data.results.sunset).toLocaleTimeString('sl-SI', options);
 
@@ -490,6 +580,20 @@
                 document.getElementById('sunset').textContent = sunset;
             })
             .catch(error => console.error('Error fetching sun times:', error));
+    }
+
+    function getMoonPhaseIcon(phase) {
+        const phases = {
+            'New Moon': 'fas fa-moon',
+            'Waxing Crescent': 'fas fa-moon',
+            'First Quarter': 'fas fa-moon',
+            'Waxing Gibbous': 'fas fa-moon',
+            'Full Moon': 'fas fa-moon',
+            'Waning Gibbous': 'fas fa-moon',
+            'Last Quarter': 'fas fa-moon',
+            'Waning Crescent': 'fas fa-moon'
+        };
+        return phases[phase] || 'fas fa-moon';
     }
     
     function setBackgroundBasedOnCondition(imageName, temperature) {
