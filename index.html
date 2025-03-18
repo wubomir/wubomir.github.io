@@ -57,67 +57,6 @@
         font-weight: 500;
     }
     
-    .moon-data {
-        margin-right: 25px;
-        display: inline-flex;
-        align-items: center;
-    }
-    
-    .moon-item {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-    }
-    
-    .moon-phase {
-        font-size: 0.9em;
-        color: rgba(255, 255, 255, 0.8);
-        min-width: 80px;
-    }
-    
-    .moon-times {
-        display: flex;
-        flex-direction: column;
-        margin-left: 10px;
-    }
-    
-    .moon-time {
-        display: flex;
-        align-items: center;
-        gap: 5px;
-    }
-    
-    .moon-rise { color: #4CAF50; }
-    .moon-set { color: #f44336; }
-    
-    /* Moon Phase Icons */
-    .fa-moon[data-phase="New Moon"] { color: #666; }
-    .fa-moon[data-phase="Waxing Crescent"] { color: #888; }
-    .fa-moon[data-phase="First Quarter"] { color: #aaa; }
-    .fa-moon[data-phase="Waxing Gibbous"] { color: #ccc; }
-    .fa-moon[data-phase="Full Moon"] { color: #fff; }
-    .fa-moon[data-phase="Waning Gibbous"] { color: #ccc; }
-    .fa-moon[data-phase="Last Quarter"] { color: #aaa; }
-    .fa-moon[data-phase="Waning Crescent"] { color: #888; }
-    
-    .sun-times {
-        font-size: 14px;
-        text-align: right;
-        line-height: 1.4;
-    }
-    
-    .sun-item {
-        display: inline-flex;
-        align-items: center;
-        margin-left: 20px;
-    }
-    
-    .sun-label {
-        color: rgba(255, 255, 255, 0.7);
-        margin: 0 8px 0 6px;
-        font-weight: 300;
-    }
-    
     .current-weather {
         grid-column: 1 / -1;
         display: flex;
@@ -292,42 +231,7 @@
         .location {
             font-size: 20px;
         }
-
-        .moon-data {
-            margin-right: 0;
-            margin-bottom: 10px;
-            width: 100%;
-            justify-content: center;
-        }
-        
-        .moon-item {
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        
-        .moon-times {
-            flex-direction: row;
-            gap: 15px;
-            margin-left: 0;
-        }
-        
-        .sun-times {
-            text-align: center;
-            margin-top: 10px;
-            display: flex;
-            flex-direction: column;
-            gap: 4px;
-        }
-        
-        .sun-item {
-            margin-left: 0;
-            justify-content: center;
-        }
-        
-        .sun-label {
-            margin: 0 5px;
-        }
-        
+    
         .current-weather {
             flex-direction: column;
             text-align: center;
@@ -399,34 +303,6 @@
     <div class="dashboard">
         <div class="header">
             <div class="location">Medvode</div>
-            <div class="moon-data">
-                <div class="moon-item">
-                    <i class="fas fa-moon" id="moon-phase-icon"></i>
-                    <span class="moon-phase" id="moon-phase"></span>
-                    <div class="moon-times">
-                        <span class="moon-time">
-                            <i class="fas fa-arrow-up moon-rise"></i>
-                            <span id="moonrise">--:--</span>
-                        </span>
-                        <span class="moon-time">
-                            <i class="fas fa-arrow-down moon-set"></i>
-                            <span id="moonset">--:--</span>
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div class="sun-times">
-                <div class="sun-item">
-                    <i class="fas fa-sunrise"></i>
-                    <span class="sun-label">Sunrise:</span>
-                    <span id="sunrise">--:--</span>
-                </div>
-                <div class="sun-item">
-                    <i class="fas fa-sunset"></i>
-                    <span class="sun-label">Sunset:</span>
-                    <span id="sunset">--:--</span>
-                </div>
-    </div>
         </div>
 
         <div class="current-weather">
@@ -547,85 +423,6 @@
         return `${year}-${month}-${day} ${hour}:${minute}:${second}`;
     }
 
-    function fetchSunTimes() {
-        const lat = 46.1422;
-        const lng = 14.4342;
-        
-        fetch(`https://api.sunrise-sunset.org/json?lat=${lat}&lng=${lng}&formatted=0`)
-            .then(response => response.json())
-            .then(data => {
-                if (data.status !== "OK") {
-                    console.error("API Error:", data.status);
-                    return;
-                }
-    
-                const options = {
-                    timeZone: 'Europe/Ljubljana',
-                    hour: '2-digit',
-                    minute: '2-digit',
-                    hour12: false
-                };
-    
-                // Helper function to parse UTC times
-                const parseTime = (timeString) => {
-                    if (!timeString || timeString === 'N/A') return null;
-                    try {
-                        const date = new Date(timeString);
-                        return isNaN(date.getTime()) ? null : date;
-                    } catch (e) {
-                        return null;
-                    }
-                };
-    
-                // Sun Times
-                const sunrise = parseTime(data.results.sunrise);
-                const sunset = parseTime(data.results.sunset);
-                
-                // Moon Times
-                const moonrise = parseTime(data.results.moonrise);
-                const moonset = parseTime(data.results.moonset);
-    
-                // Update DOM elements
-                const updateElement = (id, time) => {
-                    const element = document.getElementById(id);
-                    if (time) {
-                        element.textContent = time.toLocaleTimeString('en-GB', options);
-                        element.title = time.toUTCString();  // Add UTC time as tooltip
-                    } else {
-                        element.textContent = '--:--';
-                        element.title = 'Time not available';
-                    }
-                };
-    
-                updateElement('sunrise', sunrise);
-                updateElement('sunset', sunset);
-                updateElement('moonrise', moonrise);
-                updateElement('moonset', moonset);
-    
-                // Moon Phase
-                const moonPhase = data.results.moon_phase;
-                document.getElementById('moon-phase').textContent = moonPhase;
-                const moonIcon = document.getElementById('moon-phase-icon');
-                moonIcon.className = getMoonPhaseIcon(moonPhase);
-                moonIcon.setAttribute('data-phase', moonPhase);
-            })
-            .catch(error => console.error('Error fetching times:', error));
-    }
-
-    function getMoonPhaseIcon(phase) {
-        const phases = {
-            'New Moon': 'fas fa-moon',
-            'Waxing Crescent': 'fas fa-moon',
-            'First Quarter': 'fas fa-moon',
-            'Waxing Gibbous': 'fas fa-moon',
-            'Full Moon': 'fas fa-moon',
-            'Waning Gibbous': 'fas fa-moon',
-            'Last Quarter': 'fas fa-moon',
-            'Waning Crescent': 'fas fa-moon'
-        };
-        return phases[phase] || 'fas fa-moon';
-    }
-    
     function setBackgroundBasedOnCondition(imageName, temperature) {
         const conditionMap = {
             'partly_cloudy.gif': temperature <= 0 ? 'partly_cloudy_frost.jpg' : 'partly_cloudy.jpg',
@@ -747,7 +544,6 @@
 
     // Initial setup
     fetchWeatherStats();
-    fetchSunTimes();
     setInterval(fetchWeatherStats, 300000); // Refresh every 5 minutes
     </script>
 </body>
