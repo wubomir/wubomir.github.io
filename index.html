@@ -560,12 +560,21 @@
                     minute: '2-digit'
                 };
 
-                const moonrise = new Date(data.results.moonrise).toLocaleTimeString('sl-SI', options);
-                const moonset = new Date(data.results.moonset).toLocaleTimeString('sl-SI', options);
-                const moonPhase = data.results.moon_phase;
+                const parseMoonTime = (timeString) => {
+                    if (!timeString || timeString === 'N/A') return null;
+                    const date = new Date(timeString);
+                    return isNaN(date.getTime()) ? null : date;
+                };
+    
+                // Moon Data
+                const moonrise = parseMoonTime(data.results.moonrise);
+                const moonset = parseMoonTime(data.results.moonset);
                 
-                document.getElementById('moonrise').textContent = moonrise;
-                document.getElementById('moonset').textContent = moonset;
+                document.getElementById('moonrise').textContent = moonrise ? 
+                    moonrise.toLocaleTimeString('sl-SI', options) : '--:--';
+                
+                document.getElementById('moonset').textContent = moonset ? 
+                    moonset.toLocaleTimeString('sl-SI', options) : '--:--';
                 document.getElementById('moon-phase').textContent = moonPhase;
                 
                 // Set moon phase icon
