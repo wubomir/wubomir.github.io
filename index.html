@@ -554,41 +554,62 @@
         fetch(`https://api.sunrise-sunset.org/json?lat=${lat}&lng=${lng}&formatted=0`)
             .then(response => response.json())
             .then(data => {
+                if (data.status !== "OK") {
+                    console.error("API Error:", data.status);
+                    return;
+                }
+    
                 const options = {
                     timeZone: 'Europe/Ljubljana',
                     hour: '2-digit',
-                    minute: '2-digit'
-                };
-
-                const parseMoonTime = (timeString) => {
-                    if (!timeString || timeString === 'N/A') return null;
-                    const date = new Date(timeString);
-                    return isNaN(date.getTime()) ? null : date;
+                    minute: '2-digit',
+                    hour12: false
                 };
     
-                // Moon Data
-                const moonrise = parseMoonTime(data.results.moonrise);
-                const moonset = parseMoonTime(data.results.moonset);
+                // Helper function to parse UTC times
+                const parseTime = (timeString) => {
+                    if (!timeString || timeString === 'N/A') return null;
+                    try {
+                        const date = new Date(timeString);
+                        return isNaN(date.getTime()) ? null : date;
+                    } catch (e) {
+                        return null;
+                    }
+                };
+    
+                // Sun Times
+                const sunrise = parseTime(data.results.sunrise);
+                const sunset = parseTime(data.results.sunset);
                 
-                document.getElementById('moonrise').textContent = moonrise ? 
-                    moonrise.toLocaleTimeString('sl-SI', options) : '--:--';
-                
-                document.getElementById('moonset').textContent = moonset ? 
-                    moonset.toLocaleTimeString('sl-SI', options) : '--:--';
+                // Moon Times
+                const moonrise = parseTime(data.results.moonrise);
+                const moonset = parseTime(data.results.moonset);
+    
+                // Update DOM elements
+                const updateElement = (id, time) => {
+                    const element = document.getElementById(id);
+                    if (time) {
+                        element.textContent = time.toLocaleTimeString('en-GB', options);
+                        element.title = time.toUTCString();  // Add UTC time as tooltip
+                    } else {
+                        element.textContent = '--:--';
+                        element.title = 'Time not available';
+                    }
+                };
+    
+                updateElement('sunrise', sunrise);
+                updateElement('sunset', sunset);
+                updateElement('moonrise', moonrise);
+                updateElement('moonset', moonset);
+    
+                // Moon Phase
+                const moonPhase = data.results.moon_phase;
                 document.getElementById('moon-phase').textContent = moonPhase;
-                
-                // Set moon phase icon
                 const moonIcon = document.getElementById('moon-phase-icon');
                 moonIcon.className = getMoonPhaseIcon(moonPhase);
                 moonIcon.setAttribute('data-phase', moonPhase);
-
-                const sunrise = new Date(data.results.sunrise).toLocaleTimeString('sl-SI', options);
-                const sunset = new Date(data.results.sunset).toLocaleTimeString('sl-SI', options);
-
-                document.getElementById('sunrise').textContent = sunrise;
-                document.getElementById('sunset').textContent = sunset;
             })
-            .catch(error => console.error('Error fetching sun times:', error));
+            .catch(error => console.error('Error fetching times:', error));
     }
 
     function getMoonPhaseIcon(phase) {
