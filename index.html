@@ -195,11 +195,11 @@
     }
 
     #min-temp {
-        color: #6ba3ff; /* Soft blue for minimum */
+        color: #6ba3ff;
     }
 
     #max-temp {
-        color: #ffa500; /* Soft orange for maximum */
+        color: #ffa500;
     }
 
     .stat-value {
@@ -207,7 +207,7 @@
     }
 
     .pressure-arrow {
-        color: #4CAF50; /* Match other icon colors */
+        color: #4CAF50;
         margin-right: 8px;
         font-size: 0.9em;
         vertical-align: middle;
@@ -244,28 +244,14 @@
     
         .header {
             flex-direction: column;
-            gap: 5px;
+            gap: 15px;
             text-align: center;
             padding: 12px;
         }
     
         .location {
-            font-size: 20px;
+            font-size: 28px;
         }
-
-        .astro-data {
-            gap: 15px;
-            justify-content: center;
-        }
-        
-        .astro-item {
-            font-size: 13px;
-        }
-        
-        .header {
-            gap: 10px;
-        }
-    }
     
         .current-weather {
             flex-direction: column;
@@ -302,6 +288,15 @@
         .stat-item {
             padding: 10px 0;
         }
+
+        .astro-data {
+            gap: 15px;
+            justify-content: center;
+        }
+        
+        .astro-item {
+            font-size: 13px;
+        }
     
         .update-status {
             font-size: 0.8rem;
@@ -309,18 +304,10 @@
         }
     }
     
-    @media (max-width: 380px) {
+    @media (max-width: 480px) {
         .dashboard {
             padding: 8px;
             gap: 10px;
-        }
-
-        .astro-data {
-            gap: 10px;
-        }
-        
-        .astro-item {
-            font-size: 12px;
         }
     
         .temp-number {
@@ -338,37 +325,45 @@
         .stat-label, .stat-value {
             font-size: 0.9rem;
         }
+
+        .astro-data {
+            gap: 10px;
+        }
+        
+        .astro-item {
+            font-size: 12px;
+        }
     }
     </style>
 </head>
 <body>
     <div class="overlay"></div>
-        <div class="dashboard">
-            <div class="header">
-                <div class="location">Medvode</div>
-                <div class="astro-data">
-                    <div class="astro-item">
-                        <i class="fas fa-sunrise"></i>
-                        <span id="sunrise">--:--</span>
-                    </div>
-                    <div class="astro-item">
-                        <i class="fas fa-sunset"></i>
-                        <span id="sunset">--:--</span>
-                    </div>
-                    <div class="astro-item">
-                        <i class="fas fa-moon"></i>
-                        <span id="moonrise">--:--</span>
-                    </div>
-                    <div class="astro-item">
-                        <i class="fas fa-moon"></i>
-                        <span id="moonset">--:--</span>
-                    </div>
-                    <div class="astro-item">
-                        <i class="fas" id="moon-status-icon"></i>
-                        <span id="moon-illumination">--%</span>
-                    </div>
+    <div class="dashboard">
+        <div class="header">
+            <div class="location">Medvode</div>
+            <div class="astro-data">
+                <div class="astro-item">
+                    <i class="fas fa-sunrise"></i>
+                    <span id="sunrise">--:--</span>
+                </div>
+                <div class="astro-item">
+                    <i class="fas fa-sunset"></i>
+                    <span id="sunset">--:--</span>
+                </div>
+                <div class="astro-item">
+                    <i class="fas fa-moon"></i>
+                    <span id="moonrise">--:--</span>
+                </div>
+                <div class="astro-item">
+                    <i class="fas fa-moon"></i>
+                    <span id="moonset">--:--</span>
+                </div>
+                <div class="astro-item">
+                    <i class="fas" id="moon-status-icon"></i>
+                    <span id="moon-illumination">🌕 --%</span>
                 </div>
             </div>
+        </div>
 
         <div class="current-weather">
             <img id="weather-icon" class="weather-icon" src="" alt="Weather Icon">
@@ -478,14 +473,8 @@
         const formatter = new Intl.DateTimeFormat('en-GB', options);
         const parts = formatter.formatToParts(date);
         
-        const day = parts.find(p => p.type === 'day').value;
-        const month = parts.find(p => p.type === 'month').value;
-        const year = parts.find(p => p.type === 'year').value;
-        const hour = parts.find(p => p.type === 'hour').value;
-        const minute = parts.find(p => p.type === 'minute').value;
-        const second = parts.find(p => p.type === 'second').value;
-
-        return `${year}-${month}-${day} ${hour}:${minute}:${second}`;
+        return `${parts.find(p => p.type === 'year').value}-${parts.find(p => p.type === 'month').value}-${parts.find(p => p.type === 'day').value} ` +
+               `${parts.find(p => p.type === 'hour').value}:${parts.find(p => p.type === 'minute').value}:${parts.find(p => p.type === 'second').value}`;
     }
 
     function setBackgroundBasedOnCondition(imageName, temperature) {
@@ -524,88 +513,31 @@
                 return index !== -1 ? data[index] : '--';
             };
 
-    async function fetchAstroData() {
-        try {
-            const response = await fetch('astro.csv?t=' + new Date().getTime());
-            if (!response.ok) throw new Error('Network response was not ok');
-
-            const csvText = await response.text();
-            const rows = csvText.split('\n').filter(row => row.trim() !== '');
-            if (rows.length < 2) throw new Error('Not enough data in CSV');
-
-            const headers = rows[0].split(',').map(h => h.trim());
-            const data = rows[1].split(',').map(c => c.trim());
-
-            const getValue = header => {
-                const index = headers.indexOf(header);
-                return index !== -1 ? data[index] : '--';
-            };
-
-            // Update astronomical data
-            document.getElementById('sunrise').textContent = getValue('sunrise');
-            document.getElementById('sunset').textContent = getValue('sunset');
-            document.getElementById('moonrise').textContent = getValue('moonrise');
-            document.getElementById('moonset').textContent = getValue('moonset');
-            
-            // Update moon status and illumination
-            const moonStatus = getValue('moon_status');
-            const moonIcon = document.getElementById('moon-status-icon');
-            if (moonStatus === 'waxing') {
-                moonIcon.className = 'fas fa-arrow-up';
-                moonIcon.style.color = '#4CAF50';
-            } else if (moonStatus === 'waning') {
-                moonIcon.className = 'fas fa-arrow-down';
-                moonIcon.style.color = '#4CAF50';
-            }
-
-            const illumination = getValue('illumination');
-            document.getElementById('moon-illumination').innerHTML = 
-                `🌕 ${illumination}%`;
-
-        } catch (error) {
-            console.error('Error fetching astronomical data:', error);
-        }
-    }
-
-            // Update current weather
+            // Update weather data
             const currentTemp = parseFloat(getValue('Current Temperature (°C)'));
             document.getElementById('curr-temp').textContent = isNaN(currentTemp) ? '--' : currentTemp.toFixed(1);
 
-            const heatIndexValue = getValue('Current Heat Index (°C)');
-            const windChillValue = getValue('Current Wind Chill (°C)');
-            
-            // Parse values or use current temp as fallback
-            const heatIndex = heatIndexValue !== '--' ? parseFloat(heatIndexValue) : currentTemp;
-            const windChill = windChillValue !== '--' ? parseFloat(windChillValue) : currentTemp;
-            
-            // Determine feels like temperature
-            let feelsLike = currentTemp;
-            if (heatIndex !== currentTemp) {
-                feelsLike = heatIndex;
-            } else if (windChill !== currentTemp) {
-                feelsLike = windChill;
-            }
-            
-            // Update Feels Like display
+            const heatIndex = parseFloat(getValue('Current Heat Index (°C)')) || currentTemp;
+            const windChill = parseFloat(getValue('Current Wind Chill (°C)')) || currentTemp;
+            const feelsLike = heatIndex !== currentTemp ? heatIndex : windChill;
             document.getElementById('feels-value').textContent = feelsLike.toFixed(1);
-                        
-                        const skyCondition = getValue('Current Sky Condition');
-                        if (skyCondition && skyCondition !== '--') {
-                            document.getElementById('weather-icon').src = skyCondition;
-                            setBackgroundBasedOnCondition(skyCondition, currentTemp);
-                        }
 
-            // Update current conditions
+            const skyCondition = getValue('Current Sky Condition');
+            if (skyCondition && skyCondition !== '--') {
+                document.getElementById('weather-icon').src = skyCondition;
+                setBackgroundBasedOnCondition(skyCondition, currentTemp);
+            }
+
+            // Update other weather elements
             document.getElementById('curr-humidity').textContent = `${getValue('Current Humidity (%)')}%`;
             const currentPressure = getValue('Current Pressure (hPa)');
             const pressureRate = getValue('Pressure_Rate').toLowerCase();
             let pressureSymbol = '';
             if (currentPressure !== '--') {
-                if (pressureRate === 'rising') {
-                    pressureSymbol = '<i class="fas fa-arrow-up pressure-arrow"></i>';
-                } else if (pressureRate === 'falling') {
-                    pressureSymbol = '<i class="fas fa-arrow-down pressure-arrow"></i>';
-                }
+                pressureSymbol = pressureRate === 'rising' ? 
+                    '<i class="fas fa-arrow-up pressure-arrow"></i>' :
+                    pressureRate === 'falling' ? 
+                    '<i class="fas fa-arrow-down pressure-arrow"></i>' : '';
             }
             document.getElementById('curr-pressure').innerHTML = `${pressureSymbol}<span>${currentPressure} hPa</span>`;
             document.getElementById('curr-wind').textContent = `${getValue('Current Wind Gust (km/h)')} km/h`;
@@ -647,6 +579,48 @@
             console.error('Error fetching weather stats:', error);
             document.getElementById('update-status').textContent = 
                 'Error updating data. Retrying...';
+        }
+    }
+
+    async function fetchAstroData() {
+        try {
+            const response = await fetch('astro.csv?t=' + new Date().getTime());
+            if (!response.ok) throw new Error('Network response was not ok');
+
+            const csvText = await response.text();
+            const rows = csvText.split('\n').filter(row => row.trim() !== '');
+            if (rows.length < 2) throw new Error('Not enough data in CSV');
+
+            const headers = rows[0].split(',').map(h => h.trim());
+            const data = rows[1].split(',').map(c => c.trim());
+
+            const getValue = header => {
+                const index = headers.indexOf(header);
+                return index !== -1 ? data[index] : '--';
+            };
+
+            // Update astronomical data
+            document.getElementById('sunrise').textContent = getValue('sunrise');
+            document.getElementById('sunset').textContent = getValue('sunset');
+            document.getElementById('moonrise').textContent = getValue('moonrise');
+            document.getElementById('moonset').textContent = getValue('moonset');
+            
+            // Update moon status and illumination
+            const moonStatus = getValue('moon_status');
+            const moonIcon = document.getElementById('moon-status-icon');
+            if (moonStatus === 'waxing') {
+                moonIcon.className = 'fas fa-arrow-up';
+                moonIcon.style.color = '#4CAF50';
+            } else if (moonStatus === 'waning') {
+                moonIcon.className = 'fas fa-arrow-down';
+                moonIcon.style.color = '#4CAF50';
+            }
+
+            const illumination = getValue('illumination');
+            document.getElementById('moon-illumination').textContent = `🌕 ${illumination}%`;
+
+        } catch (error) {
+            console.error('Error fetching astronomical data:', error);
         }
     }
 
