@@ -56,6 +56,27 @@
         font-size: 40px;
         font-weight: 500;
     }
+
+    .astro-data {
+        display: flex;
+        gap: 25px;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .astro-item {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 15px;
+        color: rgba(255, 255, 255, 0.9);
+    }
+
+    .astro-item i {
+        color: #4CAF50;
+        width: 18px;
+        text-align: center;
+    }
     
     .current-weather {
         grid-column: 1 / -1;
@@ -231,6 +252,20 @@
         .location {
             font-size: 20px;
         }
+
+        .astro-data {
+            gap: 15px;
+            justify-content: center;
+        }
+        
+        .astro-item {
+            font-size: 13px;
+        }
+        
+        .header {
+            gap: 10px;
+        }
+    }
     
         .current-weather {
             flex-direction: column;
@@ -279,6 +314,14 @@
             padding: 8px;
             gap: 10px;
         }
+
+        .astro-data {
+            gap: 10px;
+        }
+        
+        .astro-item {
+            font-size: 12px;
+        }
     
         .temp-number {
             font-size: 60px;
@@ -300,10 +343,32 @@
 </head>
 <body>
     <div class="overlay"></div>
-    <div class="dashboard">
-        <div class="header">
-            <div class="location">Medvode</div>
-        </div>
+        <div class="dashboard">
+            <div class="header">
+                <div class="location">Medvode</div>
+                <div class="astro-data">
+                    <div class="astro-item">
+                        <i class="fas fa-sunrise"></i>
+                        <span id="sunrise">--:--</span>
+                    </div>
+                    <div class="astro-item">
+                        <i class="fas fa-sunset"></i>
+                        <span id="sunset">--:--</span>
+                    </div>
+                    <div class="astro-item">
+                        <i class="fas fa-moon"></i>
+                        <span id="moonrise">--:--</span>
+                    </div>
+                    <div class="astro-item">
+                        <i class="fas fa-moon"></i>
+                        <span id="moonset">--:--</span>
+                    </div>
+                    <div class="astro-item">
+                        <i class="fas" id="moon-status-icon"></i>
+                        <span id="moon-illumination">--%</span>
+                    </div>
+                </div>
+            </div>
 
         <div class="current-weather">
             <img id="weather-icon" class="weather-icon" src="" alt="Weather Icon">
@@ -459,6 +524,49 @@
                 return index !== -1 ? data[index] : '--';
             };
 
+    async function fetchAstroData() {
+        try {
+            const response = await fetch('astro.csv?t=' + new Date().getTime());
+            if (!response.ok) throw new Error('Network response was not ok');
+
+            const csvText = await response.text();
+            const rows = csvText.split('\n').filter(row => row.trim() !== '');
+            if (rows.length < 2) throw new Error('Not enough data in CSV');
+
+            const headers = rows[0].split(',').map(h => h.trim());
+            const data = rows[1].split(',').map(c => c.trim());
+
+            const getValue = header => {
+                const index = headers.indexOf(header);
+                return index !== -1 ? data[index] : '--';
+            };
+
+            // Update astronomical data
+            document.getElementById('sunrise').textContent = getValue('sunrise');
+            document.getElementById('sunset').textContent = getValue('sunset');
+            document.getElementById('moonrise').textContent = getValue('moonrise');
+            document.getElementById('moonset').textContent = getValue('moonset');
+            
+            // Update moon status and illumination
+            const moonStatus = getValue('moon_status');
+            const moonIcon = document.getElementById('moon-status-icon');
+            if (moonStatus === 'waxing') {
+                moonIcon.className = 'fas fa-arrow-up';
+                moonIcon.style.color = '#4CAF50';
+            } else if (moonStatus === 'waning') {
+                moonIcon.className = 'fas fa-arrow-down';
+                moonIcon.style.color = '#4CAF50';
+            }
+
+            const illumination = getValue('illumination');
+            document.getElementById('moon-illumination').innerHTML = 
+                `🌕 ${illumination}%`;
+
+        } catch (error) {
+            console.error('Error fetching astronomical data:', error);
+        }
+    }
+
             // Update current weather
             const currentTemp = parseFloat(getValue('Current Temperature (°C)'));
             document.getElementById('curr-temp').textContent = isNaN(currentTemp) ? '--' : currentTemp.toFixed(1);
@@ -544,6 +652,7 @@
 
     // Initial setup
     fetchWeatherStats();
+    fetchAstroData();
     setInterval(fetchWeatherStats, 300000); // Refresh every 5 minutes
     </script>
 </body>
