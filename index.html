@@ -653,7 +653,10 @@
     // Initial setup
     fetchWeatherStats();
     fetchAstroData();
-    setInterval(fetchWeatherStats, 300000); // Refresh every 5 minutes
+    setInterval(() => {
+        fetchWeatherStats();
+        fetchAstroData();
+    }, 300000);
     </script>
 </body>
 </html>
