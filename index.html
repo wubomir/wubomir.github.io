@@ -380,31 +380,6 @@
     </div>
 </div>
 
-<!-- In the JavaScript fetchAstroData function -->
-// Update astronomical data with time only
-const formatTime = (datetime) => {
-    if (!datetime || datetime === '--') return '--:--';
-    const parts = datetime.split(' ');
-    return parts.length > 1 ? parts[1].slice(0, 5) : datetime;
-};
-
-document.getElementById('sunrise').textContent = formatTime(getValue('sunrise'));
-document.getElementById('sunset').textContent = formatTime(getValue('sunset'));
-document.getElementById('moonrise').textContent = formatTime(getValue('moonrise'));
-document.getElementById('moonset').textContent = formatTime(getValue('moonset'));
-
-<!-- Add to CSS -->
-.astro-text {
-    color: rgba(255, 255, 255, 0.7);
-    margin-right: 3px;
-}
-
-.astro-item span:last-child {
-    color: #fff;
-    font-weight: 500;
-}
-        </div>
-
         <div class="current-weather">
             <img id="weather-icon" class="weather-icon" src="" alt="Weather Icon">
             <div class="temperature">
