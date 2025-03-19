@@ -64,6 +64,16 @@
         flex-wrap: wrap;
     }
 
+    .astro-text {
+        color: rgba(255, 255, 255, 0.7);
+        margin-right: 3px;
+    }
+    
+    .astro-item span:last-child {
+        color: #fff;
+        font-weight: 500;
+    }
+
     .astro-item {
         display: flex;
         align-items: center;
@@ -341,28 +351,58 @@
     <div class="dashboard">
         <div class="header">
             <div class="location">Medvode</div>
-            <div class="astro-data">
-                <div class="astro-item">
-                    <i class="fas fa-sunrise"></i>
-                    <span id="sunrise">--:--</span>
-                </div>
-                <div class="astro-item">
-                    <i class="fas fa-sunset"></i>
-                    <span id="sunset">--:--</span>
-                </div>
-                <div class="astro-item">
-                    <i class="fas fa-moon"></i>
-                    <span id="moonrise">--:--</span>
-                </div>
-                <div class="astro-item">
-                    <i class="fas fa-moon"></i>
-                    <span id="moonset">--:--</span>
-                </div>
-                <div class="astro-item">
-                    <i class="fas" id="moon-status-icon"></i>
-                    <span id="moon-illumination">🌕 --%</span>
-                </div>
-            </div>
+            <!-- In the header section -->
+<div class="astro-data">
+    <div class="astro-item">
+        <i class="fas fa-sunrise"></i>
+        <span class="astro-text">Sunrise </span>
+        <span id="sunrise">--:--</span>
+    </div>
+    <div class="astro-item">
+        <i class="fas fa-sunset"></i>
+        <span class="astro-text">Sunset </span>
+        <span id="sunset">--:--</span>
+    </div>
+    <div class="astro-item">
+        <i class="fas fa-moon"></i>
+        <span class="astro-text">Moonrise </span>
+        <span id="moonrise">--:--</span>
+    </div>
+    <div class="astro-item">
+        <i class="fas fa-moon"></i>
+        <span class="astro-text">Moonset </span>
+        <span id="moonset">--:--</span>
+    </div>
+    <div class="astro-item">
+        <i class="fas" id="moon-status-icon"></i>
+        <span class="astro-text">Moon </span>
+        <span id="moon-illumination">🌕 --%</span>
+    </div>
+</div>
+
+<!-- In the JavaScript fetchAstroData function -->
+// Update astronomical data with time only
+const formatTime = (datetime) => {
+    if (!datetime || datetime === '--') return '--:--';
+    const parts = datetime.split(' ');
+    return parts.length > 1 ? parts[1].slice(0, 5) : datetime;
+};
+
+document.getElementById('sunrise').textContent = formatTime(getValue('sunrise'));
+document.getElementById('sunset').textContent = formatTime(getValue('sunset'));
+document.getElementById('moonrise').textContent = formatTime(getValue('moonrise'));
+document.getElementById('moonset').textContent = formatTime(getValue('moonset'));
+
+<!-- Add to CSS -->
+.astro-text {
+    color: rgba(255, 255, 255, 0.7);
+    margin-right: 3px;
+}
+
+.astro-item span:last-child {
+    color: #fff;
+    font-weight: 500;
+}
         </div>
 
         <div class="current-weather">
@@ -600,10 +640,16 @@
             };
 
             // Update astronomical data
-            document.getElementById('sunrise').textContent = getValue('sunrise');
-            document.getElementById('sunset').textContent = getValue('sunset');
-            document.getElementById('moonrise').textContent = getValue('moonrise');
-            document.getElementById('moonset').textContent = getValue('moonset');
+    const formatTime = (datetime) => {
+        if (!datetime || datetime === '--') return '--:--';
+        const parts = datetime.split(' ');
+        return parts.length > 1 ? parts[1].slice(0, 5) : datetime;
+    };
+    
+    document.getElementById('sunrise').textContent = formatTime(getValue('sunrise'));
+    document.getElementById('sunset').textContent = formatTime(getValue('sunset'));
+    document.getElementById('moonrise').textContent = formatTime(getValue('moonrise'));
+    document.getElementById('moonset').textContent = formatTime(getValue('moonset'));
             
             // Update moon status and illumination
             const moonStatus = getValue('moon_status');
