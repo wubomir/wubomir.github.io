@@ -1,8 +1,6 @@
 timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,imedvode1_precipitation_today,imedvode1_pressure,imedvode1_relative_humidity,imedvode1_solar_radiation,imedvode1_temperature,imedvode1_uv_index,imedvode1_wind_chill,imedvode1_wind_direction_degrees,windCardinals,imedvode1_wind_gust,imedvode1_wind_speed,condition1,condition2,visibility,condition3,sky,max_solar_radiation,image_name
-2025-03-18 23:22,-4.4,-3.2,0.0,0.0,1034.61,91.0,0.1,-3.2,1.0,-3.2,337.0,NW,0.0,1.8,DRY,,9999.0,,Night,0.0,night.gif
-2025-03-18 23:27,-4.0,-2.8,0.0,0.0,1034.51,91.0,0.1,-2.8,1.0,-2.8,337.0,NW,0.0,1.8,DRY,,9999.0,,Night,0.0,night.gif
-2025-03-18 23:32,-4.2,-2.8,0.0,0.0,1034.51,90.0,0.1,-2.8,1.0,-2.8,337.0,NW,0.0,1.8,DRY,,9999.0,,Night,0.0,night.gif
-2025-03-18 23:37,-4.4,-3.0,0.0,0.0,1034.71,90.0,0.1,-3.0,1.0,-3.0,337.0,NW,0.0,0.0,DRY,,9999.0,,Night,0.0,night.gif
+2025-03-18 23:32,-4.2,-3.0,0.0,0.0,1034.71,90.0,0.1,-3.0,1.0,-3.0,338.0,N,0.0,0.0,DRY,,9999.0,,Night,0.0,night.gif
+2025-03-18 23:37,-4.4,-3.0,0.0,0.0,1034.71,90.0,0.1,-3.0,1.0,-3.0,338.0,N,0.0,0.0,DRY,,9999.0,,Night,0.0,night.gif
 2025-03-18 23:42,-4.5,-3.1,0.0,0.0,1034.71,90.0,0.1,-3.1,1.0,-3.1,338.0,N,1.8,1.8,DRY,,9999.0,,Night,0.0,night.gif
 2025-03-18 23:47,-4.7,-3.3,0.0,0.0,1034.71,90.0,0.1,-3.3,1.0,-3.3,337.0,NW,1.8,1.4,DRY,,9999.0,,Night,0.0,night.gif
 2025-03-18 23:52,-4.5,-3.3,0.0,0.0,1034.71,91.0,0.1,-3.3,1.0,-3.3,338.0,N,0.0,0.0,DRY,,9999.0,,Night,0.0,night.gif
@@ -283,3 +281,5 @@ timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,i
 2025-03-19 22:58,-2.8,-1.5,0.0,0.0,1033.09,91.0,0.0,-1.5,0.0,-1.5,326.0,NW,1.8,0.4,DRY,,9999.0,,Night,0.0,night.gif
 2025-03-19 23:03,-2.8,-1.2,0.0,0.0,1032.98,89.0,0.0,-1.2,0.0,-1.2,326.0,NW,3.6,3.6,DRY,,9999.0,,Night,0.0,night.gif
 2025-03-19 23:13,-2.9,-1.3,0.0,0.0,1033.09,89.0,0.0,-1.3,0.0,-1.3,324.0,NW,3.6,2.9,DRY,,9999.0,,Night,0.0,night.gif
+2025-03-19 23:18,-3.3,-1.9,0.0,0.0,1032.98,90.0,0.0,-1.9,0.0,-1.9,335.0,NW,3.6,2.9,DRY,,9999.0,,Night,0.0,night.gif
+2025-03-19 23:23,-3.3,-2.1,0.0,0.0,1033.19,91.0,0.0,-2.1,0.0,-2.1,337.0,NW,1.8,1.8,DRY,,9999.0,,Night,0.0,night.gif
