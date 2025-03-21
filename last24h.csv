@@ -1,9 +1,7 @@
 timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,imedvode1_precipitation_today,imedvode1_pressure,imedvode1_relative_humidity,imedvode1_solar_radiation,imedvode1_temperature,imedvode1_uv_index,imedvode1_wind_chill,imedvode1_wind_direction_degrees,windCardinals,imedvode1_wind_gust,imedvode1_wind_speed,condition1,condition2,visibility,condition3,sky,max_solar_radiation,image_name
-2025-03-20 05:58,-4.7,-4.2,0.0,0.0,1032.92,95.0,1.2,-4.2,1.0,-4.2,336.0,NW,3.6,1.1,DRY,,9999.0,,Twilight,0.0,cloudy.gif
-2025-03-20 06:03,-4.7,-4.2,0.0,0.0,1032.61,95.0,2.3,-4.2,1.0,-4.2,335.0,NW,3.6,0.7,DRY,,9999.0,,Twilight,0.0,cloudy.gif
-2025-03-20 06:08,-4.7,-4.2,0.0,0.0,1032.92,95.0,3.8,-4.2,1.0,-4.2,335.0,NW,3.6,1.1,DRY,,9999.0,,Sunny,1.6037919061153576,sunny.gif
-2025-03-20 06:13,-4.8,-4.3,0.0,0.0,1033.19,95.0,5.9,-4.3,1.0,-4.3,335.0,NW,3.6,3.6,DRY,,9999.0,,Mostly Sunny,8.68974883934193,mostly_sunny.gif
-2025-03-20 06:18,-4.7,-4.2,0.0,0.0,1032.98,95.0,8.1,-4.2,1.0,-4.2,335.0,NW,1.8,1.8,DRY,,9999.0,,Partly Cloudy,16.11441274556081,partly_cloudy.gif
+2025-03-20 06:08,-4.8,-4.3,0.0,0.0,1032.92,95.0,3.8,-4.3,1.0,-4.3,336.0,NW,3.6,1.1,DRY,,9999.0,,Sunny,1.6037919061153576,sunny.gif
+2025-03-20 06:13,-4.8,-4.3,0.0,0.0,1033.19,95.0,5.9,-4.3,1.0,-4.3,336.0,NW,3.6,3.6,DRY,,9999.0,,Mostly Sunny,8.68974883934193,mostly_sunny.gif
+2025-03-20 06:18,-4.7,-4.2,0.0,0.0,1032.98,95.0,8.1,-4.2,1.0,-4.2,336.0,NW,1.8,1.8,DRY,,9999.0,,Partly Cloudy,16.11441274556081,partly_cloudy.gif
 2025-03-20 06:23,-4.9,-4.4,0.0,0.0,1032.98,95.0,11.3,-4.4,1.0,-4.4,336.0,NW,1.8,1.8,DRY,,9999.0,,Partly Cloudy,23.76928537635678,partly_cloudy.gif
 2025-03-20 06:28,-4.8,-4.1,0.0,0.0,1032.92,95.0,14.4,-4.1,1.0,-4.1,336.0,NW,0.0,0.0,DRY,,9999.0,,Partly Cloudy,31.57116110878886,partly_cloudy.gif
 2025-03-20 06:33,-4.6,-3.9,0.0,0.0,1032.92,95.0,17.7,-3.9,1.0,-3.9,336.0,NW,1.8,0.7,DRY,,9999.0,,Partly Cloudy,39.46227164283205,partly_cloudy.gif
@@ -287,3 +285,5 @@ timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,i
 2025-03-21 05:43,-3.0,-2.1,0.0,0.0,1028.51,94.0,0.1,-2.1,0.0,-2.1,338.0,N,0.0,0.0,DRY,,9999.0,,Twilight,0.0,cloudy.gif
 2025-03-21 05:48,-2.8,-1.9,0.0,0.0,1028.51,94.0,0.3,-1.9,0.0,-1.9,338.0,N,3.6,2.9,DRY,,9999.0,,Twilight,0.0,cloudy.gif
 2025-03-21 05:53,-2.7,-1.8,0.0,0.0,1028.31,94.0,0.6,-1.8,0.0,-1.8,338.0,N,1.8,1.8,DRY,,9999.0,,Twilight,0.0,cloudy.gif
+2025-03-21 05:58,-3.3,-2.4,0.0,0.0,1028.62,94.0,1.4,-2.4,0.0,-2.4,340.0,N,0.0,0.0,DRY,,9999.0,,Twilight,0.0,cloudy.gif
+2025-03-21 06:03,-3.1,-2.2,0.0,0.0,1028.72,94.0,2.5,-2.2,0.0,-2.2,340.0,N,1.8,1.1,DRY,,9999.0,,Twilight,0.0,cloudy.gif
