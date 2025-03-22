@@ -1,7 +1,5 @@
 timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,imedvode1_precipitation_today,imedvode1_pressure,imedvode1_relative_humidity,imedvode1_solar_radiation,imedvode1_temperature,imedvode1_uv_index,imedvode1_wind_chill,imedvode1_wind_direction_degrees,windCardinals,imedvode1_wind_gust,imedvode1_wind_speed,visibility,condition1,condition2,condition3,sky,max_solar_radiation,image_name
-2025-03-21 14:29,0.4,13.4,0.0,0.0,1024.48,42.0,418.0,13.4,4.0,13.4,229.0,SW,14.8,9.4,9999.0,DRY,,,Sunny,478.3045282266886,sunny.gif
-2025-03-21 14:34,0.4,13.8,0.0,0.0,1024.48,40.0,408.6,13.8,3.0,13.8,283.0,W,14.8,12.2,9999.0,DRY,,,Sunny,469.6850596930257,sunny.gif
-2025-03-21 14:39,0.4,13.4,0.0,0.0,1024.69,41.0,389.0,13.4,3.0,13.4,157.0,SE,13.0,8.6,9999.0,DRY,,,Mostly Sunny,460.8078226885718,mostly_sunny.gif
+2025-03-21 14:39,1.1,13.4,0.0,0.0,1024.69,41.0,389.0,13.4,2.0,13.4,157.0,SE,13.0,8.6,9999.0,DRY,,,Mostly Sunny,460.8078226885718,mostly_sunny.gif
 2025-03-21 14:44,1.1,13.8,0.0,0.0,1024.59,42.0,295.2,13.8,2.0,13.8,158.0,S,11.2,7.9,9999.0,DRY,,,Mostly Sunny,451.67764908439585,mostly_sunny.gif
 2025-03-21 14:49,1.6,13.6,0.0,0.0,1024.42,44.0,250.0,13.6,2.0,13.6,260.0,W,3.6,2.9,9999.0,DRY,,,Partly Cloudy,442.2995470418454,partly_cloudy.gif
 2025-03-21 14:54,0.9,13.2,0.0,0.0,1024.48,43.0,245.5,13.2,2.0,13.2,246.0,SW,14.8,12.2,9999.0,DRY,,,Partly Cloudy,432.6787048807085,partly_cloudy.gif
@@ -220,3 +218,5 @@ timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,i
 2025-03-22 14:11,7.3,8.5,0.0,0.0,1017.41,92.0,36.4,8.5,0.0,7.3,111.0,E,9.4,7.9,9999.0,DRY,,,Cloudy,511.52800054908806,cloudy.gif
 2025-03-22 14:16,7.3,8.4,0.0,0.0,1017.31,93.0,30.9,8.4,0.0,7.5,121.0,SE,7.2,6.5,9999.0,DRY,,,Cloudy,503.8561331476596,cloudy.gif
 2025-03-22 14:21,7.2,8.3,1.19,0.2,1017.51,93.0,26.7,8.3,0.0,8.3,138.0,SE,5.4,4.0,9999.0,RAIN,LIGHT,,Cloudy,495.91065916236846,rain_light.gif
+2025-03-22 14:26,7.2,8.3,0.0,0.2,1017.41,93.0,36.2,8.3,0.0,7.2,99.0,E,9.4,7.2,9999.0,RAIN,LIGHT,,Cloudy,487.6957979113693,rain_light.gif
+2025-03-22 14:31,7.1,8.2,0.0,0.2,1017.2,93.0,28.3,8.2,0.0,7.1,126.0,SE,9.4,7.2,9999.0,DRY,,,Cloudy,479.2159349520256,cloudy.gif
