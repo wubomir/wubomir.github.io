@@ -597,6 +597,27 @@
         }
     }
 
+    function getMoonEmoji(illumination, status) {
+        const illum = parseFloat(illumination);
+        if (isNaN(illum)) return '🌕';
+
+        if (illum === 0) return '🌑';
+        if (illum === 100) return '🌕';
+
+        if (status === 'Waxing') {
+            if (illum < 25) return '🌒';
+            if (illum < 50) return '🌓';
+            if (illum < 75) return '🌔';
+            return '🌕';
+        } else if (status === 'Waning') {
+            if (illum > 75) return '🌖';
+            if (illum > 50) return '🌗';
+            if (illum > 25) return '🌘';
+            return '🌑';
+        }
+        return '🌕';
+    }
+
     async function fetchAstroData() {
         try {
             const response = await fetch('astro.csv?t=' + new Date().getTime());
@@ -628,17 +649,14 @@
             
             // Update moon status and illumination
             const moonStatus = getValue('moon_status');
-            const moonIcon = document.getElementById('moon-status-icon');
-            if (moonStatus === 'Waxing') {
-                moonIcon.className = 'fas fa-arrow-up';
-                moonIcon.style.color = '#4CAF50';
-            } else if (moonStatus === 'Waning') {
-                moonIcon.className = 'fas fa-arrow-down';
-                moonIcon.style.color = '#4CAF50';
-            }
-
             const illumination = getValue('illumination');
-            document.getElementById('moon-illumination').textContent = `🌕 ${illumination}`;
+            const moonEmoji = getMoonEmoji(illumination, moonStatus);
+            
+            // Remove the arrow icon and update moon display
+            const moonItem = document.querySelector('#moon-illumination').closest('.astro-item');
+            moonItem.querySelector('i').remove();
+            document.getElementById('moon-illumination').innerHTML = 
+                `<span class="moon-emoji">${moonEmoji}</span> ${illumination}%`;
 
         } catch (error) {
             console.error('Error fetching astronomical data:', error);
