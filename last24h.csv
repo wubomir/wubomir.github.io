@@ -1,7 +1,5 @@
 timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,imedvode1_precipitation_today,imedvode1_pressure,imedvode1_relative_humidity,imedvode1_solar_radiation,imedvode1_temperature,imedvode1_uv_index,imedvode1_wind_chill,imedvode1_wind_direction_degrees,windCardinals,imedvode1_wind_gust,imedvode1_wind_speed,visibility,condition1,condition2,condition3,sky,max_solar_radiation,image_name
-2025-03-22 12:16,6.1,9.4,0.0,0.0,1018.19,80.0,48.6,9.4,1.0,9.4,275.0,W,5.4,2.2,4000.0,DRY,,,Cloudy,605.1956973990152,cloudy.gif
-2025-03-22 12:21,6.0,9.5,0.0,0.0,1018.19,79.0,51.9,9.5,1.0,9.5,311.0,NW,5.4,4.7,4000.0,DRY,,,Cloudy,604.6069967887502,cloudy.gif
-2025-03-22 12:26,6.2,9.5,0.0,0.0,1018.02,80.0,45.9,9.5,1.0,9.5,304.0,NW,1.8,1.1,4000.0,DRY,,,Cloudy,603.6925570113897,cloudy.gif
+2025-03-22 12:26,6.2,9.6,0.0,0.0,1018.02,80.0,45.9,9.6,1.0,9.6,304.0,NW,1.8,1.1,4000.0,DRY,,,Cloudy,603.6925570113897,cloudy.gif
 2025-03-22 12:31,6.1,9.6,0.0,0.0,1018.08,79.0,41.3,9.6,1.0,9.6,185.0,S,1.8,1.4,4000.0,DRY,,,Cloudy,602.4528485544702,cloudy.gif
 2025-03-22 12:36,6.1,9.6,0.0,0.0,1018.29,79.0,42.8,9.6,1.0,9.6,224.0,SW,1.8,1.8,4000.0,DRY,,,Cloudy,600.8885065020689,cloudy.gif
 2025-03-22 12:41,6.1,9.6,0.0,0.0,1018.08,79.0,36.1,9.6,1.0,9.6,222.0,SW,1.8,1.8,4000.0,DRY,,,Cloudy,599.0003304014328,cloudy.gif
@@ -213,3 +211,5 @@ timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,i
 2025-03-23 12:02,9.4,16.0,0.0,10.69,1012.09,65.0,951.6,16.0,9.0,16.0,163.0,S,9.4,6.5,9999.0,DRY,,,Sunny,609.9609430625319,sunny.gif
 2025-03-23 12:07,9.9,16.2,0.0,10.69,1012.19,66.0,294.3,16.2,2.0,16.2,200.0,S,7.2,5.8,9999.0,DRY,,,Partly Cloudy,610.2657108630223,partly_cloudy.gif
 2025-03-23 12:12,9.1,15.4,0.0,10.69,1012.39,66.0,107.3,15.4,1.0,15.4,179.0,S,9.4,7.2,9999.0,DRY,,,Cloudy,610.2442877702747,cloudy.gif
+2025-03-23 12:17,9.8,15.0,0.0,10.69,1012.19,71.0,437.4,15.0,4.0,15.0,228.0,SW,9.4,6.5,9999.0,DRY,,,Mostly Sunny,609.8966930300279,mostly_sunny.gif
+2025-03-23 12:22,10.0,14.0,1.19,10.9,1012.39,77.0,1412.0,14.0,13.0,14.0,263.0,W,9.4,6.5,9999.0,RAIN,LIGHT,,Sunny,609.2231104962617,rain_light.gif
