@@ -650,13 +650,21 @@
             // Update moon status and illumination
             const moonStatus = getValue('moon_status');
             const illumination = getValue('illumination');
+            const moonIcon = document.getElementById('moon-status-icon');
             const moonEmoji = getMoonEmoji(illumination, moonStatus);
-            
-            // Remove the arrow icon and update moon display
-            const moonItem = document.querySelector('#moon-illumination').closest('.astro-item');
-            moonItem.querySelector('i').remove();
+
+            // Update direction arrow
+            if (moonStatus === 'Waxing') {
+                moonIcon.className = 'fas fa-arrow-up';
+                moonIcon.style.color = '#4CAF50';
+            } else if (moonStatus === 'Waning') {
+                moonIcon.className = 'fas fa-arrow-down';
+                moonIcon.style.color = '#4CAF50';
+            }
+
+            // Update moon display
             document.getElementById('moon-illumination').innerHTML = 
-                `<span class="moon-emoji">${moonEmoji}</span> ${illumination}`;
+                `${moonEmoji} ${illumination}%`;
 
         } catch (error) {
             console.error('Error fetching astronomical data:', error);
