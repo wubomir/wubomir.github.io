@@ -1,6 +1,5 @@
 timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,imedvode1_precipitation_today,imedvode1_pressure,imedvode1_relative_humidity,imedvode1_solar_radiation,imedvode1_temperature,imedvode1_uv_index,imedvode1_wind_chill,imedvode1_wind_direction_degrees,windCardinals,imedvode1_wind_gust,imedvode1_wind_speed,condition1,condition2,visibility,condition3,sky,max_solar_radiation,image_name
-2025-03-24 13:32,6.2,18.0,0.0,0.0,1013.72,46.0,520.2,18.0,0.0,18.0,209.0,SW,7.2,6.8,DRY,,9999.0,,Sunny,570.522332036156,sunny.gif
-2025-03-24 13:37,7.3,18.2,0.0,0.0,1013.51,49.0,514.8,18.2,0.0,18.2,242.0,SW,7.2,3.6,DRY,,9999.0,,Sunny,565.074241203216,sunny.gif
+2025-03-24 13:37,7.3,18.2,0.0,0.0,1013.51,49.0,514.8,18.2,0.0,18.2,242.0,SW,3.6,3.6,DRY,,9999.0,,Sunny,565.074241203216,sunny.gif
 2025-03-24 13:42,5.9,18.0,0.0,0.0,1013.51,45.0,92.2,18.0,0.0,18.0,271.0,W,3.6,2.5,DRY,,9999.0,,Cloudy,559.325521580987,cloudy.gif
 2025-03-24 13:47,6.2,18.0,0.0,0.0,1013.61,46.0,527.5,18.0,5.0,18.0,283.0,W,13.0,9.0,DRY,,9999.0,,Sunny,553.2791335775543,sunny.gif
 2025-03-24 13:52,6.5,18.3,0.0,0.0,1013.51,46.0,84.5,18.3,0.0,18.3,325.0,NW,5.4,3.6,DRY,,9999.0,,Cloudy,546.9381982590145,cloudy.gif
@@ -286,3 +285,5 @@ timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,i
 2025-03-25 13:12,7.5,14.7,0.0,0.0,1019.61,62.0,297.6,14.7,2.0,14.7,41.0,NE,0.0,0.0,DRY,,9999.0,,Partly Cloudy,593.7532022593399,partly_cloudy.gif
 2025-03-25 13:17,7.9,15.4,0.0,0.0,1019.2,61.0,230.3,15.4,2.0,15.4,207.0,SW,1.8,1.8,DRY,,9999.0,,Mostly Cloudy,589.5153540758492,mostly_cloudy.gif
 2025-03-25 13:22,7.2,14.6,0.0,0.0,1019.51,61.0,243.7,14.6,2.0,14.6,139.0,SE,3.6,3.6,DRY,,9999.0,,Mostly Cloudy,584.9667898643114,mostly_cloudy.gif
+2025-03-25 13:27,7.3,14.5,0.0,0.0,1019.4,62.0,230.4,14.5,2.0,14.5,133.0,SE,1.8,0.4,DRY,,9999.0,,Mostly Cloudy,580.1098323291121,mostly_cloudy.gif
+2025-03-25 13:32,7.4,15.1,0.0,0.0,1019.4,60.0,223.2,15.1,2.0,15.1,134.0,SE,1.8,0.4,DRY,,9999.0,,Mostly Cloudy,574.9469652426543,mostly_cloudy.gif
