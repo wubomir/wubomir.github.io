@@ -1,7 +1,5 @@
 timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,imedvode1_precipitation_today,imedvode1_pressure,imedvode1_relative_humidity,imedvode1_solar_radiation,imedvode1_temperature,imedvode1_uv_index,imedvode1_wind_chill,imedvode1_wind_direction_degrees,windCardinals,imedvode1_wind_gust,imedvode1_wind_speed,condition1,condition2,visibility,condition3,sky,max_solar_radiation,image_name
-2025-03-24 18:17,5.6,14.8,0.0,0.0,1015.0,54.0,3.9,14.8,1.0,14.8,204.0,SW,3.6,3.6,DRY,,9999.0,,Sunny,2.7511608839546313,sunny.gif
-2025-03-24 18:22,5.6,14.8,0.0,0.0,1015.0,54.0,2.4,14.8,1.0,14.8,218.0,SW,0.0,0.0,DRY,,9999.0,,Twilight,0.0,cloudy.gif
-2025-03-24 18:27,5.6,14.5,0.0,0.0,1015.1,55.0,1.2,14.5,1.0,14.5,216.0,SW,1.8,0.4,DRY,,9999.0,,Twilight,0.0,cloudy.gif
+2025-03-24 18:27,5.9,14.5,0.0,0.0,1015.1,55.0,1.2,14.5,1.0,14.5,216.0,SW,1.8,0.4,DRY,,9999.0,,Twilight,0.0,cloudy.gif
 2025-03-24 18:32,5.9,14.3,0.0,0.0,1015.21,57.0,0.6,14.3,1.0,14.3,215.0,SW,1.8,1.4,DRY,,9999.0,,Twilight,0.0,cloudy.gif
 2025-03-24 18:37,5.9,14.0,0.0,0.0,1015.31,58.0,0.2,14.0,1.0,14.0,189.0,S,1.8,1.1,DRY,,9999.0,,Twilight,0.0,cloudy.gif
 2025-03-24 18:42,6.2,13.8,0.0,0.0,1015.21,60.0,0.1,13.8,1.0,13.8,160.0,S,0.0,0.0,DRY,,9999.0,,Twilight,0.0,cloudy.gif
@@ -287,3 +285,5 @@ timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,i
 2025-03-25 18:02,7.6,9.4,4.8,1.3,1020.22,89.0,0.7,9.4,0.0,9.4,64.0,NE,1.8,1.4,RAIN,MODERATE,9999.0,,Cloudy,27.07633902600986,rain_moderate.gif
 2025-03-25 18:07,7.8,9.4,7.8,2.11,1020.29,90.0,0.5,9.4,0.0,9.4,139.0,SE,5.4,4.0,RAIN,HEAVY,9999.0,,Cloudy,19.3619261991893,rain_heavy.gif
 2025-03-25 18:12,7.6,9.4,5.99,2.31,1020.22,89.0,0.4,9.4,0.0,9.4,140.0,SE,1.8,1.4,RAIN,MODERATE,9999.0,,Cloudy,11.844815861460809,rain_moderate.gif
+2025-03-25 18:17,7.5,9.3,4.8,2.59,1020.29,89.0,0.3,9.3,0.0,9.3,155.0,SE,1.8,1.8,RAIN,MODERATE,9999.0,,Cloudy,4.62138560601373,rain_moderate.gif
+2025-03-25 18:22,7.9,9.5,5.99,3.3,1020.39,90.0,0.2,9.5,0.0,9.5,155.0,SE,0.0,0.0,RAIN,MODERATE,9999.0,,Twilight,0.0,rain_moderate.gif
