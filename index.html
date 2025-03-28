@@ -500,11 +500,10 @@
             'fog.gif': 'fog.jpg',
             'mostly_sunny.gif': 'sunny.jpg',
             'cloudy.gif': temperature <= 0 ? 'cloudy_frost.jpg' : 'cloudy.jpg',
-            'rain_light.gif': imageName === 'night.gif' ? 'night_rain.jpg' : 'cloudy_rain.jpg',
-            'rain_moderate.gif': imageName === 'night.gif' ? 'night_rain.jpg' : 'cloudy_rain.jpg',
-            'rain_heavy.gif': imageName === 'night.gif' ? 'night_rain.jpg' : 'cloudy_rain.jpg',
-            'night.gif': temperature <= 0 ? 'night_frost.jpg' : (
-                ['rain_light.gif', 'rain_moderate.gif', 'rain_heavy.gif'].includes(imageName) ? 'night_rain.jpg' : 'night.jpg'
+            'rain_light.gif': 'cloudy_rain.jpg',
+            'rain_moderate.gif': 'cloudy_rain.jpg',
+            'rain_heavy.gif': 'cloudy_rain.jpg',
+            'night.gif': temperature <= 0 ? 'night_frost.jpg' : 'night.jpg'
         };
 
         const backgroundImage = conditionMap[imageName] || '';
