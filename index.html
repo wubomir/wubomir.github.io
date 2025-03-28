@@ -492,7 +492,7 @@
                `${parts.find(p => p.type === 'hour').value}:${parts.find(p => p.type === 'minute').value}:${parts.find(p => p.type === 'second').value}`;
     }
 
-    function setBackgroundBasedOnCondition(imageName, temperature) {
+    function setBackgroundBasedOnCondition(imageName, temperature, isRaining) {
         const conditionMap = {
             'partly_cloudy.gif': temperature <= 0 ? 'partly_cloudy_frost.jpg' : 'partly_cloudy.jpg',
             'mostly_cloudy.gif': temperature <= 0 ? 'partly_cloudy_frost.jpg' : 'partly_cloudy.jpg',
@@ -503,14 +503,15 @@
             'rain_light.gif': 'cloudy_rain.jpg',
             'rain_moderate.gif': 'cloudy_rain.jpg',
             'rain_heavy.gif': 'cloudy_rain.jpg',
-            'night.gif': temperature <= 0 ? 'night_frost.jpg' : 'night.jpg'
+            'night.gif': isRaining ? 'night_rain.jpg' : (temperature <= 0 ? 'night_frost.jpg' : 'night.jpg')
         };
-
+    
         const backgroundImage = conditionMap[imageName] || '';
         if (backgroundImage) {
             document.body.style.backgroundImage = `url('${backgroundImage}')`;
         }
     }
+
 
     async function fetchWeatherStats() {
         try {
