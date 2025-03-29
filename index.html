@@ -492,7 +492,7 @@
                `${parts.find(p => p.type === 'hour').value}:${parts.find(p => p.type === 'minute').value}:${parts.find(p => p.type === 'second').value}`;
     }
 
-    function setBackgroundBasedOnCondition(imageName, temperature, isNight) {
+    function setBackgroundBasedOnCondition(imageName, temperature) {
         const conditionMap = {
             'partly_cloudy.gif': temperature <= 0 ? 'partly_cloudy_frost.jpg' : 'partly_cloudy.jpg',
             'mostly_cloudy.gif': temperature <= 0 ? 'partly_cloudy_frost.jpg' : 'partly_cloudy.jpg',
@@ -500,12 +500,12 @@
             'fog.gif': 'fog.jpg',
             'mostly_sunny.gif': 'sunny.jpg',
             'cloudy.gif': temperature <= 0 ? 'cloudy_frost.jpg' : 'cloudy.jpg',
-            'rain_light.gif': isNight ? 'night_rain.jpg' : 'cloudy_rain.jpg',
-            'rain_moderate.gif': isNight ? 'night_rain.jpg' : 'cloudy_rain.jpg',
-            'rain_heavy.gif': isNight ? 'night_rain.jpg' : 'cloudy_rain.jpg',
+            'rain_light.gif': 'cloudy_rain.jpg',
+            'rain_moderate.gif': 'cloudy_rain.jpg',
+            'rain_heavy.gif': 'cloudy_rain.jpg',
             'night.gif': temperature <= 0 ? 'night_frost.jpg' : 'night.jpg'
         };
-    
+
         const backgroundImage = conditionMap[imageName] || '';
         if (backgroundImage) {
             document.body.style.backgroundImage = `url('${backgroundImage}')`;
