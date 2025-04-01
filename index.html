@@ -82,7 +82,11 @@
         color: rgba(255, 255, 255, 0.9);
     }
 
-    
+    .astro-item i {
+        color: #4CAF50;
+        width: 18px;
+        text-align: center;
+    }
     
     .current-weather {
         grid-column: 1 / -1;
@@ -370,8 +374,8 @@
         <span id="moonset">--:--</span>
     </div>
     <div class="astro-item">
+        <i class="fas" id="moon-status-icon"></i>
         <span class="astro-text">Moon </span>
-        <span id="moon-status">--</span>
         <span id="moon-illumination">🌕 --</span>
     </div>
 </div>
@@ -647,13 +651,21 @@
             // Update moon status and illumination
             const moonStatus = getValue('moon_status');
             const illumination = getValue('illumination');
+            const moonIcon = document.getElementById('moon-status-icon');
             const moonEmoji = getMoonEmoji(illumination, moonStatus);
 
-            
+            // Update direction arrow
+            if (moonStatus === 'Waxing') {
+                moonIcon.className = 'fas fa-arrow-up';
+                moonIcon.style.color = '#4CAF50';
+            } else if (moonStatus === 'Waning') {
+                moonIcon.className = 'fas fa-arrow-down';
+                moonIcon.style.color = '#4CAF50';
+            }
+
             // Update moon display
             document.getElementById('moon-illumination').innerHTML = 
                 `${moonEmoji} ${illumination}`;
-            document.getElementById('moon-status').textContent = moonStatus;
 
         } catch (error) {
             console.error('Error fetching astronomical data:', error);
