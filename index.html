@@ -649,17 +649,7 @@
             const illumination = getValue('illumination');
             const moonEmoji = getMoonEmoji(illumination, moonStatus);
 
-            // Update direction arrow
-            if (moonStatus.toLowerCase().includes('waxing')) {
-                moonIcon.className = 'fas fa-arrow-up';
-                moonIcon.style.color = '#4CAF50';
-            } else if (moonStatus.toLowerCase().includes('waning')) {
-                moonIcon.className = 'fas fa-arrow-down';
-                moonIcon.style.color = '#4CAF50';
-            } else {
-                moonIcon.className = '';
-            }
-
+            
             // Update moon display
             document.getElementById('moon-illumination').innerHTML = 
                 `${moonEmoji} ${illumination}`;
