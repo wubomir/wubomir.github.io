@@ -664,6 +664,7 @@
             // Update moon display
             document.getElementById('moon-illumination').innerHTML = 
                 `${moonEmoji} ${illumination}`;
+            document.getElementById('moon-status').textContent = moonStatus;
 
         } catch (error) {
             console.error('Error fetching astronomical data:', error);
