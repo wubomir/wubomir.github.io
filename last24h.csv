@@ -1,7 +1,5 @@
 timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,imedvode1_precipitation_today,imedvode1_pressure,imedvode1_relative_humidity,imedvode1_solar_radiation,imedvode1_temperature,imedvode1_uv_index,imedvode1_wind_chill,imedvode1_wind_direction_degrees,windCardinals,imedvode1_wind_gust,imedvode1_wind_speed,condition1,condition2,visibility,condition3,sky,max_solar_radiation,image_name
-2025-04-08 10:28,-3.1,8.4,0.0,0.0,1027.9,46.0,490.1,8.4,5.0,8.4,93.0,E,9.4,4.7,DRY,,9999.0,,Sunny,529.0670493404158,sunny.gif
-2025-04-08 10:33,-2.3,8.7,0.0,0.0,1027.9,46.0,485.8,8.7,5.0,8.3,106.0,E,9.4,5.0,DRY,,9999.0,,Sunny,538.2757310367856,sunny.gif
-2025-04-08 10:38,-1.5,9.2,0.0,0.0,1027.9,47.0,491.5,9.2,5.0,8.3,137.0,SE,9.4,7.2,DRY,,9999.0,,Sunny,547.2326267100685,sunny.gif
+2025-04-08 10:38,-1.5,9.2,0.0,0.0,1027.9,47.0,491.5,9.2,5.0,8.2,137.0,SE,9.4,7.2,DRY,,9999.0,,Sunny,547.2326267100685,sunny.gif
 2025-04-08 10:43,-2.6,9.3,0.0,0.0,1027.8,43.0,500.7,9.3,5.0,8.2,134.0,SE,9.4,7.9,DRY,,9999.0,,Sunny,555.9330853365092,sunny.gif
 2025-04-08 10:48,-2.5,8.8,0.0,0.0,1027.8,45.0,506.7,8.8,5.0,8.8,110.0,E,5.4,4.0,DRY,,9999.0,,Sunny,564.3726083533224,sunny.gif
 2025-04-08 10:53,-1.0,9.8,0.0,0.0,1027.7,47.0,507.3,9.8,5.0,9.5,71.0,E,7.2,5.0,DRY,,9999.0,,Sunny,572.5468492122236,sunny.gif
@@ -274,3 +272,5 @@ timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,i
 2025-04-09 10:16,2.0,8.9,0.0,0.0,1024.21,62.0,447.7,8.9,4.0,7.8,110.0,E,9.4,7.6,DRY,,9999.0,,Sunny,510.6514122571676,sunny.gif
 2025-04-09 10:21,2.8,9.0,0.0,0.0,1024.11,65.0,455.6,9.0,4.0,8.6,152.0,SE,5.4,5.0,DRY,,9999.0,,Sunny,520.4247802355645,sunny.gif
 2025-04-09 10:26,2.2,9.6,0.0,0.0,1023.91,60.0,470.8,9.6,4.0,9.6,99.0,E,5.4,4.0,DRY,,9999.0,,Sunny,529.9579529783978,sunny.gif
+2025-04-09 10:31,1.7,10.3,0.0,0.0,1023.81,55.0,430.9,10.3,4.0,10.3,76.0,E,1.8,1.1,DRY,,9999.0,,Mostly Sunny,539.2459329949706,mostly_sunny.gif
+2025-04-09 10:36,2.0,11.0,0.0,0.0,1023.91,54.0,487.9,11.0,4.0,11.0,121.0,SE,5.4,3.2,DRY,,9999.0,,Sunny,548.2838762053541,sunny.gif
