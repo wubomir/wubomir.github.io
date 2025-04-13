@@ -1,7 +1,5 @@
 timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,imedvode1_precipitation_today,imedvode1_pressure,imedvode1_relative_humidity,imedvode1_solar_radiation,imedvode1_temperature,imedvode1_uv_index,imedvode1_wind_chill,imedvode1_wind_direction_degrees,windCardinals,imedvode1_wind_gust,imedvode1_wind_speed,condition1,condition2,visibility,condition3,sky,max_solar_radiation,image_name
-2025-04-12 06:48,3.9,5.0,0.0,0.0,1021.4,92.0,22.1,5.0,1.0,5.0,347.0,N,3.6,1.8,DRY,,9999.0,,Mostly Sunny,37.06532902279425,mostly_sunny.gif
-2025-04-12 06:53,4.0,5.2,0.0,0.0,1021.5,92.0,28.9,5.2,1.0,5.2,20.0,N,3.6,2.2,DRY,,9999.0,,Mostly Sunny,44.93548973923579,mostly_sunny.gif
-2025-04-12 06:58,4.0,5.1,0.0,0.0,1021.71,93.0,35.2,5.1,1.0,5.1,14.0,N,3.6,3.6,DRY,,9999.0,,Mostly Sunny,52.88333683114736,mostly_sunny.gif
+2025-04-12 06:58,4.4,5.1,0.0,0.0,1021.71,93.0,35.2,5.1,1.0,5.1,14.0,N,0.0,3.6,DRY,,9999.0,,Mostly Sunny,52.88333683114736,mostly_sunny.gif
 2025-04-12 07:03,4.4,5.5,0.0,0.0,1021.71,93.0,41.3,5.5,1.0,5.5,18.0,N,0.0,0.0,DRY,,9999.0,,Mostly Sunny,60.872873858534035,mostly_sunny.gif
 2025-04-12 07:08,4.6,5.8,0.0,0.0,1021.81,92.0,44.8,5.8,1.0,5.8,17.0,N,1.8,0.4,DRY,,9999.0,,Mostly Sunny,68.8916697825404,mostly_sunny.gif
 2025-04-12 07:13,4.9,6.1,0.0,0.0,1021.91,92.0,52.9,6.1,1.0,6.1,17.0,N,1.8,1.1,DRY,,9999.0,,Mostly Sunny,76.92926166420605,mostly_sunny.gif
@@ -286,3 +284,4 @@ timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,i
 2025-04-13 06:34,3.8,5.1,0.0,0.0,1016.8,91.0,5.7,5.1,0.0,5.1,313.0,NW,3.6,3.6,DRY,,9999.0,,Mostly Cloudy,18.32741420493345,mostly_cloudy.gif
 2025-04-13 06:39,3.8,5.3,0.0,0.0,1017.1,90.0,7.7,5.3,0.0,5.3,313.0,NW,3.6,2.9,DRY,,9999.0,,Mostly Cloudy,25.89263028205127,mostly_cloudy.gif
 2025-04-13 06:44,3.9,5.4,0.0,0.0,1017.0,90.0,9.8,5.4,0.0,5.4,313.0,NW,1.8,1.4,DRY,,9999.0,,Mostly Cloudy,33.6100382369752,mostly_cloudy.gif
+2025-04-13 06:49,3.8,5.3,0.0,0.0,1016.9,90.0,10.2,5.3,0.0,5.3,313.0,NW,0.0,0.0,DRY,,9999.0,,Mostly Cloudy,41.43198886280315,mostly_cloudy.gif
