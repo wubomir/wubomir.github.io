@@ -1,7 +1,5 @@
 timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,imedvode1_precipitation_today,imedvode1_pressure,imedvode1_relative_humidity,imedvode1_solar_radiation,imedvode1_temperature,imedvode1_uv_index,imedvode1_wind_chill,imedvode1_wind_direction_degrees,windCardinals,imedvode1_wind_gust,imedvode1_wind_speed,visibility,condition1,condition2,condition3,sky,max_solar_radiation,image_name
-2025-04-14 06:17,7.0,10.6,0.0,0.0,1017.1,78.0,0.8,10.6,1.0,10.6,29.0,NE,1.8,1.8,6000.0,DRY,,,Twilight,0.0,cloudy.gif
-2025-04-14 06:22,7.0,10.5,0.0,0.0,1017.1,79.0,1.0,10.5,1.0,10.5,29.0,NE,1.8,1.8,6000.0,DRY,,,Mostly Cloudy,3.7016527494131157,mostly_cloudy.gif
-2025-04-14 06:27,7.2,10.5,0.0,0.0,1017.1,80.0,1.5,10.5,1.0,10.5,29.0,NE,1.8,1.8,6000.0,DRY,,,Cloudy,10.700851276012415,cloudy.gif
+2025-04-14 06:27,7.2,10.4,0.0,0.0,1017.1,80.0,1.5,10.4,1.0,10.4,29.0,NE,1.8,1.8,6000.0,DRY,,,Cloudy,10.700851276012415,cloudy.gif
 2025-04-14 06:32,7.1,10.4,0.0,0.0,1017.2,80.0,2.7,10.4,1.0,10.4,28.0,NE,1.8,1.1,6000.0,DRY,,,Cloudy,18.018198462025865,cloudy.gif
 2025-04-14 06:37,7.0,10.3,0.0,0.0,1017.2,80.0,3.9,10.3,1.0,10.3,29.0,NE,1.8,1.8,6000.0,DRY,,,Mostly Cloudy,25.56162476119577,mostly_cloudy.gif
 2025-04-14 06:42,7.1,10.4,0.0,0.0,1017.2,80.0,4.4,10.4,1.0,10.4,29.0,NE,1.8,1.4,6000.0,DRY,,,Cloudy,33.26041960219325,cloudy.gif
@@ -292,3 +290,5 @@ timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,i
 2025-04-15 06:06,11.1,11.3,0.0,9.91,1010.8,99.0,0.0,11.3,0.0,11.3,53.0,NE,0.0,0.0,8000.0,RAIN,LIGHT,,Twilight,0.0,rain_light.gif
 2025-04-15 06:07,11.1,11.3,0.0,9.91,1010.8,99.0,0.1,11.3,0.0,11.3,53.0,NE,0.0,0.0,8000.0,DRY,,,Twilight,0.0,cloudy.gif
 2025-04-15 06:12,11.1,11.3,1.8,10.21,1010.7,99.0,0.2,11.3,0.0,11.3,53.0,NE,0.0,0.0,8000.0,RAIN,LIGHT,,Twilight,0.0,rain_light.gif
+2025-04-15 06:17,11.1,11.3,0.0,10.21,1010.7,99.0,0.4,11.3,0.0,11.3,53.0,NE,0.0,0.0,8000.0,RAIN,LIGHT,,Twilight,0.0,rain_light.gif
+2025-04-15 06:22,11.1,11.3,1.19,10.39,1010.7,99.0,0.9,11.3,0.0,11.3,53.0,NE,0.0,0.0,8000.0,RAIN,LIGHT,,Cloudy,6.174865814966516,rain_light.gif
