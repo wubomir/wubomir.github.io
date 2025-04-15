@@ -1,9 +1,7 @@
 timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,imedvode1_precipitation_today,imedvode1_pressure,imedvode1_relative_humidity,imedvode1_solar_radiation,imedvode1_temperature,imedvode1_uv_index,imedvode1_wind_chill,imedvode1_wind_direction_degrees,windCardinals,imedvode1_wind_gust,imedvode1_wind_speed,visibility,condition1,condition2,condition3,sky,max_solar_radiation,image_name
-2025-04-14 05:07,7.1,10.2,0.0,0.0,1017.0,81.0,0.1,10.2,1.0,10.2,15.0,N,3.6,3.6,6000.0,DRY,,,Night,0.0,night.gif
-2025-04-14 05:12,7.3,9.9,0.0,0.0,1016.8,84.0,0.1,9.9,1.0,9.9,15.0,N,1.8,1.4,6000.0,DRY,,,Night,0.0,night.gif
-2025-04-14 05:17,7.1,9.9,0.0,0.0,1016.9,83.0,0.1,9.9,1.0,9.9,15.0,N,0.0,0.0,6000.0,DRY,,,Night,0.0,night.gif
-2025-04-14 05:22,7.0,9.9,0.0,0.0,1016.7,82.0,0.1,9.9,1.0,9.9,15.0,N,0.0,0.0,6000.0,DRY,,,Night,0.0,night.gif
-2025-04-14 05:27,7.1,9.9,0.0,0.0,1016.7,83.0,0.1,9.9,1.0,9.9,14.0,N,3.6,3.6,6000.0,DRY,,,Night,0.0,night.gif
+2025-04-14 05:17,7.1,9.8,0.0,0.0,1016.9,83.0,0.1,9.8,1.0,9.8,14.0,N,0.0,0.0,6000.0,DRY,,,Night,0.0,night.gif
+2025-04-14 05:22,7.0,9.8,0.0,0.0,1016.7,82.0,0.1,9.8,1.0,9.8,14.0,N,0.0,0.0,6000.0,DRY,,,Night,0.0,night.gif
+2025-04-14 05:27,7.1,9.8,0.0,0.0,1016.7,83.0,0.1,9.8,1.0,9.8,14.0,N,3.6,3.6,6000.0,DRY,,,Night,0.0,night.gif
 2025-04-14 05:32,7.2,9.8,0.0,0.0,1016.8,84.0,0.1,9.8,1.0,9.8,9.0,N,3.6,2.9,6000.0,DRY,,,Night,0.0,night.gif
 2025-04-14 05:37,7.2,10.0,0.0,0.0,1016.7,83.0,0.1,10.0,1.0,10.0,335.0,NW,3.6,3.6,6000.0,DRY,,,Night,0.0,night.gif
 2025-04-14 05:42,7.2,10.1,0.0,0.0,1016.7,82.0,0.1,10.1,1.0,10.1,331.0,NW,5.4,5.4,6000.0,DRY,,,Night,0.0,night.gif
@@ -291,3 +289,5 @@ timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,i
 2025-04-15 04:52,11.1,11.3,1.19,7.59,1011.11,99.0,0.0,11.3,0.0,11.3,62.0,NE,0.0,0.0,4000.0,RAIN,LIGHT,,Night,0.0,rain_light.gif
 2025-04-15 04:57,11.1,11.3,1.8,7.9,1011.01,99.0,0.0,11.3,0.0,11.3,62.0,NE,0.0,0.0,4000.0,RAIN,LIGHT,,Night,0.0,rain_light.gif
 2025-04-15 05:02,11.1,11.3,3.0,8.1,1011.01,99.0,0.0,11.3,0.0,11.3,62.0,NE,0.0,0.0,4000.0,RAIN,MODERATE,,Night,0.0,rain_moderate.gif
+2025-04-15 05:07,11.1,11.3,0.0,8.41,1011.01,99.0,0.0,11.3,0.0,11.3,62.0,NE,0.0,0.0,4000.0,RAIN,LIGHT,,Night,0.0,rain_light.gif
+2025-04-15 05:12,11.2,11.4,0.0,8.61,1011.11,99.0,0.0,11.4,0.0,11.4,62.0,NE,0.0,0.0,4000.0,RAIN,LIGHT,,Night,0.0,rain_light.gif
