@@ -1,7 +1,5 @@
 timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,imedvode1_precipitation_today,imedvode1_pressure,imedvode1_relative_humidity,imedvode1_solar_radiation,imedvode1_temperature,imedvode1_uv_index,imedvode1_wind_chill,imedvode1_wind_direction_degrees,windCardinals,imedvode1_wind_gust,imedvode1_wind_speed,visibility,condition1,condition2,condition3,sky,max_solar_radiation,image_name
-2025-04-16 21:33,12.3,15.6,0.0,0.0,1014.6,81.0,0.1,15.6,1.0,15.6,332.0,NW,5.4,2.9,8000.0,DRY,,,Night,0.0,night.gif
-2025-04-16 21:38,12.5,16.1,0.0,0.0,1014.7,79.0,0.1,16.1,1.0,16.1,319.0,NW,5.4,3.6,8000.0,DRY,,,Night,0.0,night.gif
-2025-04-16 21:43,12.4,15.7,0.0,0.0,1014.7,81.0,0.1,15.7,1.0,15.7,353.0,N,5.4,2.9,8000.0,DRY,,,Night,0.0,night.gif
+2025-04-16 21:43,12.4,15.7,0.0,0.0,1014.8,81.0,0.1,15.7,1.0,15.7,353.0,N,5.4,2.9,8000.0,DRY,,,Night,0.0,night.gif
 2025-04-16 21:48,12.1,15.2,0.0,0.0,1014.8,82.0,0.1,15.2,1.0,15.2,347.0,N,5.4,3.6,8000.0,DRY,,,Night,0.0,night.gif
 2025-04-16 21:53,12.5,15.9,0.0,0.0,1014.7,80.0,0.1,15.9,1.0,15.9,348.0,N,5.4,4.3,8000.0,DRY,,,Night,0.0,night.gif
 2025-04-16 21:58,12.2,15.5,0.0,0.0,1014.9,81.0,0.1,15.5,1.0,15.5,242.0,SW,0.0,0.0,8000.0,DRY,,,Night,0.0,night.gif
@@ -287,3 +285,6 @@ timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,i
 2025-04-17 21:18,12.0,12.6,0.0,9.7,1013.61,96.0,0.0,12.6,0.0,12.6,323.0,NW,1.8,0.4,8000.0,RAIN,LIGHT,,Night,0.0,rain_light.gif
 2025-04-17 21:23,12.2,12.6,0.0,9.7,1013.72,97.0,0.0,12.6,0.0,12.6,322.0,NW,1.8,0.4,8000.0,RAIN,LIGHT,,Night,0.0,rain_light.gif
 2025-04-17 21:28,12.2,12.6,0.0,9.7,1013.72,97.0,0.0,12.6,0.0,12.6,323.0,NW,1.8,1.8,8000.0,DRY,,,Night,0.0,night.gif
+2025-04-17 21:33,12.1,12.5,0.0,9.7,1013.51,97.0,0.0,12.5,0.0,12.5,323.0,NW,1.8,1.4,8000.0,DRY,,,Night,0.0,night.gif
+2025-04-17 21:36,12.1,12.5,0.0,9.7,1013.51,97.0,0.0,12.5,0.0,12.5,323.0,NW,1.8,1.4,6000.0,DRY,,,Night,0.0,night.gif
+2025-04-17 21:38,11.9,12.3,0.0,9.7,1013.61,97.0,0.0,12.3,0.0,12.3,322.0,NW,1.8,1.8,6000.0,DRY,,,Night,0.0,night.gif
