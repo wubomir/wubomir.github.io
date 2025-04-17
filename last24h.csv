@@ -1,7 +1,5 @@
 timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,imedvode1_precipitation_today,imedvode1_pressure,imedvode1_relative_humidity,imedvode1_solar_radiation,imedvode1_temperature,imedvode1_uv_index,imedvode1_wind_chill,imedvode1_wind_direction_degrees,windCardinals,imedvode1_wind_gust,imedvode1_wind_speed,condition1,condition2,visibility,condition3,sky,max_solar_radiation,image_name
-2025-04-16 17:07,11.8,20.0,0.0,0.0,1014.8,59.0,53.3,20.0,1.0,20.0,153.0,SE,5.4,4.0,DRY,,9999.0,,Cloudy,364.1956530121904,cloudy.gif
-2025-04-16 17:12,11.4,19.9,0.0,0.0,1014.9,58.0,64.2,19.9,1.0,19.9,108.0,E,5.4,4.0,DRY,,9999.0,,Cloudy,351.4264013109796,cloudy.gif
-2025-04-16 17:17,11.5,20.0,0.0,0.0,1014.9,58.0,73.4,20.0,1.0,20.0,123.0,SE,3.6,3.6,DRY,,9999.0,,Cloudy,338.5293296744343,cloudy.gif
+2025-04-16 17:17,11.5,20.0,0.0,0.0,1014.6,59.0,73.4,20.0,1.0,20.0,123.0,SE,3.6,3.6,DRY,,9999.0,,Cloudy,338.5293296744343,cloudy.gif
 2025-04-16 17:22,11.9,20.1,0.0,0.0,1014.6,59.0,78.5,20.1,1.0,20.1,116.0,SE,1.8,1.8,DRY,,9999.0,,Cloudy,325.5128268628881,cloudy.gif
 2025-04-16 17:27,11.7,20.2,0.0,0.0,1014.7,58.0,102.3,20.2,1.0,20.2,115.0,SE,1.8,1.4,DRY,,9999.0,,Cloudy,312.3856225158176,cloudy.gif
 2025-04-16 17:32,11.6,20.4,0.0,0.0,1014.7,57.0,155.7,20.4,1.0,20.4,116.0,SE,0.0,0.0,DRY,,9999.0,,Partly Cloudy,299.1568298367714,partly_cloudy.gif
@@ -288,3 +286,5 @@ timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,i
 2025-04-17 16:48,12.4,15.1,1.19,0.99,1011.79,84.0,47.4,15.1,0.0,15.1,182.0,S,1.8,0.7,RAIN,LIGHT,9999.0,,Cloudy,414.70198482468373,rain_light.gif
 2025-04-17 16:53,12.5,15.0,0.0,0.99,1011.79,85.0,47.6,15.0,0.0,15.0,244.0,SW,1.8,1.1,RAIN,LIGHT,9999.0,,Cloudy,402.4927088198179,rain_light.gif
 2025-04-17 16:58,12.3,15.0,0.0,0.99,1011.99,84.0,25.9,15.0,0.0,15.0,258.0,W,1.8,1.1,DRY,,9999.0,,Cloudy,390.1264713137244,cloudy.gif
+2025-04-17 17:03,12.3,15.0,0.0,0.99,1011.89,84.0,31.3,15.0,0.0,15.0,329.0,NW,1.8,1.8,DRY,,9999.0,,Cloudy,377.6105991589299,cloudy.gif
+2025-04-17 17:08,12.8,14.8,1.8,1.3,1012.09,88.0,22.6,14.8,0.0,14.8,315.0,NW,1.8,1.4,RAIN,LIGHT,9999.0,,Cloudy,364.95265057722196,rain_light.gif
