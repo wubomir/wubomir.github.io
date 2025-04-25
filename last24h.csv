@@ -1,8 +1,6 @@
 timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,imedvode1_precipitation_today,imedvode1_pressure,imedvode1_relative_humidity,imedvode1_solar_radiation,imedvode1_temperature,imedvode1_uv_index,imedvode1_wind_chill,imedvode1_wind_direction_degrees,windCardinals,imedvode1_wind_gust,imedvode1_wind_speed,visibility,condition1,condition2,condition3,sky,max_solar_radiation,image_name
-2025-04-24 05:43,8.3,8.5,0.0,0.0,1013.41,98.0,0.1,8.5,1.0,8.5,100.0,E,1.8,1.1,8000.0,DRY,,,Twilight,0.0,cloudy.gif
-2025-04-24 05:48,8.4,8.6,0.0,0.0,1013.41,98.0,0.2,8.6,1.0,8.6,137.0,SE,1.8,1.8,8000.0,DRY,,,Twilight,0.0,cloudy.gif
-2025-04-24 05:53,8.4,8.6,0.0,0.0,1013.31,98.0,0.5,8.6,1.0,8.6,131.0,SE,0.0,0.0,8000.0,DRY,,,Twilight,0.0,cloudy.gif
-2025-04-24 05:58,8.4,8.6,0.0,0.0,1013.61,98.0,0.8,8.6,1.0,8.6,133.0,SE,0.0,0.0,8000.0,DRY,,,Twilight,0.0,cloudy.gif
+2025-04-24 05:53,8.5,8.7,0.0,0.0,1013.31,98.0,0.5,8.7,1.0,8.7,131.0,SE,0.0,0.0,8000.0,DRY,,,Twilight,0.0,cloudy.gif
+2025-04-24 05:58,8.5,8.7,0.0,0.0,1013.61,98.0,0.8,8.7,1.0,8.7,133.0,SE,0.0,0.0,8000.0,DRY,,,Twilight,0.0,cloudy.gif
 2025-04-24 06:03,8.5,8.7,0.0,0.0,1013.41,98.0,1.2,8.7,1.0,8.7,86.0,E,1.8,1.4,8000.0,DRY,,,Sunny,1.595339325332703,sunny.gif
 2025-04-24 06:08,8.6,8.8,0.0,0.0,1013.31,98.0,1.9,8.8,1.0,8.8,90.0,E,1.8,1.8,8000.0,DRY,,,Mostly Cloudy,8.291512739513973,mostly_cloudy.gif
 2025-04-24 06:13,8.7,8.9,0.0,0.0,1013.72,98.0,2.6,8.9,1.0,8.9,98.0,E,3.6,2.2,8000.0,DRY,,,Mostly Cloudy,15.335013643916906,mostly_cloudy.gif
@@ -285,3 +283,5 @@ timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,i
 2025-04-25 05:23,9.1,9.9,3.0,2.59,1015.1,95.0,0.0,9.9,0.0,9.9,245.0,SW,0.0,0.0,8000.0,RAIN,MODERATE,,Night,0.0,rain_moderate.gif
 2025-04-25 05:34,9.0,9.8,0.0,2.79,1015.0,95.0,0.0,9.8,0.0,9.8,245.0,SW,0.0,0.0,8000.0,RAIN,LIGHT,,Twilight,0.0,rain_light.gif
 2025-04-25 05:39,8.9,9.7,0.0,3.1,1015.0,95.0,0.0,9.7,0.0,9.7,245.0,SW,0.0,0.0,8000.0,RAIN,LIGHT,,Twilight,0.0,rain_light.gif
+2025-04-25 05:44,8.9,9.7,1.8,3.1,1015.21,95.0,0.1,9.7,0.0,9.7,245.0,SW,0.0,0.0,8000.0,RAIN,LIGHT,,Twilight,0.0,rain_light.gif
+2025-04-25 05:49,9.2,9.7,1.19,3.3,1015.1,96.0,0.1,9.7,0.0,9.7,245.0,SW,0.0,0.0,8000.0,RAIN,LIGHT,,Twilight,0.0,rain_light.gif
