@@ -1,8 +1,6 @@
 timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,imedvode1_precipitation_today,imedvode1_pressure,imedvode1_relative_humidity,imedvode1_solar_radiation,imedvode1_temperature,imedvode1_uv_index,imedvode1_wind_chill,imedvode1_wind_direction_degrees,windCardinals,imedvode1_wind_gust,imedvode1_wind_speed,condition1,condition2,visibility,condition3,sky,max_solar_radiation,image_name
-2025-04-25 20:44,8.4,10.4,0.0,0.0,1015.98,87.0,0.1,10.4,1.0,10.4,144.0,SE,1.8,1.4,DRY,,9999.0,,Night,0.0,night.gif
-2025-04-25 20:49,8.7,10.4,0.0,0.0,1015.98,89.0,0.1,10.4,1.0,10.4,144.0,SE,0.0,0.0,DRY,,9999.0,,Night,0.0,night.gif
-2025-04-25 20:54,8.6,10.4,0.0,0.0,1016.19,89.0,0.1,10.4,1.0,10.4,144.0,SE,0.0,0.0,DRY,,9999.0,,Night,0.0,night.gif
-2025-04-25 20:59,8.7,10.5,0.0,0.0,1016.29,89.0,0.1,10.5,1.0,10.5,106.0,E,3.6,3.6,DRY,,9999.0,,Night,0.0,night.gif
+2025-04-25 20:54,8.6,10.4,0.0,0.0,1016.19,90.0,0.1,10.4,1.0,10.4,106.0,E,3.6,3.6,DRY,,9999.0,,Night,0.0,night.gif
+2025-04-25 20:59,8.7,10.5,0.0,0.0,1016.29,90.0,0.1,10.5,1.0,10.5,106.0,E,3.6,3.6,DRY,,9999.0,,Night,0.0,night.gif
 2025-04-25 21:04,8.7,10.3,0.0,0.0,1016.09,90.0,0.1,10.3,1.0,10.3,118.0,SE,3.6,2.2,DRY,,9999.0,,Night,0.0,night.gif
 2025-04-25 21:09,8.7,10.3,0.0,0.0,1016.09,90.0,0.1,10.3,1.0,10.3,124.0,SE,1.8,1.4,DRY,,9999.0,,Night,0.0,night.gif
 2025-04-25 21:14,8.3,10.3,0.0,0.0,1016.19,88.0,0.1,10.3,1.0,10.3,218.0,SW,1.8,1.4,DRY,,9999.0,,Night,0.0,night.gif
@@ -283,3 +281,5 @@ timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,i
 2025-04-26 20:29,10.5,11.9,0.0,4.9,1021.61,91.0,0.0,11.9,0.0,11.9,127.0,SE,1.8,1.8,DRY,,9999.0,,Twilight,0.0,cloudy.gif
 2025-04-26 20:34,10.5,11.9,0.0,4.9,1021.61,91.0,0.0,11.9,0.0,11.9,129.0,SE,1.8,1.8,DRY,,9999.0,,Twilight,0.0,cloudy.gif
 2025-04-26 20:39,10.7,11.9,0.0,4.9,1021.5,92.0,0.0,11.9,0.0,11.9,129.0,SE,0.0,0.0,DRY,,9999.0,,Night,0.0,night.gif
+2025-04-26 20:44,10.6,11.8,0.0,4.9,1021.5,92.0,0.0,11.8,0.0,11.8,127.0,SE,0.0,0.0,DRY,,9999.0,,Night,0.0,night.gif
+2025-04-26 20:49,10.6,11.8,0.0,4.9,1021.61,92.0,0.0,11.8,0.0,11.8,127.0,SE,0.0,0.0,DRY,,9999.0,,Night,0.0,night.gif
