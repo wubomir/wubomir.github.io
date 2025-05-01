@@ -1,9 +1,7 @@
 timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,imedvode1_precipitation_today,imedvode1_pressure,imedvode1_relative_humidity,imedvode1_solar_radiation,imedvode1_temperature,imedvode1_uv_index,imedvode1_wind_chill,imedvode1_wind_direction_degrees,windCardinals,imedvode1_wind_gust,imedvode1_wind_speed,condition1,condition2,visibility,condition3,sky,max_solar_radiation,image_name
-2025-05-01 01:11,8.4,9.3,0.0,0.0,1024.48,93.0,0.1,9.3,1.0,9.3,338.0,N,0.0,1.8,DRY,,9999.0,,Night,0.0,night.gif
-2025-05-01 01:16,8.4,9.3,0.0,0.0,1024.48,93.0,0.1,9.3,1.0,9.3,338.0,N,0.0,1.1,DRY,,9999.0,,Night,0.0,night.gif
-2025-05-01 01:26,8.4,9.3,0.0,0.0,1024.48,93.0,0.1,9.3,1.0,9.3,338.0,N,0.0,1.1,DRY,,9999.0,,Night,0.0,night.gif
-2025-05-01 01:31,8.4,9.5,0.0,0.0,1024.42,93.0,0.1,9.5,1.0,9.5,338.0,N,0.0,1.8,DRY,,9999.0,,Night,0.0,night.gif
-2025-05-01 01:36,8.4,9.5,0.0,0.0,1024.42,93.0,0.1,9.5,1.0,9.5,338.0,N,0.0,0.4,DRY,,9999.0,,Night,0.0,night.gif
+2025-05-01 01:26,8.4,9.5,0.0,0.0,1024.48,94.0,0.1,9.5,1.0,9.5,338.0,N,0.0,1.8,DRY,,9999.0,,Night,0.0,night.gif
+2025-05-01 01:31,8.4,9.5,0.0,0.0,1024.42,94.0,0.1,9.5,1.0,9.5,338.0,N,0.0,1.8,DRY,,9999.0,,Night,0.0,night.gif
+2025-05-01 01:36,8.4,9.5,0.0,0.0,1024.42,94.0,0.1,9.5,1.0,9.5,338.0,N,0.0,0.4,DRY,,9999.0,,Night,0.0,night.gif
 2025-05-01 01:41,8.4,9.4,0.0,0.0,1024.42,94.0,0.1,9.4,1.0,9.4,338.0,N,0.0,1.4,DRY,,9999.0,,Night,0.0,night.gif
 2025-05-01 01:46,8.3,9.3,0.0,0.0,1024.42,94.0,0.1,9.3,1.0,9.3,338.0,N,0.0,0.4,DRY,,9999.0,,Night,0.0,night.gif
 2025-05-01 01:51,8.3,9.3,0.0,0.0,1024.48,94.0,0.1,9.3,1.0,9.3,339.0,N,0.0,1.8,DRY,,9999.0,,Night,0.0,night.gif
@@ -285,3 +283,5 @@ timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,i
 2025-05-02 00:56,9.5,10.7,0.0,0.0,1024.01,92.0,0.0,10.7,0.0,10.7,337.0,NW,1.8,1.8,DRY,,9999.0,,Night,0.0,night.gif
 2025-05-02 01:01,9.3,10.5,0.0,0.0,1023.81,92.0,0.0,10.5,0.0,10.5,338.0,N,1.8,0.7,DRY,,9999.0,,Night,0.0,night.gif
 2025-05-02 01:06,9.2,10.4,0.0,0.0,1024.01,92.0,0.0,10.4,0.0,10.4,337.0,NW,1.8,1.8,DRY,,9999.0,,Night,0.0,night.gif
+2025-05-02 01:11,8.8,10.0,0.0,0.0,1023.81,92.0,0.0,10.0,0.0,10.0,344.0,N,3.6,2.9,DRY,,9999.0,,Night,0.0,night.gif
+2025-05-02 01:16,8.8,9.9,0.0,0.0,1024.01,93.0,0.0,9.9,0.0,9.9,344.0,N,1.8,1.1,DRY,,9999.0,,Night,0.0,night.gif
