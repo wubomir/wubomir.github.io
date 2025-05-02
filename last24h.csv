@@ -1,8 +1,6 @@
 timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,imedvode1_precipitation_today,imedvode1_pressure,imedvode1_relative_humidity,imedvode1_solar_radiation,imedvode1_temperature,imedvode1_uv_index,imedvode1_wind_chill,imedvode1_wind_direction_degrees,windCardinals,imedvode1_wind_gust,imedvode1_wind_speed,condition1,condition2,visibility,condition3,sky,max_solar_radiation,image_name
-2025-05-01 05:01,6.7,7.1,0.0,0.0,1024.42,98.0,0.1,7.1,1.0,7.1,352.0,N,0.0,0.0,DRY,,9999.0,,Night,0.0,night.gif
-2025-05-01 05:06,6.7,7.1,0.0,0.0,1024.31,98.0,0.1,7.1,1.0,7.1,352.0,N,1.8,0.4,DRY,,9999.0,,Night,0.0,night.gif
-2025-05-01 05:11,6.4,6.8,0.0,0.0,1024.21,98.0,0.1,6.8,1.0,6.8,352.0,N,1.8,1.8,DRY,,9999.0,,Night,0.0,night.gif
-2025-05-01 05:16,6.8,7.2,0.0,0.0,1024.42,98.0,0.1,7.2,1.0,7.2,352.0,N,1.8,1.4,DRY,,9999.0,,Twilight,0.0,cloudy.gif
+2025-05-01 05:11,6.4,6.8,0.0,0.0,1024.21,98.0,0.1,6.8,1.0,6.8,352.0,N,0.0,1.8,DRY,,9999.0,,Night,0.0,night.gif
+2025-05-01 05:16,6.8,7.2,0.0,0.0,1024.42,98.0,0.1,7.2,1.0,7.2,352.0,N,0.0,1.4,DRY,,9999.0,,Twilight,0.0,cloudy.gif
 2025-05-01 05:21,6.5,6.8,0.0,0.0,1024.21,98.0,0.1,6.8,1.0,6.8,352.0,N,0.0,0.0,DRY,,9999.0,,Twilight,0.0,cloudy.gif
 2025-05-01 05:26,6.5,6.8,0.0,0.0,1024.31,98.0,0.1,6.8,1.0,6.8,352.0,N,1.8,1.8,DRY,,9999.0,,Twilight,0.0,cloudy.gif
 2025-05-01 05:31,6.9,7.2,0.0,0.0,1024.42,98.0,0.2,7.2,1.0,7.2,352.0,N,1.8,1.4,DRY,,9999.0,,Twilight,0.0,cloudy.gif
@@ -285,3 +283,5 @@ timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,i
 2025-05-02 04:46,7.4,7.9,0.0,0.0,1023.81,96.0,0.0,7.9,0.0,7.9,337.0,NW,1.8,1.1,DRY,,9999.0,,Night,0.0,night.gif
 2025-05-02 04:51,7.6,8.1,0.0,0.0,1023.71,96.0,0.0,8.1,0.0,8.1,336.0,NW,1.8,1.8,DRY,,9999.0,,Night,0.0,night.gif
 2025-05-02 04:56,7.5,8.0,0.0,0.0,1023.81,96.0,0.0,8.0,0.0,8.0,337.0,NW,3.6,2.9,DRY,,9999.0,,Night,0.0,night.gif
+2025-05-02 05:01,7.5,8.0,0.0,0.0,1023.81,96.0,0.0,8.0,0.0,8.0,338.0,N,1.8,1.8,DRY,,9999.0,,Night,0.0,night.gif
+2025-05-02 05:06,7.6,8.0,0.0,0.0,1023.81,97.0,0.0,8.0,0.0,8.0,339.0,N,3.6,2.2,DRY,,9999.0,,Night,0.0,night.gif
