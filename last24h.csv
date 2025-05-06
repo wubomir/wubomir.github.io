@@ -1,9 +1,7 @@
 timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,imedvode1_precipitation_today,imedvode1_pressure,imedvode1_relative_humidity,imedvode1_solar_radiation,imedvode1_temperature,imedvode1_uv_index,imedvode1_wind_chill,imedvode1_wind_direction_degrees,windCardinals,imedvode1_wind_gust,imedvode1_wind_speed,visibility,condition1,condition2,condition3,sky,max_solar_radiation,image_name
-2025-05-05 20:19,9.5,10.3,0.0,0.0,1009.41,95.0,0.3,10.3,1.0,10.3,120.0,SE,1.8,1.4,9999.0,DRY,,,Twilight,0.0,cloudy.gif
-2025-05-05 20:24,9.6,10.4,0.0,0.0,1009.52,95.0,0.1,10.4,1.0,10.4,147.0,SE,3.6,3.2,9999.0,DRY,,,Twilight,0.0,cloudy.gif
-2025-05-05 20:29,9.4,10.4,0.0,0.0,1009.52,94.0,0.1,10.4,1.0,10.4,125.0,SE,3.6,3.6,9999.0,DRY,,,Twilight,0.0,cloudy.gif
-2025-05-05 20:34,9.4,10.4,0.0,0.0,1009.31,94.0,0.0,10.4,1.0,10.4,144.0,SE,3.6,2.5,9999.0,DRY,,,Twilight,0.0,cloudy.gif
-2025-05-05 20:38,9.4,10.4,0.0,0.0,1009.31,94.0,0.0,10.4,1.0,10.4,144.0,SE,3.6,2.5,9999.0,DRY,,,Twilight,0.0,cloudy.gif
+2025-05-05 20:29,9.4,10.5,0.0,0.0,1009.31,94.0,0.0,10.5,1.0,10.5,125.0,SE,5.4,3.6,9999.0,DRY,,,Twilight,0.0,cloudy.gif
+2025-05-05 20:34,9.4,10.5,0.0,0.0,1009.31,94.0,0.0,10.5,1.0,10.5,144.0,SE,5.4,2.5,9999.0,DRY,,,Twilight,0.0,cloudy.gif
+2025-05-05 20:38,9.4,10.5,0.0,0.0,1009.31,94.0,0.0,10.5,1.0,10.5,144.0,SE,5.4,2.5,9999.0,DRY,,,Twilight,0.0,cloudy.gif
 2025-05-05 20:39,9.7,10.5,0.0,0.0,1009.58,95.0,0.0,10.5,1.0,10.5,185.0,S,5.4,4.7,9999.0,DRY,,,Twilight,0.0,cloudy.gif
 2025-05-05 20:44,9.6,10.4,0.0,0.0,1009.69,95.0,0.0,10.4,1.0,10.4,152.0,SE,3.6,2.9,9999.0,DRY,,,Twilight,0.0,cloudy.gif
 2025-05-05 20:49,9.6,10.4,0.0,0.0,1009.79,95.0,0.0,10.4,1.0,10.4,143.0,SE,7.2,5.8,9999.0,DRY,,,Twilight,0.0,cloudy.gif
@@ -235,3 +233,5 @@ timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,i
 2025-05-06 20:06,9.8,11.0,0.0,4.09,1013.82,92.0,3.0,11.0,0.0,11.0,123.0,SE,5.4,5.4,9999.0,DRY,,,Mostly Cloudy,12.681579244969612,mostly_cloudy.gif
 2025-05-06 20:11,9.8,11.0,0.0,4.09,1013.88,92.0,2.2,11.0,0.0,11.0,133.0,SE,3.6,3.6,9999.0,DRY,,,Partly Cloudy,6.02430855225305,partly_cloudy.gif
 2025-05-06 20:16,9.7,10.9,0.0,4.09,1013.72,92.0,1.6,10.9,0.0,10.9,133.0,SE,3.6,3.6,9999.0,DRY,,,Twilight,0.0,cloudy.gif
+2025-05-06 20:21,9.8,10.9,0.0,4.09,1013.88,93.0,0.8,10.9,0.0,10.9,111.0,E,5.4,4.0,9999.0,DRY,,,Twilight,0.0,cloudy.gif
+2025-05-06 20:26,9.9,10.9,0.0,4.09,1013.82,94.0,0.5,10.9,0.0,10.9,121.0,SE,3.6,3.6,9999.0,DRY,,,Twilight,0.0,cloudy.gif
