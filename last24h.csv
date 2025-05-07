@@ -1,7 +1,5 @@
 timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,imedvode1_precipitation_today,imedvode1_pressure,imedvode1_relative_humidity,imedvode1_solar_radiation,imedvode1_temperature,imedvode1_uv_index,imedvode1_wind_chill,imedvode1_wind_direction_degrees,windCardinals,imedvode1_wind_gust,imedvode1_wind_speed,visibility,condition1,condition2,condition3,sky,max_solar_radiation,image_name
-2025-05-06 15:50,9.9,11.0,0.0,0.0,1012.6,92.0,196.5,11.0,0.0,11.0,125.0,SE,11.2,8.6,8000.0,DRY,,,Cloudy,597.1265778522595,cloudy.gif
-2025-05-06 15:55,9.9,11.0,0.0,0.0,1012.8,93.0,197.3,11.0,0.0,11.0,106.0,E,7.2,6.1,8000.0,DRY,,,Cloudy,587.3093166816889,cloudy.gif
-2025-05-06 16:00,9.9,11.1,0.0,0.0,1012.9,92.0,138.8,11.1,0.0,11.1,118.0,SE,9.4,7.2,8000.0,DRY,,,Cloudy,577.2707085280834,cloudy.gif
+2025-05-06 16:00,9.6,11.1,0.0,0.0,1012.9,92.0,138.8,11.1,0.0,11.1,118.0,SE,9.4,7.2,8000.0,DRY,,,Cloudy,577.2707085280834,cloudy.gif
 2025-05-06 16:05,9.6,11.0,0.0,0.0,1012.7,91.0,147.7,11.0,0.0,11.0,141.0,SE,11.2,7.2,8000.0,DRY,,,Cloudy,567.015898596604,cloudy.gif
 2025-05-06 16:10,9.5,11.1,0.0,0.0,1012.9,90.0,133.8,11.1,0.0,11.1,145.0,SE,7.2,6.8,8000.0,DRY,,,Cloudy,556.5501628583994,cloudy.gif
 2025-05-06 16:15,9.4,11.0,0.0,0.0,1012.9,90.0,110.1,11.0,0.0,11.0,140.0,SE,11.2,8.6,8000.0,DRY,,,Cloudy,545.8789081373462,cloudy.gif
@@ -287,3 +285,5 @@ timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,i
 2025-05-07 15:37,9.5,12.3,0.0,0.99,1014.29,83.0,182.7,12.3,1.0,12.3,22.0,N,1.8,1.8,9999.0,DRY,,,Cloudy,624.010848533713,cloudy.gif
 2025-05-07 15:42,8.9,12.3,0.0,0.99,1014.19,80.0,161.7,12.3,1.0,12.3,68.0,E,0.0,0.0,9999.0,DRY,,,Cloudy,614.8018251861685,cloudy.gif
 2025-05-07 15:47,8.8,12.3,0.0,0.99,1014.09,79.0,142.8,12.3,1.0,12.3,28.0,NE,0.0,0.0,9999.0,DRY,,,Cloudy,605.3590481173563,cloudy.gif
+2025-05-07 15:52,8.9,12.3,0.0,0.99,1013.99,80.0,135.0,12.3,1.0,12.3,61.0,NE,0.0,0.0,9999.0,DRY,,,Cloudy,595.6873124985285,cloudy.gif
+2025-05-07 15:57,8.9,12.4,0.0,0.99,1014.09,79.0,89.6,12.4,0.0,12.4,31.0,NE,0.0,0.0,9999.0,DRY,,,Cloudy,585.7915443572508,cloudy.gif
