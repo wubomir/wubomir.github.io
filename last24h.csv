@@ -1,8 +1,6 @@
 timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,imedvode1_precipitation_today,imedvode1_pressure,imedvode1_relative_humidity,imedvode1_solar_radiation,imedvode1_temperature,imedvode1_uv_index,imedvode1_wind_chill,imedvode1_wind_direction_degrees,windCardinals,imedvode1_wind_gust,imedvode1_wind_speed,condition1,condition2,visibility,condition3,sky,max_solar_radiation,image_name
-2025-05-13 19:09,6.6,16.5,0.0,0.0,1016.09,51.0,36.5,16.5,1.0,16.5,155.0,SE,7.2,6.5,DRY,,9999.0,,Mostly Cloudy,119.67625797769503,mostly_cloudy.gif
-2025-05-13 19:14,6.6,16.5,0.0,0.0,1015.92,51.0,45.6,16.5,1.0,16.5,170.0,S,7.2,6.5,DRY,,9999.0,,Partly Cloudy,106.9467011561556,partly_cloudy.gif
-2025-05-13 19:19,6.3,16.5,0.0,0.0,1015.98,51.0,49.4,16.5,1.0,16.5,139.0,SE,7.2,6.5,DRY,,9999.0,,Partly Cloudy,94.52400345418535,partly_cloudy.gif
-2025-05-13 19:24,6.6,16.5,0.0,0.0,1015.98,52.0,44.6,16.5,1.0,16.5,160.0,S,7.2,6.5,DRY,,9999.0,,Partly Cloudy,86.83132129798852,partly_cloudy.gif
+2025-05-13 19:19,6.3,16.4,0.0,0.0,1015.98,51.0,49.4,16.4,1.0,16.4,139.0,SE,7.2,6.5,DRY,,9999.0,,Partly Cloudy,94.52400345418535,partly_cloudy.gif
+2025-05-13 19:24,6.6,16.4,0.0,0.0,1015.98,52.0,44.6,16.4,1.0,16.4,160.0,S,7.2,6.5,DRY,,9999.0,,Partly Cloudy,86.83132129798852,partly_cloudy.gif
 2025-05-13 19:29,6.3,16.4,0.0,0.0,1015.98,51.0,41.6,16.4,1.0,16.4,166.0,S,5.4,3.6,DRY,,9999.0,,Partly Cloudy,79.1691258260026,partly_cloudy.gif
 2025-05-13 19:34,7.1,16.4,0.0,0.0,1015.98,54.0,33.2,16.4,1.0,16.4,173.0,S,1.8,0.4,DRY,,9999.0,,Partly Cloudy,71.54391947813349,partly_cloudy.gif
 2025-05-13 19:39,6.6,16.2,0.0,0.0,1015.98,53.0,28.0,16.2,1.0,16.2,158.0,S,3.6,2.2,DRY,,9999.0,,Partly Cloudy,63.96301710080474,partly_cloudy.gif
@@ -287,3 +285,5 @@ timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,i
 2025-05-14 18:54,9.0,20.3,0.0,0.0,1012.8,48.0,67.7,20.3,0.0,20.3,224.0,SW,5.4,4.0,DRY,,9999.0,,Partly Cloudy,161.49662237158967,partly_cloudy.gif
 2025-05-14 18:59,9.3,20.3,0.0,0.0,1012.9,49.0,99.1,20.3,0.0,20.3,307.0,NW,1.8,1.1,DRY,,9999.0,,Mostly Sunny,148.29892500054675,mostly_sunny.gif
 2025-05-14 19:04,9.3,20.3,0.0,0.0,1012.8,49.0,53.8,20.3,0.0,20.3,234.0,SW,1.8,1.8,DRY,,9999.0,,Partly Cloudy,135.22223453157164,partly_cloudy.gif
+2025-05-14 19:09,9.2,20.2,0.0,0.0,1013.0,49.0,76.5,20.2,0.0,20.2,233.0,SW,7.2,5.4,DRY,,9999.0,,Mostly Sunny,122.29341971651593,mostly_sunny.gif
+2025-05-14 19:14,9.1,20.1,0.0,0.0,1012.9,49.0,67.5,20.1,0.0,20.1,240.0,SW,11.2,7.2,DRY,,9999.0,,Mostly Sunny,109.54393490021273,mostly_sunny.gif
