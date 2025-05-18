@@ -1,9 +1,7 @@
 timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,imedvode1_precipitation_today,imedvode1_pressure,imedvode1_relative_humidity,imedvode1_solar_radiation,imedvode1_temperature,imedvode1_uv_index,imedvode1_wind_chill,imedvode1_wind_direction_degrees,windCardinals,imedvode1_wind_gust,imedvode1_wind_speed,condition1,condition2,visibility,condition3,sky,max_solar_radiation,image_name
-2025-05-17 08:00,6.0,9.3,0.0,0.0,1015.0,79.0,240.9,9.3,1.0,9.3,111.0,E,3.6,0.4,DRY,,9999.0,,Mostly Sunny,319.3521886489838,mostly_sunny.gif
-2025-05-17 08:05,6.2,9.7,0.0,0.0,1014.7,79.0,231.7,9.7,1.0,9.7,129.0,SE,3.6,0.4,DRY,,9999.0,,Mostly Sunny,332.67794315961663,mostly_sunny.gif
-2025-05-17 08:10,6.1,9.6,0.0,0.0,1014.9,79.0,233.9,9.6,1.0,9.6,352.0,N,3.6,2.2,DRY,,9999.0,,Mostly Sunny,345.93969994085364,mostly_sunny.gif
-2025-05-17 08:15,6.3,9.8,0.0,0.0,1014.8,79.0,262.1,9.8,1.0,9.8,340.0,N,1.8,1.1,DRY,,9999.0,,Mostly Sunny,359.1288935591661,mostly_sunny.gif
-2025-05-17 08:20,6.7,10.2,0.0,0.0,1014.9,79.0,115.2,10.2,1.0,10.2,83.0,E,3.6,3.6,DRY,,9999.0,,Cloudy,372.2372337100105,cloudy.gif
+2025-05-17 08:10,6.1,9.6,0.0,0.0,1014.9,80.0,233.9,9.6,1.0,9.6,352.0,N,3.6,2.2,DRY,,9999.0,,Mostly Sunny,345.93969994085364,mostly_sunny.gif
+2025-05-17 08:15,6.3,9.8,0.0,0.0,1014.8,80.0,262.1,9.8,1.0,9.8,340.0,N,1.8,1.1,DRY,,9999.0,,Mostly Sunny,359.1288935591661,mostly_sunny.gif
+2025-05-17 08:20,6.7,10.2,0.0,0.0,1014.9,80.0,115.2,10.2,1.0,10.2,83.0,E,3.6,3.6,DRY,,9999.0,,Cloudy,372.2372337100105,cloudy.gif
 2025-05-17 08:25,6.0,9.3,0.0,0.0,1014.7,80.0,284.6,9.3,2.0,9.3,71.0,E,1.8,1.8,DRY,,9999.0,,Mostly Sunny,385.25667775446095,mostly_sunny.gif
 2025-05-17 08:30,6.5,10.2,0.0,0.0,1015.0,78.0,157.6,10.2,1.0,10.2,99.0,E,1.8,1.1,DRY,,9999.0,,Mostly Cloudy,398.179407970394,mostly_cloudy.gif
 2025-05-17 08:35,6.2,9.3,0.0,0.0,1014.8,81.0,117.0,9.3,1.0,9.3,122.0,SE,1.8,1.1,DRY,,9999.0,,Cloudy,410.99781265664865,cloudy.gif
@@ -286,3 +284,5 @@ timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,i
 2025-05-18 07:41,7.2,9.6,0.0,0.0,1015.71,85.0,128.6,9.6,1.0,9.6,10.0,N,0.0,0.0,DRY,,9999.0,,Partly Cloudy,270.5592329761444,partly_cloudy.gif
 2025-05-18 07:46,7.2,9.3,0.0,0.0,1015.61,87.0,96.9,9.3,0.0,9.3,11.0,N,1.8,1.1,DRY,,9999.0,,Cloudy,284.03162613755774,cloudy.gif
 2025-05-18 07:51,7.0,9.1,0.0,0.0,1015.71,87.0,118.2,9.1,1.0,9.1,31.0,NE,1.8,1.8,DRY,,9999.0,,Mostly Cloudy,297.4752221448041,mostly_cloudy.gif
+2025-05-18 07:56,7.6,9.6,0.0,0.0,1015.71,88.0,95.2,9.6,0.0,9.6,61.0,NE,0.0,0.0,DRY,,9999.0,,Cloudy,310.8801367351307,cloudy.gif
+2025-05-18 08:01,7.4,9.5,0.0,0.0,1015.71,87.0,115.2,9.5,1.0,9.5,32.0,NE,1.8,0.4,DRY,,9999.0,,Mostly Cloudy,324.23691645510996,mostly_cloudy.gif
