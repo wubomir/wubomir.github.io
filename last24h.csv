@@ -1,7 +1,5 @@
 timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,imedvode1_precipitation_today,imedvode1_pressure,imedvode1_relative_humidity,imedvode1_solar_radiation,imedvode1_temperature,imedvode1_uv_index,imedvode1_wind_chill,imedvode1_wind_direction_degrees,windCardinals,imedvode1_wind_gust,imedvode1_wind_speed,visibility,condition1,condition2,condition3,sky,max_solar_radiation,image_name
-2025-05-20 19:17,12.7,16.9,0.0,0.0,1015.51,76.0,17.3,16.9,1.0,16.9,228.0,SW,0.0,0.4,800.0,DRY,,FOG,Cloudy,116.86621525596325,fog.gif
-2025-05-20 19:22,12.6,16.9,0.0,0.0,1015.51,76.0,14.6,16.9,1.0,16.9,150.0,SE,0.0,0.0,800.0,DRY,,FOG,Cloudy,104.32915013385139,fog.gif
-2025-05-20 19:27,12.7,16.8,0.0,0.0,1015.31,77.0,12.8,16.8,1.0,16.8,150.0,SE,1.8,1.1,800.0,DRY,,FOG,Cloudy,93.01871541118955,fog.gif
+2025-05-20 19:27,12.7,16.8,0.0,0.0,1015.31,77.0,12.8,16.8,1.0,16.8,312.0,NW,1.8,1.1,800.0,DRY,,FOG,Cloudy,93.01871541118955,fog.gif
 2025-05-20 19:32,12.7,16.8,0.0,0.0,1015.51,77.0,9.8,16.8,1.0,16.8,312.0,NW,1.8,1.8,800.0,DRY,,FOG,Cloudy,85.43124433130083,fog.gif
 2025-05-20 19:37,12.6,16.7,0.0,0.0,1015.41,77.0,7.2,16.7,1.0,16.7,311.0,NW,0.0,0.0,800.0,DRY,,FOG,Cloudy,77.8798316063305,fog.gif
 2025-05-20 19:42,12.4,16.7,0.0,0.0,1015.41,76.0,5.9,16.7,1.0,16.7,311.0,NW,0.0,0.0,800.0,DRY,,FOG,Cloudy,70.37090615816089,fog.gif
@@ -255,3 +253,5 @@ timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,i
 2025-05-21 19:02,11.5,19.2,0.0,0.0,1009.99,61.0,36.8,19.2,0.0,19.2,134.0,SE,7.2,6.5,9999.0,DRY,,,Mostly Cloudy,157.9237263285179,mostly_cloudy.gif
 2025-05-21 19:07,11.3,19.2,0.0,0.0,1009.89,60.0,35.6,19.2,0.0,19.2,153.0,SE,7.2,7.2,9999.0,DRY,,,Mostly Cloudy,144.8827349886954,mostly_cloudy.gif
 2025-05-21 19:12,11.7,19.2,0.0,0.0,1010.09,62.0,28.2,19.2,0.0,19.2,139.0,SE,5.4,5.0,9999.0,DRY,,,Mostly Cloudy,131.97476090851723,mostly_cloudy.gif
+2025-05-21 19:17,11.9,19.1,0.0,0.0,1010.19,63.0,21.8,19.1,0.0,19.1,151.0,SE,5.4,4.3,9999.0,DRY,,,Mostly Cloudy,119.22675857036425,mostly_cloudy.gif
+2025-05-21 19:22,12.2,18.9,0.0,0.0,1010.5,65.0,18.7,18.9,0.0,18.9,131.0,SE,5.4,4.3,9999.0,DRY,,,Mostly Cloudy,106.67026369624598,mostly_cloudy.gif
