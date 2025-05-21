@@ -1,8 +1,6 @@
 timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,imedvode1_precipitation_today,imedvode1_pressure,imedvode1_relative_humidity,imedvode1_solar_radiation,imedvode1_temperature,imedvode1_uv_index,imedvode1_wind_chill,imedvode1_wind_direction_degrees,windCardinals,imedvode1_wind_gust,imedvode1_wind_speed,visibility,condition1,condition2,condition3,sky,max_solar_radiation,image_name
-2025-05-20 22:47,12.0,14.7,0.0,0.0,1015.51,83.0,69.5,14.7,1.0,14.7,107.0,E,1.8,1.1,800.0,DRY,,FOG,Night,0.0,fog.gif
-2025-05-20 22:52,11.9,14.8,0.0,0.0,1015.51,83.0,69.5,14.8,1.0,14.8,107.0,E,1.8,1.1,800.0,DRY,,FOG,Night,0.0,fog.gif
-2025-05-20 22:57,11.8,14.8,0.0,0.0,1015.51,82.0,69.5,14.8,1.0,14.8,107.0,E,1.8,1.1,800.0,DRY,,FOG,Night,0.0,fog.gif
-2025-05-20 23:02,11.8,14.7,0.0,0.0,1015.51,83.0,69.5,14.7,1.0,14.7,107.0,E,1.8,1.1,800.0,DRY,,FOG,Night,0.0,fog.gif
+2025-05-20 22:57,11.8,14.7,0.0,0.0,1015.51,82.0,69.5,14.7,1.0,14.7,109.0,E,1.8,1.1,800.0,DRY,,FOG,Night,0.0,fog.gif
+2025-05-20 23:02,11.8,14.7,0.0,0.0,1015.51,83.0,69.5,14.7,1.0,14.7,109.0,E,1.8,1.1,800.0,DRY,,FOG,Night,0.0,fog.gif
 2025-05-20 23:07,11.7,14.6,0.0,0.0,1015.41,83.0,69.5,14.6,1.0,14.6,109.0,E,1.8,1.1,800.0,DRY,,FOG,Night,0.0,fog.gif
 2025-05-20 23:12,11.6,14.5,0.0,0.0,1015.51,83.0,69.5,14.5,1.0,14.5,109.0,E,1.8,1.1,800.0,DRY,,FOG,Night,0.0,fog.gif
 2025-05-20 23:17,11.7,14.4,0.0,0.0,1015.41,84.0,69.5,14.4,1.0,14.4,109.0,E,1.8,1.1,800.0,DRY,,FOG,Night,0.0,fog.gif
@@ -255,3 +253,5 @@ timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,i
 2025-05-21 22:32,12.6,14.9,0.0,0.2,1011.01,86.0,0.0,14.9,0.0,14.9,304.0,NW,3.6,3.2,9999.0,DRY,,,Night,0.0,night.gif
 2025-05-21 22:37,12.5,15.0,1.8,0.51,1011.31,85.0,0.0,15.0,0.0,15.0,297.0,NW,3.6,2.2,9999.0,RAIN,LIGHT,,Night,0.0,rain_light.gif
 2025-05-21 22:42,12.4,14.9,0.0,0.51,1011.21,85.0,0.0,14.9,0.0,14.9,320.0,NW,5.4,4.0,9999.0,RAIN,LIGHT,,Night,0.0,rain_light.gif
+2025-05-21 22:47,12.7,15.0,0.0,0.51,1011.31,86.0,0.0,15.0,0.0,15.0,308.0,NW,7.2,5.8,9999.0,DRY,,,Night,0.0,night.gif
+2025-05-21 22:52,12.5,14.6,0.0,0.51,1011.21,87.0,0.0,14.6,0.0,14.6,324.0,NW,7.2,6.8,9999.0,DRY,,,Night,0.0,night.gif
