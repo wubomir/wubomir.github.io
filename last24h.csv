@@ -1,8 +1,6 @@
 timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,imedvode1_precipitation_today,imedvode1_pressure,imedvode1_relative_humidity,imedvode1_solar_radiation,imedvode1_temperature,imedvode1_uv_index,imedvode1_wind_chill,imedvode1_wind_direction_degrees,windCardinals,imedvode1_wind_gust,imedvode1_wind_speed,visibility,condition1,condition2,condition3,sky,max_solar_radiation,image_name
-2025-05-20 23:27,12.3,14.3,0.0,0.0,1015.41,87.0,69.5,14.3,1.0,14.3,107.0,E,1.8,1.1,800.0,DRY,,FOG,Night,0.0,fog.gif
-2025-05-20 23:32,12.2,14.3,0.0,0.0,1015.41,87.0,69.5,14.3,1.0,14.3,107.0,E,1.8,1.1,800.0,DRY,,FOG,Night,0.0,fog.gif
-2025-05-20 23:37,12.3,14.3,0.0,0.0,1015.61,88.0,69.5,14.3,1.0,14.3,107.0,E,1.8,1.1,800.0,DRY,,FOG,Night,0.0,fog.gif
-2025-05-20 23:42,12.3,14.3,0.0,0.0,1015.31,88.0,69.5,14.3,1.0,14.3,107.0,E,1.8,1.1,800.0,DRY,,FOG,Night,0.0,fog.gif
+2025-05-20 23:37,12.3,14.2,0.0,0.0,1015.61,88.0,69.5,14.2,1.0,14.2,107.0,E,1.8,1.1,800.0,DRY,,FOG,Night,0.0,fog.gif
+2025-05-20 23:42,12.3,14.2,0.0,0.0,1015.31,88.0,69.5,14.2,1.0,14.2,107.0,E,1.8,1.1,800.0,DRY,,FOG,Night,0.0,fog.gif
 2025-05-20 23:47,12.2,14.2,0.0,0.0,1015.51,88.0,69.5,14.2,1.0,14.2,107.0,E,1.8,1.1,800.0,DRY,,FOG,Night,0.0,fog.gif
 2025-05-20 23:52,12.4,14.2,0.0,0.0,1015.41,89.0,69.5,14.2,1.0,14.2,108.0,E,0.0,0.0,800.0,DRY,,FOG,Night,0.0,fog.gif
 2025-05-20 23:57,12.3,14.1,0.0,0.0,1015.51,89.0,69.5,14.1,1.0,14.1,107.0,E,0.0,0.0,800.0,DRY,,FOG,Night,0.0,fog.gif
@@ -255,3 +253,5 @@ timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,i
 2025-05-21 23:12,12.3,14.8,0.0,0.51,1011.31,85.0,0.0,14.8,0.0,14.8,323.0,NW,7.2,7.2,9999.0,DRY,,,Night,0.0,night.gif
 2025-05-21 23:17,12.4,14.7,0.0,0.51,1011.41,86.0,0.0,14.7,0.0,14.7,295.0,NW,11.2,7.9,9999.0,DRY,,,Night,0.0,night.gif
 2025-05-21 23:22,12.3,14.6,1.8,0.79,1011.41,86.0,0.0,14.6,0.0,14.6,302.0,NW,7.2,6.8,9999.0,RAIN,LIGHT,,Night,0.0,rain_light.gif
+2025-05-21 23:27,12.6,14.7,0.0,0.79,1011.41,87.0,0.0,14.7,0.0,14.7,313.0,NW,0.0,0.0,9999.0,RAIN,LIGHT,,Night,0.0,rain_light.gif
+2025-05-21 23:32,12.4,14.5,0.0,0.79,1011.41,87.0,0.0,14.5,0.0,14.5,304.0,NW,3.6,2.2,9999.0,DRY,,,Night,0.0,night.gif
