@@ -1,7 +1,5 @@
 timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,imedvode1_precipitation_today,imedvode1_pressure,imedvode1_relative_humidity,imedvode1_solar_radiation,imedvode1_temperature,imedvode1_uv_index,imedvode1_wind_chill,imedvode1_wind_direction_degrees,windCardinals,imedvode1_wind_gust,imedvode1_wind_speed,visibility,condition1,condition2,condition3,sky,max_solar_radiation,image_name
-2025-05-21 20:17,11.9,18.0,0.0,0.0,1010.8,67.0,1.9,18.0,1.0,18.0,156.0,SE,5.4,5.4,8000.0,DRY,,,Cloudy,21.350952262552116,cloudy.gif
-2025-05-21 20:22,11.9,18.0,0.0,0.0,1010.7,67.0,1.2,18.0,1.0,18.0,158.0,S,3.6,3.2,8000.0,DRY,,,Cloudy,14.662114283430315,cloudy.gif
-2025-05-21 20:27,12.1,18.0,0.0,0.0,1010.6,68.0,0.7,18.0,1.0,18.0,148.0,SE,3.6,2.2,8000.0,DRY,,,Cloudy,8.221886226965026,cloudy.gif
+2025-05-21 20:27,12.1,18.0,0.0,0.0,1010.6,68.0,0.7,18.0,1.0,18.0,148.0,SE,1.8,2.2,8000.0,DRY,,,Cloudy,8.221886226965026,cloudy.gif
 2025-05-21 20:32,12.0,18.0,0.0,0.0,1010.6,68.0,0.4,18.0,1.0,18.0,175.0,S,1.8,1.4,8000.0,DRY,,,Mostly Cloudy,2.0987936180039948,mostly_cloudy.gif
 2025-05-21 20:37,12.5,17.6,0.0,0.0,1010.7,72.0,0.3,17.6,1.0,17.6,246.0,SW,1.8,0.4,8000.0,DRY,,,Twilight,0.0,cloudy.gif
 2025-05-21 20:42,12.4,17.3,0.0,0.0,1010.7,73.0,0.2,17.3,1.0,17.3,229.0,SW,0.0,0.0,8000.0,DRY,,,Twilight,0.0,cloudy.gif
@@ -279,3 +277,5 @@ timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,i
 2025-05-22 20:03,13.2,15.0,0.0,3.99,1008.5,89.0,1.9,15.0,0.0,15.0,188.0,S,1.8,0.7,9999.0,DRY,,,Cloudy,42.410841017760134,cloudy.gif
 2025-05-22 20:08,13.3,14.9,0.0,3.99,1008.5,90.0,1.0,14.9,0.0,14.9,163.0,S,3.6,2.2,9999.0,DRY,,,Cloudy,35.28443784993627,cloudy.gif
 2025-05-22 20:13,13.6,14.8,3.0,4.5,1008.7,92.0,0.7,14.8,0.0,14.8,172.0,S,3.6,2.9,9999.0,RAIN,MODERATE,,Cloudy,28.274734740431477,rain_moderate.gif
+2025-05-22 20:18,13.5,14.7,4.8,4.8,1008.6,92.0,0.7,14.7,0.0,14.7,106.0,E,3.6,2.9,9999.0,RAIN,MODERATE,,Cloudy,21.41177605518703,rain_moderate.gif
+2025-05-22 20:23,13.7,14.7,3.0,5.0,1008.5,94.0,0.5,14.7,0.0,14.7,151.0,SE,3.6,2.9,9999.0,RAIN,MODERATE,,Cloudy,14.739544657685654,rain_moderate.gif
