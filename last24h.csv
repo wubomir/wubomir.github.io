@@ -1,7 +1,5 @@
 timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,imedvode1_precipitation_today,imedvode1_pressure,imedvode1_relative_humidity,imedvode1_solar_radiation,imedvode1_temperature,imedvode1_uv_index,imedvode1_wind_chill,imedvode1_wind_direction_degrees,windCardinals,imedvode1_wind_gust,imedvode1_wind_speed,condition1,condition2,visibility,condition3,sky,max_solar_radiation,image_name
-2025-05-21 15:27,13.8,20.6,0.0,0.0,1011.31,65.0,293.7,20.6,2.0,20.6,123.0,SE,14.8,11.5,DRY,,9999.0,,Mostly Cloudy,670.9779948218035,mostly_cloudy.gif
-2025-05-21 15:32,13.7,20.2,0.0,0.0,1011.11,66.0,585.9,20.2,5.0,20.2,145.0,SE,14.8,12.2,DRY,,9999.0,,Sunny,662.4161360783443,sunny.gif
-2025-05-21 15:37,13.5,20.5,0.0,0.0,1011.01,64.0,547.0,20.5,5.0,20.5,120.0,SE,14.8,13.0,DRY,,9999.0,,Mostly Sunny,653.6155632489719,mostly_sunny.gif
+2025-05-21 15:37,13.5,20.5,0.0,0.0,1011.01,64.0,547.0,20.5,4.0,20.5,120.0,SE,11.2,13.0,DRY,,9999.0,,Mostly Sunny,653.6155632489719,mostly_sunny.gif
 2025-05-21 15:42,14.1,20.7,0.0,0.0,1010.9,66.0,511.8,20.7,4.0,20.7,112.0,E,11.2,8.6,DRY,,9999.0,,Mostly Sunny,644.5806843531319,mostly_sunny.gif
 2025-05-21 15:47,13.5,20.5,0.0,0.0,1011.01,64.0,505.2,20.5,4.0,20.5,124.0,SE,11.2,9.4,DRY,,9999.0,,Mostly Sunny,635.316033835657,mostly_sunny.gif
 2025-05-21 15:52,13.9,20.2,0.0,0.0,1010.8,67.0,494.5,20.2,4.0,20.2,90.0,E,11.2,10.1,DRY,,9999.0,,Mostly Sunny,625.8262715583097,mostly_sunny.gif
@@ -279,3 +277,5 @@ timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,i
 2025-05-22 15:13,14.4,17.3,3.0,1.5,1007.48,83.0,28.8,17.3,0.0,17.3,215.0,SW,9.4,6.5,RAIN,MODERATE,9999.0,,Cloudy,695.3751484210392,rain_moderate.gif
 2025-05-22 15:18,14.7,16.1,11.99,3.0,1007.79,91.0,37.7,16.1,0.0,16.1,325.0,NW,9.4,6.8,RAIN,HEAVY,9999.0,,Cloudy,687.5174818823522,rain_heavy.gif
 2025-05-22 15:23,14.6,15.8,12.6,3.3,1007.59,93.0,72.4,15.8,0.0,15.8,254.0,W,1.8,1.1,RAIN,HEAVY,9999.0,,Cloudy,679.4096824504711,rain_heavy.gif
+2025-05-22 15:28,14.8,15.8,1.8,3.3,1007.79,94.0,118.1,15.8,1.0,15.8,353.0,N,1.8,1.4,RAIN,LIGHT,9999.0,,Cloudy,671.0557899319106,rain_light.gif
+2025-05-22 15:33,14.8,15.8,1.19,3.51,1007.69,94.0,104.7,15.8,1.0,15.8,299.0,NW,3.6,3.6,RAIN,LIGHT,9999.0,,Cloudy,662.459973303566,rain_light.gif
