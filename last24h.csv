@@ -1,7 +1,5 @@
 timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,imedvode1_precipitation_today,imedvode1_pressure,imedvode1_relative_humidity,imedvode1_solar_radiation,imedvode1_temperature,imedvode1_uv_index,imedvode1_wind_chill,imedvode1_wind_direction_degrees,windCardinals,imedvode1_wind_gust,imedvode1_wind_speed,condition1,condition2,visibility,condition3,sky,max_solar_radiation,image_name
-2025-05-21 12:27,12.8,18.1,0.0,0.0,1013.31,73.0,447.9,18.1,4.0,18.1,17.0,N,1.8,0.4,DRY,,9999.0,,Partly Cloudy,794.1292186346268,partly_cloudy.gif
-2025-05-21 12:32,13.6,19.0,0.0,0.0,1013.31,73.0,386.7,19.0,3.0,19.0,15.0,N,5.4,5.4,DRY,,9999.0,,Partly Cloudy,795.9454761037082,partly_cloudy.gif
-2025-05-21 12:37,13.7,18.6,0.0,0.0,1013.41,73.0,366.3,18.6,3.0,18.6,44.0,NE,3.6,2.9,DRY,,9999.0,,Partly Cloudy,797.456826001659,partly_cloudy.gif
+2025-05-21 12:37,13.7,18.6,0.0,0.0,1013.41,73.0,366.3,18.6,4.0,18.6,44.0,NE,3.6,2.9,DRY,,9999.0,,Partly Cloudy,797.456826001659,partly_cloudy.gif
 2025-05-21 12:42,13.4,18.6,0.0,0.0,1013.41,72.0,418.1,18.6,4.0,18.6,319.0,NW,5.4,4.3,DRY,,9999.0,,Partly Cloudy,798.662535220511,partly_cloudy.gif
 2025-05-21 12:47,13.1,18.9,0.0,0.0,1013.31,69.0,445.8,18.9,4.0,18.9,333.0,NW,7.2,4.7,DRY,,9999.0,,Partly Cloudy,799.562020343493,partly_cloudy.gif
 2025-05-21 12:52,13.6,18.8,0.0,0.0,1013.31,72.0,427.2,18.8,4.0,18.8,329.0,NW,7.2,6.5,DRY,,9999.0,,Partly Cloudy,800.1548478653589,partly_cloudy.gif
@@ -283,3 +281,4 @@ timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,i
 2025-05-22 12:12,14.9,16.5,0.0,0.51,1008.81,90.0,156.0,16.5,1.0,16.5,342.0,N,3.6,2.5,DRY,,9999.0,,Cloudy,788.3211271971949,cloudy.gif
 2025-05-22 12:17,14.7,16.5,0.0,0.51,1008.81,89.0,82.2,16.5,0.0,16.5,352.0,N,1.8,1.1,DRY,,9999.0,,Cloudy,791.047076338707,cloudy.gif
 2025-05-22 12:22,14.6,16.4,0.0,0.51,1009.11,89.0,69.3,16.4,0.0,16.4,351.0,N,1.8,1.4,DRY,,9999.0,,Cloudy,793.471613284855,cloudy.gif
+2025-05-22 12:27,14.5,16.3,0.0,0.51,1008.81,89.0,73.3,16.3,0.0,16.3,41.0,NE,3.6,3.2,DRY,,9999.0,,Cloudy,795.5935572266144,cloudy.gif
