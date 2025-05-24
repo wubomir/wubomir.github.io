@@ -1,8 +1,6 @@
 timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,imedvode1_precipitation_today,imedvode1_pressure,imedvode1_relative_humidity,imedvode1_solar_radiation,imedvode1_temperature,imedvode1_uv_index,imedvode1_wind_chill,imedvode1_wind_direction_degrees,windCardinals,imedvode1_wind_gust,imedvode1_wind_speed,visibility,condition1,condition2,condition3,sky,max_solar_radiation,image_name
-2025-05-23 23:59,6.7,7.9,0.0,0.0,1018.49,91.0,0.1,7.9,1.0,7.9,257.0,W,3.6,3.2,300.0,DRY,,FOG,Night,0.0,fog.gif
-2025-05-24 00:04,6.7,7.9,0.0,0.0,1018.29,91.0,0.1,7.9,1.0,7.9,238.0,SW,3.6,2.2,300.0,DRY,,FOG,Night,0.0,fog.gif
-2025-05-24 00:09,6.6,7.9,0.0,0.0,1018.29,91.0,0.1,7.9,1.0,7.9,236.0,SW,1.8,1.8,300.0,DRY,,FOG,Night,0.0,fog.gif
-2025-05-24 00:14,6.6,7.8,0.0,0.0,1018.29,92.0,0.1,7.8,1.0,7.8,230.0,SW,1.8,1.8,300.0,DRY,,FOG,Night,0.0,fog.gif
+2025-05-24 00:09,6.6,7.8,0.0,0.0,1018.39,91.0,0.1,7.8,1.0,7.8,236.0,SW,1.8,1.8,300.0,DRY,,FOG,Night,0.0,fog.gif
+2025-05-24 00:14,6.6,7.8,0.0,0.0,1018.39,92.0,0.1,7.8,1.0,7.8,230.0,SW,1.8,1.8,300.0,DRY,,FOG,Night,0.0,fog.gif
 2025-05-24 00:19,6.5,7.6,0.0,0.0,1018.39,93.0,0.1,7.6,1.0,7.6,214.0,SW,0.0,0.0,300.0,DRY,,FOG,Night,0.0,fog.gif
 2025-05-24 00:24,6.2,7.3,0.0,0.0,1018.39,93.0,0.1,7.3,1.0,7.3,214.0,SW,0.0,0.0,300.0,DRY,,FOG,Night,0.0,fog.gif
 2025-05-24 00:29,6.1,7.1,0.0,0.0,1018.39,94.0,0.1,7.1,1.0,7.1,214.0,SW,0.0,0.0,300.0,DRY,,FOG,Night,0.0,fog.gif
@@ -87,3 +85,5 @@ timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,i
 2025-05-24 23:45,6.7,9.6,0.0,0.0,1019.0,82.0,0.0,9.6,0.0,9.6,305.0,NW,0.0,0.0,300.0,DRY,,FOG,Night,0.0,fog.gif
 2025-05-24 23:50,6.6,9.4,0.0,0.0,1019.0,83.0,0.0,9.4,0.0,9.4,303.0,NW,0.0,0.0,300.0,DRY,,FOG,Night,0.0,fog.gif
 2025-05-24 23:55,6.7,9.1,0.0,0.0,1018.8,85.0,0.0,9.1,0.0,9.1,303.0,NW,0.0,0.0,300.0,DRY,,FOG,Night,0.0,fog.gif
+2025-05-24 23:58,6.9,9.1,0.0,0.0,1018.9,86.0,0.0,9.1,0.0,9.1,322.0,NW,1.8,1.8,300.0,DRY,,FOG,Night,0.0,fog.gif
+2025-05-25 00:03,7.2,8.8,0.0,0.0,1019.0,90.0,0.0,8.8,0.0,8.8,330.0,NW,1.8,1.8,300.0,DRY,,FOG,Night,0.0,fog.gif
