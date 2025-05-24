@@ -1,9 +1,7 @@
 timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,imedvode1_precipitation_today,imedvode1_pressure,imedvode1_relative_humidity,imedvode1_solar_radiation,imedvode1_temperature,imedvode1_uv_index,imedvode1_wind_chill,imedvode1_wind_direction_degrees,windCardinals,imedvode1_wind_gust,imedvode1_wind_speed,visibility,condition1,condition2,condition3,sky,max_solar_radiation,image_name
-2025-05-23 22:44,7.1,8.4,0.0,0.0,1018.39,92.0,0.1,8.4,1.0,8.4,229.0,SW,1.8,1.8,300.0,DRY,,FOG,Night,0.0,fog.gif
-2025-05-23 22:49,7.1,8.4,0.0,0.0,1018.29,92.0,0.1,8.4,1.0,8.4,228.0,SW,0.0,0.0,300.0,DRY,,FOG,Night,0.0,fog.gif
-2025-05-23 22:54,7.1,8.3,0.0,0.0,1018.08,92.0,0.1,8.3,1.0,8.3,229.0,SW,0.0,0.0,300.0,DRY,,FOG,Night,0.0,fog.gif
-2025-05-23 22:59,7.0,8.3,0.0,0.0,1018.29,91.0,0.1,8.3,1.0,8.3,231.0,SW,0.0,0.0,300.0,DRY,,FOG,Night,0.0,fog.gif
-2025-05-23 23:04,7.0,8.2,0.0,0.0,1018.29,92.0,0.1,8.2,1.0,8.2,230.0,SW,0.0,0.0,300.0,DRY,,FOG,Night,0.0,fog.gif
+2025-05-23 22:54,7.0,8.3,0.0,0.0,1018.08,92.0,0.1,8.3,1.0,8.3,229.0,SW,1.8,0.4,300.0,DRY,,FOG,Night,0.0,fog.gif
+2025-05-23 22:59,7.0,8.3,0.0,0.0,1018.29,91.0,0.1,8.3,1.0,8.3,231.0,SW,1.8,0.4,300.0,DRY,,FOG,Night,0.0,fog.gif
+2025-05-23 23:04,7.0,8.2,0.0,0.0,1018.29,92.0,0.1,8.2,1.0,8.2,230.0,SW,1.8,0.4,300.0,DRY,,FOG,Night,0.0,fog.gif
 2025-05-23 23:09,7.0,8.2,0.0,0.0,1018.19,92.0,0.1,8.2,1.0,8.2,230.0,SW,1.8,0.4,300.0,DRY,,FOG,Night,0.0,fog.gif
 2025-05-23 23:14,7.0,8.2,0.0,0.0,1018.08,92.0,0.1,8.2,1.0,8.2,230.0,SW,0.0,0.0,300.0,DRY,,FOG,Night,0.0,fog.gif
 2025-05-23 23:19,6.9,8.1,0.0,0.0,1018.39,92.0,0.1,8.1,1.0,8.1,231.0,SW,1.8,0.7,300.0,DRY,,FOG,Night,0.0,fog.gif
@@ -87,3 +85,5 @@ timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,i
 2025-05-24 05:44,3.5,3.7,0.0,0.0,1018.69,99.0,8.6,3.7,1.0,3.7,331.0,NW,0.0,0.0,300.0,DRY,,FOG,Mostly Cloudy,28.038380158286586,fog.gif
 2025-05-24 08:24,6.4,6.9,0.0,0.0,1019.1,96.0,140.0,6.9,1.0,6.9,96.0,E,1.8,0.4,300.0,DRY,,FOG,Mostly Cloudy,395.8900809812533,fog.gif
 2025-05-24 22:40,6.9,10.8,0.0,0.0,1018.49,77.0,0.0,10.8,0.0,10.8,197.0,S,1.8,0.4,300.0,DRY,,FOG,Night,0.0,fog.gif
+2025-05-24 22:45,6.6,10.9,0.0,0.0,1018.39,75.0,0.0,10.9,0.0,10.9,228.0,SW,3.6,2.2,300.0,DRY,,FOG,Night,0.0,fog.gif
+2025-05-24 22:50,6.5,10.8,0.0,0.0,1018.59,75.0,0.0,10.8,0.0,10.8,245.0,SW,0.0,0.0,300.0,DRY,,FOG,Night,0.0,fog.gif
