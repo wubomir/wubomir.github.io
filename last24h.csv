@@ -1,8 +1,6 @@
 timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,imedvode1_precipitation_today,imedvode1_pressure,imedvode1_relative_humidity,imedvode1_solar_radiation,imedvode1_temperature,imedvode1_uv_index,imedvode1_wind_chill,imedvode1_wind_direction_degrees,windCardinals,imedvode1_wind_gust,imedvode1_wind_speed,visibility,condition1,condition2,condition3,sky,max_solar_radiation,image_name
-2025-05-24 04:59,3.7,3.9,0.0,0.0,1018.29,96.0,0.3,3.9,1.0,3.9,96.0,E,1.8,1.8,300.0,DRY,,FOG,Twilight,0.0,fog.gif
-2025-05-24 05:04,3.6,3.8,0.0,0.0,1018.29,96.0,0.3,3.8,1.0,3.8,96.0,E,1.8,1.8,300.0,DRY,,FOG,Twilight,0.0,fog.gif
-2025-05-24 05:08,3.6,3.8,0.0,0.0,1018.29,96.0,0.3,3.8,1.0,3.8,96.0,E,1.8,1.8,300.0,DRY,,FOG,Twilight,0.0,fog.gif
-2025-05-24 05:09,3.5,3.7,0.0,0.0,1018.49,96.0,0.6,3.7,1.0,3.7,96.0,E,1.8,0.4,300.0,DRY,,FOG,Twilight,0.0,fog.gif
+2025-05-24 05:08,3.5,3.7,0.0,0.0,1018.49,96.0,0.6,3.7,1.0,3.7,96.0,E,0.0,0.4,300.0,DRY,,FOG,Twilight,0.0,fog.gif
+2025-05-24 05:09,3.5,3.7,0.0,0.0,1018.49,96.0,0.6,3.7,1.0,3.7,96.0,E,0.0,0.4,300.0,DRY,,FOG,Twilight,0.0,fog.gif
 2025-05-24 05:14,3.5,3.7,0.0,0.0,1018.39,96.0,1.2,3.7,1.0,3.7,96.0,E,0.0,0.0,300.0,DRY,,FOG,Twilight,0.0,fog.gif
 2025-05-24 05:19,3.5,3.7,0.0,0.0,1018.39,96.0,1.9,3.7,1.0,3.7,96.0,E,0.0,0.0,300.0,DRY,,FOG,Twilight,0.0,fog.gif
 2025-05-24 05:24,3.6,3.8,0.0,0.0,1018.39,96.0,3.0,3.8,1.0,3.8,96.0,E,0.0,0.0,300.0,DRY,,FOG,Sunny,2.0650391112908655,fog.gif
@@ -86,3 +84,5 @@ timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,i
 2025-05-25 04:43,4.2,4.5,0.0,0.0,1019.0,98.0,0.0,4.5,0.0,4.5,350.0,N,0.0,0.0,9999.0,DRY,,,Twilight,0.0,cloudy.gif
 2025-05-25 04:48,4.0,4.3,0.0,0.0,1019.1,98.0,0.0,4.3,0.0,4.3,350.0,N,0.0,0.0,9999.0,DRY,,,Twilight,0.0,cloudy.gif
 2025-05-25 04:53,4.0,4.3,0.0,0.0,1019.0,98.0,0.1,4.3,0.0,4.3,350.0,N,0.0,0.0,9999.0,DRY,,,Twilight,0.0,cloudy.gif
+2025-05-25 04:58,4.0,4.3,0.0,0.0,1019.0,98.0,0.2,4.3,0.0,4.3,350.0,N,1.8,1.4,9999.0,DRY,,,Twilight,0.0,cloudy.gif
+2025-05-25 05:03,4.1,4.4,0.0,0.0,1018.9,98.0,0.4,4.4,0.0,4.4,350.0,N,1.8,1.4,9999.0,DRY,,,Twilight,0.0,cloudy.gif
