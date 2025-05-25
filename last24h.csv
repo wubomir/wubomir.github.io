@@ -1,7 +1,5 @@
 timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,imedvode1_precipitation_today,imedvode1_pressure,imedvode1_relative_humidity,imedvode1_solar_radiation,imedvode1_temperature,imedvode1_uv_index,imedvode1_wind_chill,imedvode1_wind_direction_degrees,windCardinals,imedvode1_wind_gust,imedvode1_wind_speed,visibility,condition1,condition2,condition3,sky,max_solar_radiation,image_name
-2025-05-24 05:19,3.6,3.8,0.0,0.0,1018.49,96.0,1.9,3.8,1.0,3.8,96.0,E,1.8,1.8,9999.0,DRY,,,Twilight,0.0,cloudy.gif
-2025-05-24 05:24,3.6,3.8,0.0,0.0,1018.49,96.0,3.0,3.8,1.0,3.8,96.0,E,1.8,1.8,9999.0,DRY,,,Sunny,2.0650391112908655,sunny.gif
-2025-05-24 05:29,3.6,3.8,0.0,0.0,1018.49,96.0,4.2,3.8,1.0,3.8,96.0,E,1.8,1.8,9999.0,DRY,,,Partly Cloudy,8.148919683080397,partly_cloudy.gif
+2025-05-24 05:29,3.5,3.7,0.0,0.0,1018.49,96.0,4.2,3.7,1.0,3.7,96.0,E,1.8,1.8,9999.0,DRY,,,Partly Cloudy,8.148919683080397,partly_cloudy.gif
 2025-05-24 05:34,3.5,3.7,0.0,0.0,1018.49,96.0,5.9,3.7,1.0,3.7,96.0,E,1.8,1.8,9999.0,DRY,,,Partly Cloudy,14.548859655457079,partly_cloudy.gif
 2025-05-24 05:39,3.5,3.7,0.0,0.0,1018.29,96.0,7.5,3.7,1.0,3.7,96.0,E,0.0,0.0,9999.0,DRY,,,Partly Cloudy,21.197489806059174,partly_cloudy.gif
 2025-05-24 05:44,3.5,3.7,0.0,0.0,1018.69,96.0,8.6,3.7,1.0,3.7,96.0,E,0.0,0.0,9999.0,DRY,,,Mostly Cloudy,28.038380158286586,mostly_cloudy.gif
@@ -85,3 +83,5 @@ timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,i
 2025-05-25 05:03,4.1,4.4,0.0,0.0,1018.9,98.0,0.4,4.4,0.0,4.4,350.0,N,1.8,1.4,9999.0,DRY,,,Twilight,0.0,cloudy.gif
 2025-05-25 05:08,4.0,4.2,0.0,0.0,1019.2,99.0,0.7,4.2,0.0,4.2,350.0,N,0.0,0.0,9999.0,DRY,,,Twilight,0.0,cloudy.gif
 2025-05-25 05:13,3.7,3.9,0.0,0.0,1019.0,99.0,1.4,3.9,0.0,3.9,350.0,N,0.0,0.0,9999.0,DRY,,,Twilight,0.0,cloudy.gif
+2025-05-25 05:18,3.8,4.0,0.0,0.0,1019.1,99.0,2.2,4.0,0.0,4.0,350.0,N,0.0,0.0,9999.0,DRY,,,Twilight,0.0,cloudy.gif
+2025-05-25 05:23,3.7,3.9,0.0,0.0,1019.0,99.0,3.5,3.9,0.0,3.9,350.0,N,0.0,0.0,9999.0,DRY,,,Sunny,1.8889205156955726,sunny.gif
