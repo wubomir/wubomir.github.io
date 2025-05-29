@@ -1,7 +1,5 @@
 timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,imedvode1_precipitation_today,imedvode1_pressure,imedvode1_relative_humidity,imedvode1_solar_radiation,imedvode1_temperature,imedvode1_uv_index,imedvode1_wind_chill,imedvode1_wind_direction_degrees,windCardinals,imedvode1_wind_gust,imedvode1_wind_speed,visibility,condition1,condition2,condition3,sky,max_solar_radiation,image_name
-2025-05-28 12:35,11.4,21.3,0.0,0.0,1018.08,52.0,614.8,21.7,5.0,21.7,107.0,E,11.2,10.4,700.0,DRY,,FOG,Mostly Sunny,805.9843824467299,fog.gif
-2025-05-28 12:40,11.0,21.0,0.0,0.0,1018.29,51.0,669.1,21.5,6.0,21.5,67.0,NE,9.4,6.5,700.0,DRY,,FOG,Mostly Sunny,807.3425381364757,fog.gif
-2025-05-28 12:45,11.5,21.7,0.0,0.0,1017.81,51.0,499.5,22.1,4.0,22.1,32.0,NE,5.4,3.6,700.0,DRY,,FOG,Partly Cloudy,808.3972995686074,fog.gif
+2025-05-28 12:45,11.5,21.7,0.0,0.0,1017.81,56.0,499.5,22.1,4.0,22.1,32.0,NE,5.4,3.6,700.0,DRY,,FOG,Partly Cloudy,808.3972995686074,fog.gif
 2025-05-28 12:50,12.8,21.7,0.0,0.0,1017.91,56.0,718.3,22.0,7.0,22.0,153.0,SE,9.4,7.6,700.0,DRY,,FOG,Sunny,809.14815651203,fog.gif
 2025-05-28 12:55,13.6,22.0,0.0,0.0,1018.02,58.0,832.5,22.2,8.0,22.2,152.0,SE,9.4,7.9,700.0,DRY,,FOG,Sunny,809.5947473206593,fog.gif
 2025-05-28 13:00,11.6,22.1,0.0,0.0,1017.71,50.0,801.6,22.5,7.0,22.5,355.0,N,3.6,3.2,700.0,DRY,,FOG,Sunny,809.73685907955,fog.gif
@@ -230,3 +228,5 @@ timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,i
 2025-05-29 12:19,10.7,21.0,0.0,0.3,1017.61,50.0,779.1,21.5,7.0,21.5,73.0,E,7.2,5.8,9999.0,DRY,,,Sunny,800.6689172745758,sunny.gif
 2025-05-29 12:24,11.7,21.0,0.0,0.3,1017.41,54.0,757.0,21.4,7.0,21.4,68.0,E,0.0,0.0,9999.0,DRY,,,Sunny,802.9980107390795,sunny.gif
 2025-05-29 12:29,10.9,21.7,0.0,0.3,1017.61,49.0,807.4,22.1,7.0,22.1,58.0,NE,1.8,1.1,9999.0,DRY,,,Sunny,805.0266866567308,sunny.gif
+2025-05-29 12:34,9.0,21.5,0.0,0.3,1017.51,43.0,742.0,22.1,7.0,22.1,358.0,N,5.4,3.6,9999.0,DRY,,,Sunny,806.7539581552089,sunny.gif
+2025-05-29 12:39,11.7,21.6,0.0,0.3,1017.71,52.0,721.7,22.0,7.0,22.0,107.0,E,1.8,1.1,9999.0,DRY,,,Sunny,808.1789859152516,sunny.gif
