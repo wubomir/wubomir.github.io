@@ -1,6 +1,4 @@
 timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,imedvode1_precipitation_today,imedvode1_pressure,imedvode1_relative_humidity,imedvode1_solar_radiation,imedvode1_temperature,imedvode1_uv_index,imedvode1_wind_chill,imedvode1_wind_direction_degrees,windCardinals,imedvode1_wind_gust,imedvode1_wind_speed,condition1,condition2,visibility,condition3,sky,max_solar_radiation,image_name
-2025-06-01 13:36,16.5,29.2,0.0,0.0,1016.9,47.0,709.7,28.9,6.0,28.9,223.0,SW,5.4,4.7,DRY,,9999.0,,Sunny,806.2081532748645,sunny.gif
-2025-06-01 13:41,16.1,28.9,0.0,0.0,1017.0,46.0,713.5,28.8,6.0,28.8,280.0,W,3.6,1.8,DRY,,9999.0,,Sunny,803.907284752844,sunny.gif
 2025-06-01 13:46,15.6,28.8,0.0,0.0,1016.8,45.0,721.6,28.7,7.0,28.7,274.0,W,5.4,4.0,DRY,,9999.0,,Sunny,801.3080146396084,sunny.gif
 2025-06-01 13:51,15.5,29.3,0.0,0.0,1016.8,43.0,714.6,29.4,6.0,29.4,250.0,W,5.4,4.0,DRY,,9999.0,,Sunny,798.4116185267376,sunny.gif
 2025-06-01 13:56,16.5,29.2,0.0,0.0,1016.7,47.0,700.8,28.9,6.0,28.9,119.0,SE,9.4,6.1,DRY,,9999.0,,Sunny,795.2195177004922,sunny.gif
@@ -232,3 +230,5 @@ timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,i
 2025-06-02 13:20,16.5,28.3,0.0,0.0,1017.1,50.0,610.8,27.9,5.0,27.9,215.0,SW,5.4,3.2,DRY,,9999.0,,Mostly Sunny,812.5028951683962,mostly_sunny.gif
 2025-06-02 13:25,16.0,27.5,0.0,0.0,1017.1,51.0,470.4,27.0,4.0,27.0,272.0,W,3.6,3.2,DRY,,9999.0,,Partly Cloudy,811.1744115864224,partly_cloudy.gif
 2025-06-02 13:30,16.0,27.7,0.0,0.0,1017.0,50.0,624.8,27.3,6.0,27.3,227.0,SW,3.6,2.5,DRY,,9999.0,,Mostly Sunny,809.544681313139,mostly_sunny.gif
+2025-06-02 13:35,16.2,27.9,0.0,0.0,1016.9,50.0,539.7,27.5,5.0,27.5,307.0,NW,1.8,1.4,DRY,,9999.0,,Mostly Sunny,807.6145049909396,mostly_sunny.gif
+2025-06-02 13:40,16.4,28.5,0.0,0.0,1016.9,49.0,679.7,28.1,6.0,28.1,202.0,S,3.6,2.2,DRY,,9999.0,,Mostly Sunny,805.3848302280959,mostly_sunny.gif
