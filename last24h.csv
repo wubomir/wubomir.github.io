@@ -1,7 +1,5 @@
 timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,imedvode1_precipitation_today,imedvode1_pressure,imedvode1_relative_humidity,imedvode1_solar_radiation,imedvode1_temperature,imedvode1_uv_index,imedvode1_wind_chill,imedvode1_wind_direction_degrees,windCardinals,imedvode1_wind_gust,imedvode1_wind_speed,condition1,condition2,visibility,condition3,sky,max_solar_radiation,image_name
-2025-06-01 20:46,12.7,23.1,0.0,0.0,1016.9,49.0,1.7,23.4,1.0,23.4,273.0,W,11.2,4.3,DRY,,9999.0,,Twilight,0.0,cloudy.gif
-2025-06-01 20:51,12.2,23.2,0.0,0.0,1016.9,49.0,1.1,23.5,1.0,23.5,222.0,SW,11.2,9.4,DRY,,9999.0,,Twilight,0.0,cloudy.gif
-2025-06-01 20:56,12.5,23.2,0.0,0.0,1016.9,50.0,0.7,23.5,1.0,23.5,221.0,SW,14.8,11.2,DRY,,9999.0,,Twilight,0.0,cloudy.gif
+2025-06-01 20:56,12.5,23.1,0.0,0.0,1016.9,50.0,0.7,23.4,1.0,23.4,221.0,SW,14.8,11.2,DRY,,9999.0,,Twilight,0.0,cloudy.gif
 2025-06-01 21:01,12.7,23.1,0.0,0.0,1016.9,51.0,0.3,23.4,1.0,23.4,233.0,SW,5.4,3.6,DRY,,9999.0,,Twilight,0.0,cloudy.gif
 2025-06-01 21:06,12.2,23.2,0.0,0.0,1017.1,49.0,0.2,23.5,1.0,23.5,227.0,SW,13.0,7.6,DRY,,9999.0,,Twilight,0.0,cloudy.gif
 2025-06-01 21:11,12.2,23.2,0.0,0.0,1017.31,49.0,0.1,23.5,1.0,23.5,262.0,W,9.4,8.6,DRY,,9999.0,,Twilight,0.0,cloudy.gif
@@ -232,3 +230,5 @@ timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,i
 2025-06-02 20:30,15.1,22.2,0.0,0.0,1016.9,64.0,4.8,22.2,0.0,22.2,261.0,W,1.8,0.4,DRY,,9999.0,,Mostly Cloudy,19.05370952220215,mostly_cloudy.gif
 2025-06-02 20:35,15.4,22.0,0.0,0.0,1016.9,66.0,3.2,22.0,0.0,22.0,283.0,W,3.6,2.5,DRY,,9999.0,,Mostly Cloudy,12.636272189128567,mostly_cloudy.gif
 2025-06-02 20:40,15.5,21.9,0.0,0.0,1017.0,67.0,2.1,21.9,0.0,21.9,224.0,SW,5.4,3.6,DRY,,9999.0,,Mostly Cloudy,6.47989109066325,mostly_cloudy.gif
+2025-06-02 20:45,15.5,21.9,0.0,0.0,1016.8,67.0,1.4,21.9,0.0,21.9,300.0,NW,3.6,2.9,DRY,,9999.0,,Cloudy,0.6488529151227264,cloudy.gif
+2025-06-02 20:50,15.4,21.8,0.0,0.0,1016.9,67.0,1.0,21.8,0.0,21.8,296.0,NW,5.4,3.6,DRY,,9999.0,,Twilight,0.0,cloudy.gif
