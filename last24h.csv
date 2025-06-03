@@ -1,7 +1,5 @@
 timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,imedvode1_precipitation_today,imedvode1_pressure,imedvode1_relative_humidity,imedvode1_solar_radiation,imedvode1_temperature,imedvode1_uv_index,imedvode1_wind_chill,imedvode1_wind_direction_degrees,windCardinals,imedvode1_wind_gust,imedvode1_wind_speed,condition1,condition2,visibility,condition3,sky,max_solar_radiation,image_name
-2025-06-02 11:05,14.3,26.0,0.0,0.0,1018.08,48.0,576.4,26.1,5.0,26.1,55.0,NE,3.6,3.2,DRY,,9999.0,,Mostly Sunny,735.6140742900864,mostly_sunny.gif
-2025-06-02 11:10,14.4,26.2,0.0,0.0,1017.91,48.0,599.6,26.2,5.0,26.2,38.0,NE,1.8,1.4,DRY,,9999.0,,Mostly Sunny,742.1844355528249,mostly_sunny.gif
-2025-06-02 11:15,15.3,25.6,0.0,0.0,1017.91,53.0,633.8,25.6,6.0,25.6,119.0,SE,3.6,3.6,DRY,,9999.0,,Mostly Sunny,748.4872719725361,mostly_sunny.gif
+2025-06-02 11:15,15.3,25.6,0.0,0.0,1017.81,53.0,633.8,25.6,6.0,25.6,119.0,SE,3.6,3.6,DRY,,9999.0,,Mostly Sunny,748.4872719725361,mostly_sunny.gif
 2025-06-02 11:20,14.1,25.5,0.0,0.0,1017.81,49.0,660.0,25.6,6.0,25.6,88.0,E,5.4,5.4,DRY,,9999.0,,Sunny,754.5194844981673,sunny.gif
 2025-06-02 11:25,13.9,26.0,0.0,0.0,1017.91,47.0,669.0,26.1,6.0,26.1,325.0,NW,7.2,6.8,DRY,,9999.0,,Sunny,760.2781097946756,sunny.gif
 2025-06-02 11:30,13.7,25.8,0.0,0.0,1017.81,47.0,669.1,25.9,6.0,25.9,337.0,NW,3.6,2.9,DRY,,9999.0,,Sunny,765.7603213071917,sunny.gif
@@ -275,3 +273,5 @@ timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,i
 2025-06-03 10:51,15.6,24.4,0.0,0.0,1017.41,58.0,186.8,24.4,1.0,24.4,282.0,W,1.8,1.8,DRY,,9999.0,,Cloudy,716.5284607834798,cloudy.gif
 2025-06-03 10:56,16.0,24.5,0.0,0.0,1017.51,59.0,226.1,24.5,2.0,24.5,242.0,SW,3.6,2.9,DRY,,9999.0,,Cloudy,723.8321556462923,cloudy.gif
 2025-06-03 11:01,15.9,24.8,0.0,0.0,1017.61,58.0,169.8,24.7,1.0,24.7,303.0,NW,9.4,7.6,DRY,,9999.0,,Cloudy,730.8780553677689,cloudy.gif
+2025-06-03 11:06,15.0,24.2,0.0,0.0,1017.61,56.0,155.0,24.3,1.0,24.3,152.0,SE,3.6,2.2,DRY,,9999.0,,Cloudy,737.6626859737378,cloudy.gif
+2025-06-03 11:11,16.0,24.8,0.0,0.0,1017.41,58.0,230.5,24.8,2.0,24.8,208.0,SW,5.4,3.6,DRY,,9999.0,,Cloudy,744.1827058723186,cloudy.gif
