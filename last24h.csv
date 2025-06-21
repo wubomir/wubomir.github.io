@@ -1,7 +1,5 @@
 timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,imedvode1_precipitation_today,imedvode1_pressure,imedvode1_relative_humidity,imedvode1_solar_radiation,imedvode1_temperature,imedvode1_uv_index,imedvode1_wind_chill,imedvode1_wind_direction_degrees,windCardinals,imedvode1_wind_gust,imedvode1_wind_speed,condition1,condition2,visibility,condition3,sky,max_solar_radiation,image_name
-2025-06-20 20:51,13.1,23.3,0.0,0.0,1020.89,52.0,4.4,23.5,1.0,23.5,139.0,SE,13.0,11.9,DRY,,9999.0,,Sunny,5.124252465731974,sunny.gif
-2025-06-20 20:56,13.1,23.3,0.0,0.0,1021.0,52.0,3.1,23.5,1.0,23.5,145.0,SE,11.2,9.4,DRY,,9999.0,,Twilight,0.0,cloudy.gif
-2025-06-20 21:01,13.3,22.9,0.0,0.0,1021.0,54.0,2.0,23.1,1.0,23.1,103.0,E,7.2,6.5,DRY,,9999.0,,Twilight,0.0,cloudy.gif
+2025-06-20 21:01,13.3,22.9,0.0,0.0,1021.3,54.0,2.0,23.1,1.0,23.1,103.0,E,7.2,6.5,DRY,,9999.0,,Twilight,0.0,cloudy.gif
 2025-06-20 21:06,13.2,22.8,0.0,0.0,1021.3,54.0,1.1,23.0,1.0,23.0,105.0,E,3.6,3.6,DRY,,9999.0,,Twilight,0.0,cloudy.gif
 2025-06-20 21:11,13.3,22.5,0.0,0.0,1021.3,55.0,0.6,22.8,1.0,22.8,123.0,SE,5.4,4.7,DRY,,9999.0,,Twilight,0.0,cloudy.gif
 2025-06-20 21:16,12.9,22.5,0.0,0.0,1021.4,54.0,0.3,22.7,1.0,22.7,139.0,SE,9.4,8.3,DRY,,9999.0,,Twilight,0.0,cloudy.gif
@@ -283,3 +281,5 @@ timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,i
 2025-06-21 20:36,10.8,23.0,0.0,0.0,1021.5,45.0,10.1,23.4,0.0,23.4,137.0,SE,5.4,4.0,DRY,,9999.0,,Partly Cloudy,24.03838281370801,partly_cloudy.gif
 2025-06-21 20:41,10.6,22.8,0.0,0.0,1021.4,45.0,7.5,23.2,0.0,23.2,138.0,SE,3.6,3.6,DRY,,9999.0,,Partly Cloudy,17.58291460183621,partly_cloudy.gif
 2025-06-21 20:46,10.3,22.7,0.0,0.0,1021.5,44.0,5.6,23.2,0.0,23.2,147.0,SE,7.2,6.1,DRY,,9999.0,,Partly Cloudy,11.341948838594723,partly_cloudy.gif
+2025-06-21 20:51,11.3,22.4,0.0,0.0,1021.61,48.0,3.9,22.8,0.0,22.8,162.0,S,1.8,1.4,DRY,,9999.0,,Mostly Sunny,5.369122308018666,mostly_sunny.gif
+2025-06-21 20:56,11.9,21.9,0.0,0.0,1021.71,52.0,2.7,22.2,0.0,22.2,207.0,SW,1.8,0.4,DRY,,9999.0,,Twilight,0.0,cloudy.gif
