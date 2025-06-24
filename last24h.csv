@@ -1,7 +1,5 @@
 timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,imedvode1_precipitation_today,imedvode1_pressure,imedvode1_relative_humidity,imedvode1_solar_radiation,imedvode1_temperature,imedvode1_uv_index,imedvode1_wind_chill,imedvode1_wind_direction_degrees,windCardinals,imedvode1_wind_gust,imedvode1_wind_speed,condition1,condition2,visibility,condition3,sky,max_solar_radiation,image_name
-2025-06-23 11:27,16.7,29.8,0.0,0.0,1016.29,46.0,618.0,29.5,7.0,29.5,232.0,SW,9.4,6.1,DRY,,9999.0,,Mostly Sunny,766.300241198632,mostly_sunny.gif
-2025-06-23 11:32,16.7,29.8,0.0,0.0,1016.59,46.0,678.8,29.5,7.0,29.5,249.0,W,18.4,14.8,DRY,,9999.0,,Sunny,771.8552904794989,sunny.gif
-2025-06-23 11:37,16.7,29.6,0.0,0.0,1016.29,47.0,696.5,29.2,7.0,29.2,291.0,W,9.4,6.5,DRY,,9999.0,,Sunny,777.134822172373,sunny.gif
+2025-06-23 11:37,16.4,29.6,0.0,0.0,1016.29,47.0,696.5,29.2,7.0,29.2,291.0,W,9.4,6.5,DRY,,9999.0,,Sunny,777.134822172373,sunny.gif
 2025-06-23 11:42,16.4,29.8,0.0,0.0,1016.39,45.0,693.0,29.6,7.0,29.6,254.0,W,13.0,9.7,DRY,,9999.0,,Sunny,782.1362466181721,sunny.gif
 2025-06-23 11:47,17.0,29.9,0.0,0.0,1016.39,47.0,696.1,29.5,7.0,29.5,317.0,NW,9.4,6.1,DRY,,9999.0,,Sunny,786.8571119863907,sunny.gif
 2025-06-23 11:52,16.6,29.7,0.0,0.0,1016.29,46.0,696.2,29.4,7.0,29.4,221.0,SW,9.4,6.5,DRY,,9999.0,,Sunny,791.2951052079136,sunny.gif
@@ -287,3 +285,5 @@ timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,i
 2025-06-24 11:12,16.7,26.5,0.0,0.0,1016.59,55.0,365.4,26.4,3.0,26.4,112.0,E,9.4,6.5,DRY,,9999.0,,Partly Cloudy,747.592132895559,partly_cloudy.gif
 2025-06-24 11:17,16.2,27.4,0.0,0.0,1016.49,52.0,759.3,26.9,7.0,26.9,167.0,S,11.2,9.4,DRY,,9999.0,,Sunny,753.9689595515388,sunny.gif
 2025-06-24 11:22,16.4,28.1,0.0,0.0,1016.7,50.0,758.9,27.7,7.0,27.7,140.0,SE,7.2,6.1,DRY,,9999.0,,Sunny,760.0789502624295,sunny.gif
+2025-06-24 11:27,16.5,28.3,0.0,0.0,1016.39,50.0,486.1,27.9,4.0,27.9,228.0,SW,3.6,2.5,DRY,,9999.0,,Partly Cloudy,765.9191015127433,partly_cloudy.gif
+2025-06-24 11:32,17.0,29.2,0.0,0.0,1016.39,49.0,451.6,28.7,4.0,28.7,163.0,S,13.0,9.7,DRY,,9999.0,,Partly Cloudy,771.4865445366762,partly_cloudy.gif
