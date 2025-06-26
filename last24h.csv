@@ -1,8 +1,6 @@
 timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,imedvode1_precipitation_today,imedvode1_pressure,imedvode1_relative_humidity,imedvode1_solar_radiation,imedvode1_temperature,imedvode1_uv_index,imedvode1_wind_chill,imedvode1_wind_direction_degrees,windCardinals,imedvode1_wind_gust,imedvode1_wind_speed,visibility,condition1,condition2,condition3,sky,max_solar_radiation,image_name
-2025-06-26 00:57,18.0,22.8,0.0,0.0,1015.71,75.0,47.3,22.5,1.0,22.5,110.0,E,3.6,1.8,6000.0,DRY,,,Night,0.0,night.gif
-2025-06-26 01:02,18.0,22.5,0.0,0.0,1015.71,77.0,47.3,22.2,1.0,22.2,111.0,E,3.6,1.4,6000.0,DRY,,,Night,0.0,night.gif
-2025-06-26 01:07,17.8,22.3,0.0,0.0,1015.71,77.0,47.3,22.0,1.0,22.0,90.0,E,3.6,2.2,6000.0,DRY,,,Night,0.0,night.gif
-2025-06-26 01:12,18.0,22.1,0.0,0.0,1015.71,79.0,47.3,21.8,1.0,21.8,134.0,SE,0.0,0.0,6000.0,DRY,,,Night,0.0,night.gif
+2025-06-26 01:07,17.8,22.3,0.0,0.0,1015.51,79.0,47.3,22.0,1.0,22.0,90.0,E,3.6,2.2,6000.0,DRY,,,Night,0.0,night.gif
+2025-06-26 01:12,18.0,22.1,0.0,0.0,1015.51,79.0,47.3,21.8,1.0,21.8,134.0,SE,0.0,0.0,6000.0,DRY,,,Night,0.0,night.gif
 2025-06-26 01:17,17.9,21.8,0.0,0.0,1015.51,80.0,47.3,21.5,1.0,21.5,134.0,SE,1.8,0.7,6000.0,DRY,,,Night,0.0,night.gif
 2025-06-26 01:22,17.9,21.8,0.0,0.0,1015.51,80.0,47.3,21.5,1.0,21.5,134.0,SE,0.0,0.0,6000.0,DRY,,,Night,0.0,night.gif
 2025-06-26 01:27,17.9,22.0,0.0,0.0,1015.71,79.0,47.3,21.7,1.0,21.7,134.0,SE,1.8,1.1,6000.0,DRY,,,Night,0.0,night.gif
@@ -261,3 +259,6 @@ timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,i
 2025-06-27 00:43,15.5,23.4,0.0,0.0,1017.81,61.0,0.0,23.4,0.0,23.4,292.0,W,18.4,13.0,6000.0,DRY,,,Night,0.0,night.gif
 2025-06-27 00:48,16.4,23.2,0.0,0.0,1018.08,66.0,0.0,23.1,0.0,23.1,277.0,W,9.4,6.5,6000.0,DRY,,,Night,0.0,night.gif
 2025-06-27 00:53,16.1,22.6,0.0,0.0,1018.39,67.0,0.0,22.5,0.0,22.5,269.0,W,9.4,6.8,6000.0,DRY,,,Night,0.0,night.gif
+2025-06-27 00:58,16.1,22.6,0.0,0.0,1018.29,67.0,0.0,22.5,0.0,22.5,275.0,W,5.4,3.2,6000.0,DRY,,,Night,0.0,night.gif
+2025-06-27 01:03,15.6,22.5,0.0,0.0,1018.69,65.0,0.0,22.5,0.0,22.5,234.0,SW,13.0,8.3,6000.0,DRY,,,Night,0.0,night.gif
+2025-06-27 01:05,15.6,22.5,0.0,0.0,1018.69,65.0,0.0,22.5,0.0,22.5,234.0,SW,13.0,8.3,9999.0,DRY,,,Night,0.0,night.gif
