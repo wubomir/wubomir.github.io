@@ -1,8 +1,6 @@
 timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,imedvode1_precipitation_today,imedvode1_pressure,imedvode1_relative_humidity,imedvode1_solar_radiation,imedvode1_temperature,imedvode1_uv_index,imedvode1_wind_chill,imedvode1_wind_direction_degrees,windCardinals,imedvode1_wind_gust,imedvode1_wind_speed,visibility,condition1,condition2,condition3,sky,max_solar_radiation,image_name
-2025-06-26 03:07,17.3,19.7,0.0,0.0,1015.51,86.0,47.3,19.7,1.0,19.7,133.0,SE,0.0,1.8,6000.0,DRY,,,Night,0.0,night.gif
-2025-06-26 03:12,17.2,19.4,0.0,0.0,1015.51,87.0,47.3,19.4,1.0,19.4,133.0,SE,0.0,1.4,6000.0,DRY,,,Night,0.0,night.gif
-2025-06-26 03:17,17.0,19.1,0.0,0.0,1015.51,88.0,47.3,19.1,1.0,19.1,134.0,SE,0.0,0.4,6000.0,DRY,,,Night,0.0,night.gif
-2025-06-26 03:22,17.0,19.1,0.0,0.0,1015.51,88.0,47.3,19.1,1.0,19.1,134.0,SE,0.0,0.0,6000.0,DRY,,,Night,0.0,night.gif
+2025-06-26 03:17,17.0,19.1,0.0,0.0,1015.61,88.0,47.3,19.1,1.0,19.1,134.0,SE,0.0,0.4,6000.0,DRY,,,Night,0.0,night.gif
+2025-06-26 03:22,17.0,19.1,0.0,0.0,1015.61,88.0,47.3,19.1,1.0,19.1,134.0,SE,0.0,0.0,6000.0,DRY,,,Night,0.0,night.gif
 2025-06-26 03:27,17.2,19.1,0.0,0.0,1015.61,89.0,47.3,19.1,1.0,19.1,134.0,SE,1.8,1.1,6000.0,DRY,,,Night,0.0,night.gif
 2025-06-26 03:32,17.3,19.2,0.0,0.0,1015.81,89.0,47.3,19.2,1.0,19.2,133.0,SE,3.6,2.2,6000.0,DRY,,,Night,0.0,night.gif
 2025-06-26 03:37,17.3,19.2,0.0,0.0,1015.71,89.0,47.3,19.2,1.0,19.2,9.0,N,3.6,3.6,6000.0,DRY,,,Night,0.0,night.gif
@@ -266,3 +264,5 @@ timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,i
 2025-06-27 02:58,17.1,18.4,0.0,4.6,1019.81,92.0,0.0,18.4,0.0,18.4,319.0,NW,0.0,0.0,8000.0,RAIN,LIGHT,,Night,0.0,rain_light.gif
 2025-06-27 03:03,17.1,18.4,1.8,4.6,1019.81,92.0,0.0,18.4,0.0,18.4,319.0,NW,0.0,0.0,8000.0,RAIN,LIGHT,,Night,0.0,rain_light.gif
 2025-06-27 03:05,17.1,18.4,0.0,4.6,1019.81,92.0,0.0,18.4,0.0,18.4,319.0,NW,0.0,0.0,9999.0,DRY,,,Night,0.0,night.gif
+2025-06-27 03:08,17.3,18.5,0.0,4.9,1020.12,93.0,0.0,18.5,0.0,18.5,235.0,SW,0.0,0.0,9999.0,RAIN,LIGHT,,Night,0.0,rain_light.gif
+2025-06-27 03:13,17.2,18.4,0.0,4.9,1019.91,93.0,0.0,18.4,0.0,18.4,318.0,NW,0.0,0.0,9999.0,RAIN,LIGHT,,Night,0.0,rain_light.gif
