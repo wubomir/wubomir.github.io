@@ -1,8 +1,6 @@
 timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,imedvode1_precipitation_today,imedvode1_pressure,imedvode1_relative_humidity,imedvode1_solar_radiation,imedvode1_temperature,imedvode1_uv_index,imedvode1_wind_chill,imedvode1_wind_direction_degrees,windCardinals,imedvode1_wind_gust,imedvode1_wind_speed,visibility,condition1,condition2,condition3,sky,max_solar_radiation,image_name
-2025-06-30 22:14,19.6,26.0,0.0,0.0,1016.39,68.0,0.1,25.7,1.0,25.7,255.0,W,1.8,1.1,9999.0,DRY,,,Night,0.0,night.gif
-2025-06-30 22:19,19.5,26.0,0.0,0.0,1016.39,68.0,0.1,25.8,1.0,25.8,255.0,W,5.4,4.7,9999.0,DRY,,,Night,0.0,night.gif
-2025-06-30 22:24,19.3,26.0,0.0,0.0,1016.9,68.0,0.1,25.6,1.0,25.6,235.0,SW,3.6,3.6,9999.0,DRY,,,Night,0.0,night.gif
-2025-06-30 22:29,19.3,26.0,0.0,0.0,1016.9,68.0,0.1,25.6,1.0,25.6,250.0,W,3.6,2.5,9999.0,DRY,,,Night,0.0,night.gif
+2025-06-30 22:24,19.3,26.0,0.0,0.0,1016.9,69.0,0.1,25.6,1.0,25.6,235.0,SW,3.6,3.6,9999.0,DRY,,,Night,0.0,night.gif
+2025-06-30 22:29,19.3,26.0,0.0,0.0,1016.9,69.0,0.1,25.6,1.0,25.6,250.0,W,3.6,2.5,9999.0,DRY,,,Night,0.0,night.gif
 2025-06-30 22:34,19.2,25.7,0.0,0.0,1016.8,69.0,0.1,25.3,1.0,25.3,240.0,SW,1.8,0.4,9999.0,DRY,,,Night,0.0,night.gif
 2025-06-30 22:39,19.3,25.8,0.0,0.0,1016.8,69.0,0.1,25.4,1.0,25.4,251.0,W,1.8,0.4,9999.0,DRY,,,Night,0.0,night.gif
 2025-06-30 22:44,18.9,25.9,0.0,0.0,1017.0,67.0,0.1,25.5,1.0,25.5,227.0,SW,5.4,4.7,9999.0,DRY,,,Night,0.0,night.gif
@@ -199,3 +197,5 @@ timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,i
 2025-07-01 21:59,14.0,22.2,0.0,0.0,1018.8,59.0,0.0,22.4,0.0,22.4,209.0,SW,3.6,2.2,9999.0,DRY,,,Night,0.0,night.gif
 2025-07-01 22:04,14.3,22.1,0.0,0.0,1018.69,61.0,0.0,22.2,0.0,22.2,239.0,SW,1.8,1.8,9999.0,DRY,,,Night,0.0,night.gif
 2025-07-01 22:09,14.9,21.6,0.0,0.0,1018.9,65.0,0.0,21.7,0.0,21.7,333.0,NW,3.6,3.6,9999.0,DRY,,,Night,0.0,night.gif
+2025-07-01 22:14,14.6,20.5,0.0,0.0,1019.0,69.0,0.0,20.5,0.0,20.5,327.0,NW,1.8,1.8,9999.0,DRY,,,Night,0.0,night.gif
+2025-07-01 22:19,14.2,20.3,0.0,0.0,1018.9,68.0,0.0,20.3,0.0,20.3,326.0,NW,1.8,0.4,9999.0,DRY,,,Night,0.0,night.gif
