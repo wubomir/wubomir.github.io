@@ -1,9 +1,7 @@
 timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,imedvode1_precipitation_today,imedvode1_pressure,imedvode1_relative_humidity,imedvode1_solar_radiation,imedvode1_temperature,imedvode1_uv_index,imedvode1_wind_chill,imedvode1_wind_direction_degrees,windCardinals,imedvode1_wind_gust,imedvode1_wind_speed,visibility,condition1,condition2,condition3,sky,max_solar_radiation,image_name
-2025-06-30 20:34,19.5,30.0,0.0,0.0,1015.81,58.0,5.4,28.4,1.0,28.4,293.0,NW,1.8,1.4,9999.0,DRY,,,Mostly Cloudy,26.95761308291399,mostly_cloudy.gif
-2025-06-30 20:39,19.5,30.0,0.0,0.0,1015.81,58.0,4.3,28.4,1.0,28.4,195.0,S,0.0,0.0,9999.0,DRY,,,Mostly Cloudy,20.38503641929926,mostly_cloudy.gif
-2025-06-30 20:44,19.4,29.8,0.0,0.0,1015.98,58.0,3.2,28.4,1.0,28.4,218.0,SW,1.8,1.1,9999.0,DRY,,,Mostly Cloudy,14.006935590807451,mostly_cloudy.gif
-2025-06-30 20:49,19.3,29.6,0.0,0.0,1015.81,58.0,2.1,28.3,1.0,28.3,239.0,SW,3.6,2.2,9999.0,DRY,,,Mostly Cloudy,7.874125664530772,mostly_cloudy.gif
-2025-06-30 20:54,19.2,29.5,0.0,0.0,1015.92,58.0,1.4,28.2,1.0,28.2,245.0,SW,1.8,1.1,9999.0,DRY,,,Mostly Sunny,2.046077536752662,mostly_sunny.gif
+2025-06-30 20:44,19.4,29.8,0.0,0.0,1015.98,60.0,3.2,28.4,1.0,28.4,218.0,SW,1.8,1.1,9999.0,DRY,,,Mostly Cloudy,14.006935590807451,mostly_cloudy.gif
+2025-06-30 20:49,19.3,29.6,0.0,0.0,1015.81,60.0,2.1,28.3,1.0,28.3,239.0,SW,3.6,2.2,9999.0,DRY,,,Mostly Cloudy,7.874125664530772,mostly_cloudy.gif
+2025-06-30 20:54,19.2,29.5,0.0,0.0,1015.92,60.0,1.4,28.2,1.0,28.2,245.0,SW,1.8,1.1,9999.0,DRY,,,Mostly Sunny,2.046077536752662,mostly_sunny.gif
 2025-06-30 20:59,19.5,29.4,0.0,0.0,1015.98,60.0,1.0,28.0,1.0,28.0,245.0,SW,0.0,0.0,9999.0,DRY,,,Twilight,0.0,cloudy.gif
 2025-06-30 21:04,19.7,28.7,0.0,0.0,1016.09,63.0,0.6,27.3,1.0,27.3,73.0,E,0.0,0.0,9999.0,DRY,,,Twilight,0.0,cloudy.gif
 2025-06-30 21:09,19.4,28.3,0.0,0.0,1015.92,63.0,0.3,27.0,1.0,27.0,127.0,SE,0.0,0.0,9999.0,DRY,,,Twilight,0.0,cloudy.gif
@@ -199,3 +197,5 @@ timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,i
 2025-07-01 20:19,14.0,26.4,0.0,0.0,1017.81,46.0,16.1,26.5,0.0,26.5,143.0,SE,3.6,3.2,9999.0,DRY,,,Mostly Cloudy,47.28155686745146,mostly_cloudy.gif
 2025-07-01 20:24,13.9,26.0,0.0,0.0,1017.81,47.0,13.4,26.1,0.0,26.1,155.0,SE,1.8,1.4,9999.0,DRY,,,Mostly Cloudy,40.31916925863483,mostly_cloudy.gif
 2025-07-01 20:29,15.4,25.7,0.0,0.0,1018.02,53.0,11.1,25.7,0.0,25.7,157.0,SE,0.0,0.0,9999.0,DRY,,,Mostly Cloudy,33.4646452821899,mostly_cloudy.gif
+2025-07-01 20:34,15.4,25.0,0.0,0.0,1017.91,55.0,9.3,25.0,0.0,25.0,247.0,SW,1.8,1.4,9999.0,DRY,,,Mostly Cloudy,26.735155183022396,mostly_cloudy.gif
+2025-07-01 20:39,14.9,24.4,0.0,0.0,1018.19,55.0,7.5,24.5,0.0,24.5,251.0,W,3.6,2.9,9999.0,DRY,,,Partly Cloudy,20.16058437703671,partly_cloudy.gif
