@@ -1,7 +1,5 @@
 timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,imedvode1_precipitation_today,imedvode1_pressure,imedvode1_relative_humidity,imedvode1_solar_radiation,imedvode1_temperature,imedvode1_uv_index,imedvode1_wind_chill,imedvode1_wind_direction_degrees,windCardinals,imedvode1_wind_gust,imedvode1_wind_speed,condition1,condition2,visibility,condition3,sky,max_solar_radiation,image_name
-2025-07-03 17:34,10.7,35.0,0.0,0.0,1016.09,23.0,109.2,36.5,1.0,36.5,216.0,SW,7.2,4.7,DRY,,9999.0,,Cloudy,436.78375050493656,cloudy.gif
-2025-07-03 17:39,10.8,33.4,0.0,0.0,1015.81,23.0,109.6,35.0,1.0,35.0,318.0,NW,1.8,1.4,DRY,,9999.0,,Cloudy,424.1688201457581,cloudy.gif
-2025-07-03 17:44,11.5,33.6,0.0,0.0,1015.92,24.0,85.6,35.0,0.0,35.0,325.0,NW,3.6,3.6,DRY,,9999.0,,Cloudy,411.45393127743733,cloudy.gif
+2025-07-03 17:44,11.5,33.6,0.0,0.0,1015.92,24.0,85.6,34.9,0.0,34.9,325.0,NW,3.6,3.6,DRY,,9999.0,,Cloudy,411.45393127743733,cloudy.gif
 2025-07-03 17:49,10.8,33.3,0.0,0.0,1015.92,23.0,281.4,34.9,2.0,34.9,0.0,N,3.6,3.6,DRY,,9999.0,,Mostly Sunny,398.64627842167596,mostly_sunny.gif
 2025-07-03 17:54,11.4,34.3,0.0,0.0,1016.09,23.0,276.8,35.7,2.0,35.7,334.0,NW,3.6,3.2,DRY,,9999.0,,Mostly Sunny,385.7532147337095,mostly_sunny.gif
 2025-07-03 17:59,10.6,33.9,0.0,0.0,1015.98,22.0,264.4,35.5,2.0,35.5,81.0,E,5.4,4.0,DRY,,9999.0,,Mostly Sunny,372.78226327622764,mostly_sunny.gif
@@ -285,3 +283,5 @@ timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,i
 2025-07-04 17:20,18.6,20.5,0.0,24.1,1020.22,89.0,52.2,20.5,0.0,20.5,308.0,NW,5.4,4.0,RAIN,LIGHT,9999.0,,Cloudy,471.1237679629873,rain_light.gif
 2025-07-04 17:25,18.8,20.5,4.8,24.61,1020.12,90.0,78.4,20.5,0.0,20.5,0.0,N,1.8,1.1,RAIN,MODERATE,9999.0,,Cloudy,458.8224300563701,rain_moderate.gif
 2025-07-04 17:30,19.0,20.5,0.0,24.89,1020.22,91.0,101.6,20.5,0.0,20.5,315.0,NW,5.4,4.0,RAIN,LIGHT,9999.0,,Cloudy,446.4014879300281,rain_light.gif
+2025-07-04 17:35,19.2,20.7,0.0,25.4,1020.39,91.0,119.2,20.7,1.0,20.7,311.0,NW,1.8,0.4,RAIN,LIGHT,9999.0,,Cloudy,433.8677418465199,rain_light.gif
+2025-07-04 17:40,19.5,21.0,3.0,25.4,1020.79,91.0,148.9,21.0,1.0,21.0,135.0,SE,7.2,7.2,RAIN,MODERATE,9999.0,,Mostly Cloudy,421.2281290271159,rain_moderate.gif
