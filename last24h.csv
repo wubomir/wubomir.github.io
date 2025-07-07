@@ -1,8 +1,6 @@
 timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,imedvode1_precipitation_today,imedvode1_pressure,imedvode1_relative_humidity,imedvode1_solar_radiation,imedvode1_temperature,imedvode1_uv_index,imedvode1_wind_chill,imedvode1_wind_direction_degrees,windCardinals,imedvode1_wind_gust,imedvode1_wind_speed,visibility,condition1,condition2,condition3,sky,max_solar_radiation,image_name
-2025-07-06 03:16,15.2,16.4,0.0,0.0,1015.51,94.0,0.1,16.4,1.0,16.4,239.0,SW,1.8,0.4,4000.0,DRY,,,Night,0.0,night.gif
-2025-07-06 03:21,15.2,16.3,0.0,0.0,1015.51,94.0,0.1,16.3,1.0,16.3,239.0,SW,1.8,0.4,4000.0,DRY,,,Night,0.0,night.gif
-2025-07-06 03:26,15.2,16.3,0.0,0.0,1015.51,94.0,0.1,16.3,1.0,16.3,238.0,SW,1.8,0.4,4000.0,DRY,,,Night,0.0,night.gif
-2025-07-06 03:31,15.3,16.4,0.0,0.0,1015.51,94.0,0.1,16.4,1.0,16.4,238.0,SW,1.8,0.4,4000.0,DRY,,,Night,0.0,night.gif
+2025-07-06 03:26,15.3,16.4,0.0,0.0,1015.31,95.0,0.1,16.4,1.0,16.4,238.0,SW,1.8,0.4,4000.0,DRY,,,Night,0.0,night.gif
+2025-07-06 03:31,15.3,16.4,0.0,0.0,1015.31,95.0,0.1,16.4,1.0,16.4,238.0,SW,1.8,0.4,4000.0,DRY,,,Night,0.0,night.gif
 2025-07-06 03:36,15.5,16.3,0.0,0.0,1015.31,95.0,0.1,16.3,1.0,16.3,238.0,SW,1.8,1.4,4000.0,DRY,,,Night,0.0,night.gif
 2025-07-06 03:41,15.3,16.1,0.0,0.0,1015.41,95.0,0.1,16.1,1.0,16.1,238.0,SW,1.8,0.4,4000.0,DRY,,,Night,0.0,night.gif
 2025-07-06 03:46,15.4,16.0,0.0,0.0,1015.31,96.0,0.1,16.0,1.0,16.0,238.0,SW,0.0,0.0,4000.0,DRY,,,Night,0.0,night.gif
@@ -285,3 +283,5 @@ timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,i
 2025-07-07 03:01,16.9,17.5,0.0,13.79,1007.01,96.0,0.0,17.5,0.0,17.5,36.0,NE,0.0,0.0,9999.0,DRY,,,Night,0.0,night.gif
 2025-07-07 03:06,16.8,17.4,0.0,13.79,1007.11,96.0,0.0,17.4,0.0,17.4,135.0,SE,3.6,2.2,9999.0,DRY,,,Night,0.0,night.gif
 2025-07-07 03:11,16.9,17.5,0.0,13.79,1007.32,96.0,0.0,17.5,0.0,17.5,315.0,NW,5.4,4.0,9999.0,DRY,,,Night,0.0,night.gif
+2025-07-07 03:16,16.9,17.5,0.0,13.79,1007.21,96.0,0.0,17.5,0.0,17.5,346.0,N,0.0,0.0,9999.0,DRY,,,Night,0.0,night.gif
+2025-07-07 03:21,16.8,17.4,0.0,13.79,1007.21,96.0,0.0,17.4,0.0,17.4,346.0,N,0.0,0.0,9999.0,DRY,,,Night,0.0,night.gif
