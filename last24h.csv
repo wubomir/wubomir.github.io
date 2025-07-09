@@ -1,7 +1,5 @@
 timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,imedvode1_precipitation_today,imedvode1_pressure,imedvode1_relative_humidity,imedvode1_solar_radiation,imedvode1_temperature,imedvode1_uv_index,imedvode1_wind_chill,imedvode1_wind_direction_degrees,windCardinals,imedvode1_wind_gust,imedvode1_wind_speed,visibility,condition1,condition2,condition3,sky,max_solar_radiation,image_name
-2025-07-08 06:27,16.8,17.2,0.0,0.0,1004.0,96.0,100.2,17.2,1.0,17.2,339.0,N,7.2,5.8,6000.0,DRY,,,Sunny,89.54014213614879,sunny.gif
-2025-07-08 06:32,16.6,17.2,0.0,0.0,1004.1,96.0,103.5,17.2,1.0,17.2,330.0,NW,9.4,7.2,6000.0,DRY,,,Sunny,98.39717390877385,sunny.gif
-2025-07-08 06:37,16.8,17.4,0.0,0.0,1004.1,96.0,91.4,17.4,0.0,17.4,359.0,N,13.0,10.4,6000.0,DRY,,,Sunny,110.56652111001826,sunny.gif
+2025-07-08 06:37,16.8,17.4,0.0,0.0,1004.2,95.0,91.4,17.4,0.0,17.4,359.0,N,13.0,10.4,6000.0,DRY,,,Sunny,110.56652111001826,sunny.gif
 2025-07-08 06:42,16.6,17.4,0.0,0.0,1004.2,95.0,33.5,17.4,0.0,17.4,355.0,N,11.2,8.6,6000.0,DRY,,,Mostly Cloudy,122.95570727070533,mostly_cloudy.gif
 2025-07-08 06:47,15.2,17.1,0.0,0.0,1004.3,89.0,22.2,17.1,0.0,17.1,334.0,NW,11.2,9.7,6000.0,DRY,,,Mostly Cloudy,135.53140645903872,mostly_cloudy.gif
 2025-07-08 06:52,15.0,16.8,1.19,15.19,1004.2,89.0,13.4,16.8,0.0,16.8,335.0,NW,13.0,10.4,6000.0,RAIN,LIGHT,,Cloudy,148.2652317371713,rain_light.gif
@@ -256,3 +254,4 @@ timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,i
 2025-07-09 06:15,10.1,12.9,0.0,0.0,1013.51,83.0,39.4,12.9,0.0,12.9,127.0,SE,1.8,0.4,9999.0,DRY,,,Mostly Sunny,70.83139613874279,mostly_sunny.gif
 2025-07-09 06:20,10.8,13.1,0.0,0.0,1013.82,86.0,47.7,13.1,0.0,13.1,101.0,E,0.0,0.0,9999.0,DRY,,,Mostly Sunny,78.16930415788029,mostly_sunny.gif
 2025-07-09 06:25,10.6,13.6,0.0,0.0,1013.72,82.0,46.9,13.6,0.0,13.6,116.0,SE,1.8,0.7,9999.0,DRY,,,Partly Cloudy,85.55532351641071,partly_cloudy.gif
+2025-07-09 06:30,9.4,13.6,0.0,0.0,1013.61,76.0,53.1,13.6,0.0,13.6,233.0,SW,0.0,0.0,9999.0,DRY,,,Mostly Sunny,92.98334785781515,mostly_sunny.gif
