@@ -1,7 +1,5 @@
 timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,imedvode1_precipitation_today,imedvode1_pressure,imedvode1_relative_humidity,imedvode1_solar_radiation,imedvode1_temperature,imedvode1_uv_index,imedvode1_wind_chill,imedvode1_wind_direction_degrees,windCardinals,imedvode1_wind_gust,imedvode1_wind_speed,condition1,condition2,visibility,condition3,sky,max_solar_radiation,image_name
-2025-07-13 07:32,15.0,17.4,0.0,0.0,1016.59,86.0,119.2,17.4,0.0,17.4,326.0,NW,3.6,2.5,DRY,,9999.0,,Partly Cloudy,244.5555528923779,partly_cloudy.gif
-2025-07-13 07:37,15.1,17.5,0.0,0.0,1016.59,86.0,192.3,17.5,0.0,17.5,306.0,NW,3.6,2.5,DRY,,9999.0,,Mostly Sunny,257.91539541504494,mostly_sunny.gif
-2025-07-13 07:42,15.1,17.6,0.0,0.0,1016.7,85.0,127.5,17.6,0.0,17.6,309.0,NW,0.0,0.0,DRY,,9999.0,,Partly Cloudy,271.27819074011995,partly_cloudy.gif
+2025-07-13 07:42,15.2,17.6,0.0,0.0,1016.7,85.0,127.5,17.6,0.0,17.6,309.0,NW,0.0,0.0,DRY,,9999.0,,Partly Cloudy,271.27819074011995,partly_cloudy.gif
 2025-07-13 07:47,15.2,17.8,0.0,0.0,1016.49,85.0,68.6,17.8,0.0,17.8,332.0,NW,1.8,1.8,DRY,,9999.0,,Cloudy,284.6332851186855,cloudy.gif
 2025-07-13 07:52,15.3,17.5,0.0,0.0,1016.49,87.0,44.1,17.5,0.0,17.5,7.0,N,1.8,1.1,DRY,,9999.0,,Cloudy,297.9705550287793,cloudy.gif
 2025-07-13 07:57,15.2,17.4,0.0,0.0,1016.59,87.0,32.9,17.4,0.0,17.4,7.0,N,1.8,1.1,DRY,,9999.0,,Cloudy,311.280333274311,cloudy.gif
@@ -264,3 +262,4 @@ timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,i
 2025-07-14 07:17,15.1,18.4,0.0,0.0,1017.61,81.0,82.3,18.4,0.0,18.4,23.0,NE,1.8,1.8,DRY,,9999.0,,Partly Cloudy,202.6765605452898,partly_cloudy.gif
 2025-07-14 07:22,15.2,18.1,0.0,0.0,1017.41,83.0,93.1,18.1,0.0,18.1,86.0,E,3.6,2.5,DRY,,9999.0,,Partly Cloudy,215.9620163265655,partly_cloudy.gif
 2025-07-14 07:27,15.5,18.4,0.0,0.0,1017.61,83.0,103.3,18.4,1.0,18.4,73.0,E,1.8,0.7,DRY,,9999.0,,Partly Cloudy,229.28784917580833,partly_cloudy.gif
+2025-07-14 07:37,15.8,18.7,0.0,0.0,1017.41,83.0,167.2,18.7,1.0,18.7,46.0,NE,3.6,2.5,DRY,,9999.0,,Mostly Sunny,256.00933877179136,mostly_sunny.gif
