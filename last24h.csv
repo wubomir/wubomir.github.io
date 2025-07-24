@@ -1,7 +1,5 @@
 timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,imedvode1_precipitation_today,imedvode1_pressure,imedvode1_relative_humidity,imedvode1_solar_radiation,imedvode1_temperature,imedvode1_uv_index,imedvode1_wind_chill,imedvode1_wind_direction_degrees,windCardinals,imedvode1_wind_gust,imedvode1_wind_speed,visibility,condition1,condition2,condition3,sky,max_solar_radiation,image_name
-2025-07-23 15:49,16.2,27.9,0.0,0.0,1012.29,50.0,534.6,27.6,4.0,27.6,32.0,NE,5.4,6.1,9999.0,DRY,,,Mostly Sunny,646.7047974996464,mostly_sunny.gif
-2025-07-23 15:54,17.5,28.4,0.0,0.0,1012.19,54.0,524.1,27.6,4.0,27.6,139.0,SE,7.2,6.1,9999.0,DRY,,,Mostly Sunny,637.5394591088027,mostly_sunny.gif
-2025-07-23 15:59,16.0,27.9,0.0,0.0,1011.99,49.0,512.4,27.6,4.0,27.6,66.0,NE,7.2,5.4,9999.0,DRY,,,Mostly Sunny,628.1456312681762,mostly_sunny.gif
+2025-07-23 15:59,16.0,27.9,0.0,0.0,1011.99,49.0,512.4,27.8,4.0,27.8,66.0,NE,13.0,5.4,9999.0,DRY,,,Mostly Sunny,628.1456312681762,mostly_sunny.gif
 2025-07-23 16:04,16.4,28.2,0.0,0.0,1012.09,50.0,507.3,27.8,4.0,27.8,184.0,S,13.0,10.4,9999.0,DRY,,,Mostly Sunny,618.5280364020018,mostly_sunny.gif
 2025-07-23 16:09,16.1,28.1,0.0,0.0,1012.09,49.0,507.3,27.7,4.0,27.7,115.0,SE,9.4,7.9,9999.0,DRY,,,Mostly Sunny,608.6915219810614,mostly_sunny.gif
 2025-07-23 16:14,16.0,28.3,0.0,0.0,1011.89,48.0,507.3,28.0,4.0,28.0,162.0,S,3.6,2.2,9999.0,DRY,,,Mostly Sunny,598.6410597528169,mostly_sunny.gif
@@ -229,3 +227,5 @@ timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,i
 2025-07-24 15:33,19.1,28.7,0.0,0.0,1011.21,60.0,241.7,27.5,2.0,27.5,237.0,SW,3.6,3.6,9999.0,DRY,,,Mostly Cloudy,672.6986032065287,mostly_cloudy.gif
 2025-07-24 15:38,19.5,30.2,0.0,0.0,1010.9,57.0,246.7,28.8,2.0,28.8,266.0,W,0.0,0.0,9999.0,DRY,,,Mostly Cloudy,664.2845476954925,mostly_cloudy.gif
 2025-07-24 15:43,20.0,30.2,0.0,0.0,1011.11,60.0,191.1,28.5,1.0,28.5,259.0,W,0.0,0.0,9999.0,DRY,,,Cloudy,655.6274234721362,cloudy.gif
+2025-07-24 15:48,19.2,28.5,0.0,0.0,1011.01,61.0,115.1,27.3,1.0,27.3,299.0,NW,1.8,1.4,9999.0,DRY,,,Cloudy,646.7315537153721,cloudy.gif
+2025-07-24 15:53,19.1,28.2,0.0,0.0,1011.21,62.0,116.2,27.0,1.0,27.0,191.0,S,3.6,2.2,9999.0,DRY,,,Cloudy,637.6013899901852,cloudy.gif
