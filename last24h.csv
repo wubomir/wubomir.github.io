@@ -1,8 +1,6 @@
 timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,imedvode1_precipitation_today,imedvode1_pressure,imedvode1_relative_humidity,imedvode1_solar_radiation,imedvode1_temperature,imedvode1_uv_index,imedvode1_wind_chill,imedvode1_wind_direction_degrees,windCardinals,imedvode1_wind_gust,imedvode1_wind_speed,condition1,condition2,visibility,condition3,sky,max_solar_radiation,image_name
-2025-07-28 00:24,16.6,17.2,0.0,0.0,1010.5,95.0,0.1,17.2,1.0,17.2,224.0,SW,1.8,1.8,DRY,,9999.0,,Night,0.0,night.gif
-2025-07-28 00:29,16.5,17.1,0.0,0.0,1010.6,95.0,0.1,17.1,1.0,17.1,301.0,NW,1.8,1.1,DRY,,9999.0,,Night,0.0,night.gif
-2025-07-28 00:34,16.5,17.1,0.0,0.0,1010.7,95.0,0.1,17.1,1.0,17.1,243.0,SW,1.8,1.1,DRY,,9999.0,,Night,0.0,night.gif
-2025-07-28 00:39,16.5,17.1,0.0,0.0,1010.5,95.0,0.1,17.1,1.0,17.1,320.0,NW,3.6,2.9,DRY,,9999.0,,Night,0.0,night.gif
+2025-07-28 00:34,16.4,17.0,0.0,0.0,1010.7,95.0,0.1,17.0,1.0,17.0,243.0,SW,3.6,2.9,DRY,,9999.0,,Night,0.0,night.gif
+2025-07-28 00:39,16.4,17.0,0.0,0.0,1010.5,95.0,0.1,17.0,1.0,17.0,320.0,NW,3.6,2.9,DRY,,9999.0,,Night,0.0,night.gif
 2025-07-28 00:44,16.4,17.0,0.0,0.0,1010.5,95.0,0.1,17.0,1.0,17.0,307.0,NW,0.0,0.0,DRY,,9999.0,,Night,0.0,night.gif
 2025-07-28 00:49,16.2,17.0,1.19,0.71,1010.5,95.0,0.1,17.0,1.0,17.0,307.0,NW,0.0,0.0,RAIN,LIGHT,9999.0,,Night,0.0,rain_light.gif
 2025-07-28 00:54,16.4,17.0,0.0,0.71,1010.5,96.0,0.1,17.0,1.0,17.0,307.0,NW,0.0,0.0,RAIN,LIGHT,9999.0,,Night,0.0,rain_light.gif
@@ -276,3 +274,5 @@ timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,i
 2025-07-29 00:09,15.4,15.8,0.0,0.0,1010.19,97.0,0.0,15.8,0.0,15.8,49.0,NE,1.8,0.7,DRY,,9999.0,,Night,0.0,night.gif
 2025-07-29 00:14,15.2,15.8,0.0,0.0,1010.3,96.0,0.0,15.8,0.0,15.8,196.0,S,1.8,1.8,DRY,,9999.0,,Night,0.0,night.gif
 2025-07-29 00:19,15.2,15.8,0.0,0.0,1010.19,96.0,0.0,15.8,0.0,15.8,234.0,SW,0.0,0.0,DRY,,9999.0,,Night,0.0,night.gif
+2025-07-29 00:24,15.2,15.8,0.0,0.0,1010.19,96.0,0.0,15.8,0.0,15.8,222.0,SW,3.6,2.2,DRY,,9999.0,,Night,0.0,night.gif
+2025-07-29 00:29,15.3,15.7,0.0,0.0,1009.99,97.0,0.0,15.7,0.0,15.7,240.0,SW,1.8,0.7,DRY,,9999.0,,Night,0.0,night.gif
