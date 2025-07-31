@@ -1,8 +1,6 @@
 timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,imedvode1_precipitation_today,imedvode1_pressure,imedvode1_relative_humidity,imedvode1_solar_radiation,imedvode1_temperature,imedvode1_uv_index,imedvode1_wind_chill,imedvode1_wind_direction_degrees,windCardinals,imedvode1_wind_gust,imedvode1_wind_speed,condition1,condition2,visibility,condition3,sky,max_solar_radiation,image_name
-2025-07-30 07:24,12.4,12.6,0.0,0.0,1018.8,98.0,82.6,12.6,1.0,12.6,94.0,E,0.0,2.2,DRY,,9999.0,,Partly Cloudy,184.93331861848154,partly_cloudy.gif
-2025-07-30 07:29,12.1,12.3,0.0,0.0,1018.8,98.0,68.5,12.3,1.0,12.3,253.0,W,0.0,0.0,DRY,,9999.0,,Mostly Cloudy,198.3752202289366,mostly_cloudy.gif
-2025-07-30 07:34,12.1,12.3,0.0,0.0,1018.8,98.0,54.0,12.3,1.0,12.3,251.0,W,0.0,0.0,DRY,,9999.0,,Mostly Cloudy,211.86189761936123,mostly_cloudy.gif
-2025-07-30 07:39,12.2,12.4,0.0,0.0,1018.8,98.0,65.2,12.4,1.0,12.4,252.0,W,1.8,1.1,DRY,,9999.0,,Mostly Cloudy,225.37806785194238,mostly_cloudy.gif
+2025-07-30 07:34,12.2,12.4,0.0,0.0,1018.69,98.0,54.0,12.4,1.0,12.4,251.0,W,1.8,1.1,DRY,,9999.0,,Mostly Cloudy,211.86189761936123,mostly_cloudy.gif
+2025-07-30 07:39,12.2,12.4,0.0,0.0,1018.69,98.0,65.2,12.4,1.0,12.4,252.0,W,1.8,1.1,DRY,,9999.0,,Mostly Cloudy,225.37806785194238,mostly_cloudy.gif
 2025-07-30 07:44,12.2,12.4,0.0,0.0,1018.69,98.0,76.9,12.4,1.0,12.4,248.0,W,1.8,1.4,DRY,,9999.0,,Mostly Cloudy,238.90973855085102,mostly_cloudy.gif
 2025-07-30 07:49,12.3,12.5,0.0,0.0,1018.8,98.0,84.6,12.5,1.0,12.5,249.0,W,0.0,0.0,DRY,,9999.0,,Cloudy,252.44398299609128,cloudy.gif
 2025-07-30 07:54,12.3,12.5,0.0,0.0,1018.9,98.0,95.6,12.5,1.0,12.5,131.0,SE,1.8,1.4,DRY,,9999.0,,Mostly Cloudy,265.9687620727346,mostly_cloudy.gif
@@ -285,3 +283,5 @@ timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,i
 2025-07-31 07:09,13.5,16.8,0.0,0.0,1018.02,81.0,91.9,16.8,0.0,16.8,63.0,NE,0.0,0.0,DRY,,9999.0,,Mostly Sunny,142.49420364122847,mostly_sunny.gif
 2025-07-31 07:14,14.1,17.2,0.0,0.0,1018.02,82.0,95.4,17.2,0.0,17.2,70.0,E,1.8,0.4,DRY,,9999.0,,Mostly Sunny,155.6879829040105,mostly_sunny.gif
 2025-07-31 07:19,13.7,16.6,0.0,0.0,1017.81,83.0,99.1,16.6,0.0,16.6,71.0,E,0.0,0.0,DRY,,9999.0,,Mostly Sunny,168.98687275734545,mostly_sunny.gif
+2025-07-31 07:24,13.7,17.4,0.0,0.0,1018.02,79.0,121.0,17.4,1.0,17.4,74.0,E,3.6,1.8,DRY,,9999.0,,Mostly Sunny,182.36901808617858,mostly_sunny.gif
+2025-07-31 07:29,13.6,17.1,0.0,0.0,1018.08,80.0,162.0,17.1,1.0,17.1,83.0,E,1.8,1.1,DRY,,9999.0,,Sunny,195.81511220597162,sunny.gif
