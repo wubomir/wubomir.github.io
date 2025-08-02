@@ -1,7 +1,5 @@
 timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,imedvode1_precipitation_today,imedvode1_pressure,imedvode1_relative_humidity,imedvode1_solar_radiation,imedvode1_temperature,imedvode1_uv_index,imedvode1_wind_chill,imedvode1_wind_direction_degrees,windCardinals,imedvode1_wind_gust,imedvode1_wind_speed,visibility,condition1,condition2,condition3,sky,max_solar_radiation,image_name
-2025-08-01 16:15,16.6,23.4,0.0,0.0,1011.89,66.0,170.7,23.3,0.0,23.3,337.0,NW,13.0,11.9,8000.0,DRY,,,Cloudy,577.1940064241244,cloudy.gif
-2025-08-01 16:20,17.1,23.3,0.0,0.0,1011.79,69.0,175.6,23.1,0.0,23.1,311.0,NW,7.2,6.5,8000.0,DRY,,,Cloudy,566.7602875721014,cloudy.gif
-2025-08-01 16:25,16.0,23.3,0.0,0.0,1011.99,64.0,111.1,23.2,0.0,23.2,293.0,NW,14.8,13.7,8000.0,DRY,,,Cloudy,556.1221125883842,cloudy.gif
+2025-08-01 16:25,16.0,23.1,0.0,0.0,1011.99,64.0,111.1,23.2,0.0,23.2,293.0,NW,14.8,13.7,8000.0,DRY,,,Cloudy,556.1221125883842,cloudy.gif
 2025-08-01 16:30,16.6,23.1,0.0,0.0,1011.99,67.0,90.7,23.0,0.0,23.0,231.0,SW,7.2,3.6,8000.0,DRY,,,Cloudy,545.2849620898389,cloudy.gif
 2025-08-01 16:35,16.5,23.0,0.0,0.0,1012.19,67.0,114.6,22.9,1.0,22.9,292.0,W,7.2,6.8,8000.0,DRY,,,Cloudy,534.2544453099142,cloudy.gif
 2025-08-01 16:40,16.3,21.9,0.0,0.0,1011.99,71.0,148.6,21.8,1.0,21.8,336.0,NW,13.0,11.9,8000.0,DRY,,,Cloudy,523.036300767742,cloudy.gif
@@ -262,3 +260,5 @@ timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,i
 2025-08-02 16:00,17.1,18.2,27.61,8.89,1011.21,94.0,11.1,18.2,0.0,18.2,207.0,SW,3.6,2.2,9999.0,RAIN,HEAVY,,Cloudy,604.7135814675909,rain_heavy.gif
 2025-08-02 16:05,17.2,18.0,30.61,10.9,1011.21,95.0,14.2,18.0,0.0,18.0,243.0,SW,5.4,4.0,9999.0,RAIN,HEAVY,,Cloudy,594.9080061056079,rain_heavy.gif
 2025-08-02 16:10,17.4,18.0,34.8,14.71,1011.41,96.0,17.3,18.0,0.0,18.0,158.0,S,0.0,0.0,9999.0,RAIN,HEAVY,,Cloudy,584.8821063427184,rain_heavy.gif
+2025-08-02 16:15,17.4,18.0,27.61,15.19,1011.21,96.0,52.0,18.0,0.0,18.0,311.0,NW,3.6,2.2,9999.0,RAIN,HEAVY,,Cloudy,574.6409915433094,rain_heavy.gif
+2025-08-02 16:20,17.5,18.1,8.99,15.49,1011.21,96.0,52.0,18.1,0.0,18.1,115.0,SE,0.0,0.0,9999.0,RAIN,HEAVY,,Cloudy,564.1898999741904,rain_heavy.gif
