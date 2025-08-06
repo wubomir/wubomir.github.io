@@ -1,8 +1,6 @@
 timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,imedvode1_precipitation_today,imedvode1_pressure,imedvode1_relative_humidity,imedvode1_solar_radiation,imedvode1_temperature,imedvode1_uv_index,imedvode1_wind_chill,imedvode1_wind_direction_degrees,windCardinals,imedvode1_wind_gust,imedvode1_wind_speed,condition1,condition2,visibility,condition3,sky,max_solar_radiation,image_name
-2025-08-05 20:41,16.5,21.4,0.0,0.0,1018.39,73.0,0.3,21.3,4.0,21.3,250.0,W,3.6,2.9,DRY,,9999.0,,Twilight,0.0,cloudy.gif
-2025-08-05 20:46,16.2,21.3,0.0,0.0,1018.49,73.0,0.1,21.2,4.0,21.2,210.0,SW,3.6,2.9,DRY,,9999.0,,Twilight,0.0,cloudy.gif
-2025-08-05 20:51,16.3,21.4,0.0,0.0,1018.19,73.0,0.0,21.3,4.0,21.3,234.0,SW,3.6,2.2,DRY,,9999.0,,Twilight,0.0,cloudy.gif
-2025-08-05 20:56,16.4,21.3,0.0,0.0,1018.49,74.0,0.0,21.2,4.0,21.2,233.0,SW,3.6,3.2,DRY,,9999.0,,Twilight,0.0,cloudy.gif
+2025-08-05 20:51,16.3,21.4,0.0,0.0,1018.19,74.0,0.0,21.3,4.0,21.3,234.0,SW,5.4,2.2,DRY,,9999.0,,Twilight,0.0,cloudy.gif
+2025-08-05 20:56,16.4,21.3,0.0,0.0,1018.49,74.0,0.0,21.2,4.0,21.2,233.0,SW,5.4,3.2,DRY,,9999.0,,Twilight,0.0,cloudy.gif
 2025-08-05 21:01,16.4,21.3,0.0,0.0,1018.59,74.0,0.0,21.2,4.0,21.2,236.0,SW,5.4,5.0,DRY,,9999.0,,Twilight,0.0,cloudy.gif
 2025-08-05 21:06,16.2,21.0,0.0,0.0,1018.49,74.0,0.0,21.0,4.0,21.0,217.0,SW,3.6,2.2,DRY,,9999.0,,Night,0.0,night.gif
 2025-08-05 21:11,16.4,21.0,0.0,0.0,1018.69,75.0,0.0,21.0,4.0,21.0,224.0,SW,1.8,0.7,DRY,,9999.0,,Night,0.0,night.gif
@@ -93,3 +91,5 @@ timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,i
 2025-08-06 20:26,15.9,18.5,0.0,5.11,1023.1,85.0,1.6,18.5,0.0,18.5,240.0,SW,1.8,1.4,DRY,,9999.0,,Twilight,0.0,cloudy.gif
 2025-08-06 20:31,15.7,18.3,0.0,5.11,1023.1,85.0,1.0,18.3,0.0,18.3,228.0,SW,3.6,3.6,DRY,,9999.0,,Twilight,0.0,cloudy.gif
 2025-08-06 20:36,15.7,18.1,0.0,5.11,1022.99,86.0,0.6,18.1,0.0,18.1,241.0,SW,3.6,2.9,DRY,,9999.0,,Twilight,0.0,cloudy.gif
+2025-08-06 20:41,15.5,17.9,0.0,5.11,1023.2,86.0,0.3,17.9,0.0,17.9,235.0,SW,3.6,2.2,DRY,,9999.0,,Twilight,0.0,cloudy.gif
+2025-08-06 20:46,15.6,17.8,0.0,5.11,1023.3,87.0,0.1,17.8,0.0,17.8,187.0,S,0.0,0.0,DRY,,9999.0,,Twilight,0.0,cloudy.gif
