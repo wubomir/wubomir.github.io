@@ -1,7 +1,6 @@
 timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,imedvode1_precipitation_today,imedvode1_pressure,imedvode1_relative_humidity,imedvode1_solar_radiation,imedvode1_temperature,imedvode1_uv_index,imedvode1_wind_chill,imedvode1_wind_direction_degrees,windCardinals,imedvode1_wind_gust,imedvode1_wind_speed,visibility,condition1,condition2,condition3,sky,max_solar_radiation,image_name
-2025-08-18 04:58,16.6,16.8,0.0,0.0,1017.2,98.0,0.1,16.8,1.0,16.8,231.0,SW,3.6,2.9,6000.0,DRY,,,Night,0.0,night.gif
-2025-08-18 05:44,16.5,16.8,0.0,0.0,1017.71,98.0,0.1,16.8,1.0,16.8,227.0,SW,3.6,2.9,6000.0,DRY,,,Twilight,0.0,cloudy.gif
-2025-08-18 06:08,16.5,16.8,0.0,0.0,1017.71,98.0,0.1,16.8,1.0,16.8,227.0,SW,3.6,2.9,6000.0,DRY,,,Cloudy,1.1850836925989008,cloudy.gif
+2025-08-18 05:44,16.5,16.5,0.0,0.0,1017.71,98.0,0.1,16.5,1.0,16.5,227.0,SW,3.6,2.9,6000.0,DRY,,,Twilight,0.0,cloudy.gif
+2025-08-18 06:08,16.5,16.5,0.0,0.0,1017.71,98.0,0.1,16.5,1.0,16.5,227.0,SW,3.6,2.9,6000.0,DRY,,,Cloudy,1.1850836925989008,cloudy.gif
 2025-08-18 06:44,16.2,16.5,0.0,0.0,1018.08,98.0,18.5,16.5,1.0,16.5,247.0,SW,1.8,1.8,6000.0,DRY,,,Mostly Cloudy,54.16203125731534,mostly_cloudy.gif
 2025-08-18 06:49,16.1,16.4,0.0,0.0,1018.08,98.0,22.8,16.4,1.0,16.4,246.0,SW,0.0,0.0,6000.0,DRY,,,Partly Cloudy,61.9984511409827,partly_cloudy.gif
 2025-08-18 07:20,16.4,16.8,0.0,0.0,1018.49,97.0,49.6,16.8,1.0,16.8,247.0,SW,1.8,1.8,6000.0,DRY,,,Partly Cloudy,121.62627671483517,partly_cloudy.gif
@@ -60,3 +59,4 @@ timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,i
 2025-08-19 02:41,13.2,15.0,0.0,0.0,1017.91,89.0,0.0,15.0,0.0,15.0,227.0,SW,0.0,0.0,9999.0,DRY,,,Night,0.0,night.gif
 2025-08-19 03:42,13.0,14.2,0.0,0.0,1018.19,92.0,0.0,14.2,0.0,14.2,292.0,W,1.8,0.4,9999.0,DRY,,,Night,0.0,night.gif
 2025-08-19 04:02,13.2,14.2,0.0,0.0,1018.19,94.0,0.0,14.2,0.0,14.2,307.0,NW,0.0,0.0,9999.0,DRY,,,Night,0.0,night.gif
+2025-08-19 04:53,12.0,14.0,0.0,0.0,1017.81,88.0,0.0,14.0,0.0,14.0,236.0,SW,3.6,2.2,9999.0,DRY,,,Night,0.0,night.gif
