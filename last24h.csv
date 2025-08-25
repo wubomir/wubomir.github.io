@@ -1,9 +1,7 @@
 timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,imedvode1_precipitation_today,imedvode1_pressure,imedvode1_relative_humidity,imedvode1_solar_radiation,imedvode1_temperature,imedvode1_uv_index,imedvode1_wind_chill,imedvode1_wind_direction_degrees,windCardinals,imedvode1_wind_gust,imedvode1_wind_speed,condition1,condition2,visibility,condition3,sky,max_solar_radiation,image_name
-2025-08-24 06:35,12.6,12.8,0.0,0.0,1019.81,98.0,11.3,12.8,1.0,12.8,5.0,N,0.0,0.0,DRY,,9999.0,,Partly Cloudy,29.252688761304437,partly_cloudy.gif
-2025-08-24 06:40,12.6,12.8,0.0,0.0,1019.81,98.0,14.0,12.8,1.0,12.8,5.0,N,0.0,0.0,DRY,,9999.0,,Partly Cloudy,36.93099944550642,partly_cloudy.gif
-2025-08-24 06:45,12.6,12.8,0.0,0.0,1019.91,98.0,12.1,12.8,1.0,12.8,5.0,N,0.0,0.0,DRY,,9999.0,,Mostly Cloudy,44.70477790241991,mostly_cloudy.gif
-2025-08-24 06:50,12.6,12.8,0.0,0.0,1019.91,98.0,6.5,12.8,1.0,12.8,5.0,N,0.0,0.0,DRY,,9999.0,,Cloudy,52.56238298544024,cloudy.gif
-2025-08-24 06:55,12.6,12.8,0.0,0.0,1020.29,98.0,7.2,12.8,1.0,12.8,5.0,N,0.0,0.0,DRY,,9999.0,,Cloudy,60.468976500925876,cloudy.gif
+2025-08-24 06:45,12.4,12.6,0.0,0.0,1019.91,98.0,12.1,12.6,1.0,12.6,5.0,N,3.6,2.2,DRY,,9999.0,,Mostly Cloudy,44.70477790241991,mostly_cloudy.gif
+2025-08-24 06:50,12.4,12.6,0.0,0.0,1019.91,98.0,6.5,12.6,1.0,12.6,5.0,N,3.6,2.2,DRY,,9999.0,,Cloudy,52.56238298544024,cloudy.gif
+2025-08-24 06:55,12.4,12.6,0.0,0.0,1020.29,98.0,7.2,12.6,1.0,12.6,5.0,N,3.6,2.2,DRY,,9999.0,,Cloudy,60.468976500925876,cloudy.gif
 2025-08-24 07:00,12.4,12.6,0.0,0.0,1020.12,98.0,14.5,12.6,1.0,12.6,5.0,N,3.6,2.2,DRY,,9999.0,,Mostly Cloudy,68.41202819011303,mostly_cloudy.gif
 2025-08-24 07:05,12.4,12.6,0.0,0.0,1020.12,98.0,27.0,12.6,1.0,12.6,9.0,N,1.8,1.8,DRY,,9999.0,,Partly Cloudy,76.38124881866587,partly_cloudy.gif
 2025-08-24 07:10,12.4,12.6,0.0,0.0,1020.29,98.0,58.4,12.6,1.0,12.6,31.0,NE,1.8,1.4,DRY,,9999.0,,Mostly Sunny,84.36796227872955,mostly_sunny.gif
@@ -285,3 +283,5 @@ timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,i
 2025-08-25 06:20,7.5,7.7,0.0,0.0,1020.69,99.0,4.2,7.7,0.0,7.7,19.0,N,1.8,1.4,DRY,,9999.0,,Sunny,5.551535373862991,sunny.gif
 2025-08-25 06:25,7.6,7.8,0.0,0.0,1020.59,99.0,6.1,7.8,0.0,7.8,19.0,N,0.0,0.0,DRY,,9999.0,,Partly Cloudy,12.576588262550656,partly_cloudy.gif
 2025-08-25 06:30,7.6,7.8,0.0,0.0,1020.79,99.0,8.2,7.8,0.0,7.8,19.0,N,0.0,0.0,DRY,,9999.0,,Partly Cloudy,19.89233697909023,partly_cloudy.gif
+2025-08-25 06:35,8.0,8.2,0.0,0.0,1020.69,99.0,10.5,8.2,0.0,8.2,19.0,N,0.0,0.0,DRY,,9999.0,,Partly Cloudy,27.41471752053878,partly_cloudy.gif
+2025-08-25 06:40,8.1,8.3,0.0,0.0,1020.89,99.0,12.9,8.3,0.0,8.3,19.0,N,0.0,0.0,DRY,,9999.0,,Partly Cloudy,35.08028803881687,partly_cloudy.gif
