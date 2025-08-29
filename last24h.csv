@@ -1,7 +1,5 @@
 timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,imedvode1_precipitation_today,imedvode1_pressure,imedvode1_relative_humidity,imedvode1_solar_radiation,imedvode1_temperature,imedvode1_uv_index,imedvode1_wind_chill,imedvode1_wind_direction_degrees,windCardinals,imedvode1_wind_gust,imedvode1_wind_speed,condition1,condition2,visibility,condition3,sky,max_solar_radiation,image_name
-2025-08-28 11:11,17.7,24.9,0.0,0.0,1013.41,65.0,467.3,24.7,5.0,24.7,22.0,N,5.4,4.3,DRY,,9999.0,,Mostly Sunny,624.1659469312295,mostly_sunny.gif
-2025-08-28 11:16,17.5,25.5,0.0,0.0,1013.21,62.0,494.4,25.3,5.0,25.3,346.0,N,5.4,4.3,DRY,,9999.0,,Mostly Sunny,630.9733215769882,mostly_sunny.gif
-2025-08-28 11:21,16.9,24.9,0.0,0.0,1013.21,62.0,476.9,24.7,5.0,24.7,326.0,NW,7.2,5.4,DRY,,9999.0,,Mostly Sunny,637.4948629618642,mostly_sunny.gif
+2025-08-28 11:21,16.9,24.9,0.0,0.0,1012.9,63.0,476.9,24.7,5.0,24.7,326.0,NW,7.2,5.4,DRY,,9999.0,,Mostly Sunny,637.4948629618642,mostly_sunny.gif
 2025-08-28 11:26,17.0,24.7,0.0,0.0,1012.9,63.0,474.6,24.5,5.0,24.5,321.0,NW,9.4,6.8,DRY,,9999.0,,Mostly Sunny,643.7272787517596,mostly_sunny.gif
 2025-08-28 11:31,17.2,24.6,0.0,0.0,1013.0,64.0,471.1,24.4,5.0,24.4,6.0,N,3.6,3.6,DRY,,9999.0,,Mostly Sunny,649.6674274421117,mostly_sunny.gif
 2025-08-28 11:36,17.7,25.1,0.0,0.0,1012.9,64.0,465.1,24.9,5.0,24.9,357.0,N,7.2,4.7,DRY,,9999.0,,Mostly Sunny,655.3123190367965,mostly_sunny.gif
@@ -252,3 +250,4 @@ timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,i
 2025-08-29 08:22,16.7,17.1,1.19,13.21,1008.81,97.0,39.2,17.1,0.0,17.1,67.0,NE,0.0,0.0,RAIN,LIGHT,9999.0,,Cloudy,255.67889457633328,rain_light.gif
 2025-08-29 08:27,16.8,17.2,0.0,13.21,1009.21,97.0,45.8,17.2,0.0,17.2,338.0,N,1.8,1.1,RAIN,LIGHT,9999.0,,Cloudy,269.11607776320335,rain_light.gif
 2025-08-29 08:32,16.8,17.2,0.0,13.21,1009.31,97.0,40.9,17.2,0.0,17.2,282.0,W,0.0,0.0,DRY,,9999.0,,Cloudy,282.4778872009789,cloudy.gif
+2025-08-29 11:17,18.0,18.4,0.0,14.2,1010.09,97.0,445.6,18.4,4.0,18.4,342.0,N,0.0,0.0,RAIN,LIGHT,9999.0,,Mostly Sunny,628.9492083170093,rain_light.gif
