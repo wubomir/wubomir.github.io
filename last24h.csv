@@ -1,6 +1,5 @@
 timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,imedvode1_precipitation_today,imedvode1_pressure,imedvode1_relative_humidity,imedvode1_solar_radiation,imedvode1_temperature,imedvode1_uv_index,imedvode1_wind_chill,imedvode1_wind_direction_degrees,windCardinals,imedvode1_wind_gust,imedvode1_wind_speed,visibility,condition1,condition2,condition3,sky,max_solar_radiation,image_name
-2025-08-30 13:07,17.2,20.9,0.0,0.0,1008.91,79.0,711.3,20.9,6.0,20.9,153.0,SE,3.6,2.2,500.0,DRY,,FOG,Sunny,696.4533510852443,fog.gif
-2025-08-30 13:12,17.0,21.4,0.0,0.0,1008.91,77.0,605.7,21.2,5.0,21.2,122.0,SE,7.2,5.4,500.0,DRY,,FOG,Sunny,696.0216196767541,fog.gif
+2025-08-30 13:12,17.0,21.4,0.0,0.0,1008.81,77.0,605.7,21.2,5.0,21.2,122.0,SE,7.2,5.4,500.0,DRY,,FOG,Sunny,696.0216196767541,fog.gif
 2025-08-30 13:17,16.9,21.3,0.0,0.0,1008.81,77.0,585.0,21.1,5.0,21.1,116.0,SE,9.4,8.6,500.0,DRY,,FOG,Mostly Sunny,695.2670301345848,fog.gif
 2025-08-30 13:22,17.3,20.9,0.0,0.0,1009.01,80.0,667.9,20.9,6.0,20.9,112.0,E,5.4,4.7,500.0,DRY,,FOG,Sunny,694.1899475061107,fog.gif
 2025-08-30 13:32,16.9,20.9,0.0,0.0,1008.7,78.0,669.4,20.9,6.0,20.9,152.0,SE,7.2,6.5,500.0,DRY,,FOG,Sunny,691.0705639127224,fog.gif
@@ -251,3 +250,5 @@ timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,i
 2025-08-31 12:47,16.6,22.9,0.0,0.3,1013.99,68.0,524.1,22.8,5.0,22.8,56.0,NE,7.2,5.8,9999.0,DRY,,,Mostly Sunny,691.2176116517884,mostly_sunny.gif
 2025-08-31 12:52,16.1,23.1,0.0,0.3,1014.19,65.0,526.9,23.0,5.0,23.0,126.0,SE,7.2,5.8,9999.0,DRY,,,Mostly Sunny,692.0582753916761,mostly_sunny.gif
 2025-08-31 12:57,16.0,23.4,0.0,0.3,1013.99,63.0,529.1,23.4,5.0,23.4,151.0,SE,7.2,6.1,9999.0,DRY,,,Mostly Sunny,692.5759171507024,mostly_sunny.gif
+2025-08-31 13:02,17.1,23.4,0.0,0.3,1013.88,68.0,525.5,23.3,5.0,23.3,166.0,S,7.2,5.8,9999.0,DRY,,,Mostly Sunny,692.7702703572062,mostly_sunny.gif
+2025-08-31 13:07,16.3,23.8,0.0,0.3,1013.99,63.0,523.4,23.7,5.0,23.7,94.0,E,1.8,1.8,9999.0,DRY,,,Mostly Sunny,692.6412290074755,mostly_sunny.gif
