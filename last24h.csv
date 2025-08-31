@@ -1,6 +1,5 @@
 timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,imedvode1_precipitation_today,imedvode1_pressure,imedvode1_relative_humidity,imedvode1_solar_radiation,imedvode1_temperature,imedvode1_uv_index,imedvode1_wind_chill,imedvode1_wind_direction_degrees,windCardinals,imedvode1_wind_gust,imedvode1_wind_speed,visibility,condition1,condition2,condition3,sky,max_solar_radiation,image_name
-2025-08-30 12:47,17.0,20.3,0.0,0.0,1008.91,80.0,396.7,20.3,3.0,20.3,163.0,S,5.4,4.0,500.0,DRY,,FOG,Partly Cloudy,694.9500052686602,fog.gif
-2025-08-30 12:57,17.0,20.6,0.0,0.0,1008.91,80.0,478.7,20.6,4.0,20.6,126.0,SE,1.8,1.4,500.0,DRY,,FOG,Mostly Sunny,696.3475807796872,fog.gif
+2025-08-30 12:57,17.0,20.6,0.0,0.0,1008.91,79.0,478.7,20.6,4.0,20.6,126.0,SE,1.8,1.4,500.0,DRY,,FOG,Mostly Sunny,696.3475807796872,fog.gif
 2025-08-30 13:07,17.2,20.9,0.0,0.0,1008.91,79.0,711.3,20.9,6.0,20.9,153.0,SE,3.6,2.2,500.0,DRY,,FOG,Sunny,696.4533510852443,fog.gif
 2025-08-30 13:12,17.0,21.4,0.0,0.0,1008.91,77.0,605.7,21.2,5.0,21.2,122.0,SE,7.2,5.4,500.0,DRY,,FOG,Sunny,696.0216196767541,fog.gif
 2025-08-30 13:17,16.9,21.3,0.0,0.0,1008.81,77.0,585.0,21.1,5.0,21.1,116.0,SE,9.4,8.6,500.0,DRY,,FOG,Mostly Sunny,695.2670301345848,fog.gif
@@ -249,3 +248,5 @@ timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,i
 2025-08-31 12:27,17.0,22.2,0.0,0.3,1014.19,73.0,517.6,22.0,5.0,22.0,71.0,E,9.4,9.0,9999.0,DRY,,,Mostly Sunny,684.6356817816795,mostly_sunny.gif
 2025-08-31 12:32,17.2,22.2,0.0,0.3,1013.99,74.0,519.7,22.0,5.0,22.0,125.0,SE,7.2,6.1,9999.0,DRY,,,Mostly Sunny,686.7625605369581,mostly_sunny.gif
 2025-08-31 12:37,16.3,22.3,0.0,0.3,1014.19,69.0,520.4,22.2,5.0,22.2,59.0,NE,9.4,7.6,9999.0,DRY,,,Mostly Sunny,688.5690867582259,mostly_sunny.gif
+2025-08-31 12:42,15.4,22.5,0.0,0.3,1014.09,64.0,521.6,22.5,5.0,22.5,124.0,SE,7.2,5.8,9999.0,DRY,,,Mostly Sunny,690.0543529792385,mostly_sunny.gif
+2025-08-31 12:47,16.6,22.9,0.0,0.3,1013.99,68.0,524.1,22.8,5.0,22.8,56.0,NE,7.2,5.8,9999.0,DRY,,,Mostly Sunny,691.2176116517884,mostly_sunny.gif
