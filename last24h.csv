@@ -1,8 +1,4 @@
 timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,imedvode1_precipitation_today,imedvode1_pressure,imedvode1_relative_humidity,imedvode1_solar_radiation,imedvode1_temperature,imedvode1_uv_index,imedvode1_wind_chill,imedvode1_wind_direction_degrees,windCardinals,imedvode1_wind_gust,imedvode1_wind_speed,condition1,condition2,visibility,condition3,sky,max_solar_radiation,image_name
-2025-08-31 13:52,14.9,25.1,0.0,0.0,1013.61,53.0,514.3,25.1,4.0,25.1,154.0,SE,9.4,5.4,DRY,,9999.0,,Mostly Sunny,676.9890503927097,mostly_sunny.gif
-2025-08-31 13:57,14.2,24.3,0.0,0.0,1013.72,53.0,508.4,24.4,4.0,24.4,184.0,S,3.6,2.2,DRY,,9999.0,,Mostly Sunny,673.6555190296838,mostly_sunny.gif
-2025-08-31 14:02,12.5,25.0,0.0,0.0,1013.61,45.0,502.7,25.2,4.0,25.2,173.0,S,1.8,0.4,DRY,,9999.0,,Mostly Sunny,670.0079993582466,mostly_sunny.gif
-2025-08-31 14:07,15.3,24.6,0.0,0.0,1013.82,56.0,535.9,24.6,5.0,24.6,164.0,S,5.4,5.4,DRY,,9999.0,,Mostly Sunny,666.0483010507761,mostly_sunny.gif
 2025-08-31 14:12,13.0,23.8,0.0,0.0,1013.88,50.0,510.6,24.0,4.0,24.0,148.0,SE,9.4,9.0,DRY,,9999.0,,Mostly Sunny,661.7783911348259,mostly_sunny.gif
 2025-08-31 14:17,13.7,24.1,0.0,0.0,1013.72,52.0,150.1,24.2,1.0,24.2,116.0,SE,13.0,10.4,DRY,,9999.0,,Cloudy,657.2003934478795,cloudy.gif
 2025-08-31 14:22,13.8,23.7,0.0,0.0,1013.61,53.0,520.3,23.9,5.0,23.9,129.0,SE,7.2,7.2,DRY,,9999.0,,Mostly Sunny,652.3165880957828,mostly_sunny.gif
@@ -156,3 +152,4 @@ timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,i
 2025-09-01 13:30,16.4,23.4,0.0,0.0,1013.0,65.0,127.3,23.3,1.0,23.3,325.0,NW,7.2,4.7,DRY,,9999.0,,Cloudy,683.9208952585468,cloudy.gif
 2025-09-01 13:35,16.4,23.2,0.0,0.0,1012.8,66.0,94.6,23.1,0.0,23.1,300.0,NW,3.6,2.2,DRY,,9999.0,,Cloudy,681.9643304494739,cloudy.gif
 2025-09-01 13:40,16.6,23.1,0.0,0.0,1013.0,67.0,80.9,23.0,0.0,23.0,297.0,NW,9.4,6.8,DRY,,9999.0,,Cloudy,679.6874939272064,cloudy.gif
+2025-09-01 14:05,16.5,24.1,0.0,0.0,1013.21,63.0,217.4,24.0,2.0,24.0,301.0,NW,9.4,6.5,DRY,,9999.0,,Cloudy,663.5441428171007,cloudy.gif
