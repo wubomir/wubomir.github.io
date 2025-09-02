@@ -1,8 +1,5 @@
 timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,imedvode1_precipitation_today,imedvode1_pressure,imedvode1_relative_humidity,imedvode1_solar_radiation,imedvode1_temperature,imedvode1_uv_index,imedvode1_wind_chill,imedvode1_wind_direction_degrees,windCardinals,imedvode1_wind_gust,imedvode1_wind_speed,visibility,condition1,condition2,condition3,sky,max_solar_radiation,image_name
-2025-09-01 13:30,16.6,23.4,0.0,0.0,1013.0,65.0,127.3,23.3,0.0,23.3,325.0,NW,3.6,4.7,8000.0,DRY,,,Cloudy,683.9208952585468,cloudy.gif
-2025-09-01 13:35,16.6,23.2,0.0,0.0,1012.8,66.0,94.6,23.1,0.0,23.1,300.0,NW,3.6,2.2,8000.0,DRY,,,Cloudy,681.9643304494739,cloudy.gif
-2025-09-01 13:40,16.6,23.1,0.0,0.0,1013.0,67.0,80.9,23.0,0.0,23.0,297.0,NW,9.4,6.8,8000.0,DRY,,,Cloudy,679.6874939272064,cloudy.gif
-2025-09-01 14:05,16.5,24.1,0.0,0.0,1013.21,63.0,217.4,24.0,2.0,24.0,301.0,NW,9.4,6.5,8000.0,DRY,,,Cloudy,663.5441428171007,cloudy.gif
+2025-09-01 14:05,16.5,24.1,0.0,0.0,1013.21,63.0,217.4,24.0,2.0,24.0,301.0,NW,11.2,6.5,8000.0,DRY,,,Cloudy,663.5441428171007,cloudy.gif
 2025-09-01 14:15,16.3,23.6,0.0,0.0,1013.0,64.0,223.3,23.5,2.0,23.5,303.0,NW,11.2,9.4,8000.0,DRY,,,Cloudy,654.8964762657635,cloudy.gif
 2025-09-01 14:35,16.8,25.2,0.0,0.0,1013.0,60.0,474.0,25.1,4.0,25.1,296.0,NW,5.4,4.0,8000.0,DRY,,,Mostly Sunny,633.9392693528125,mostly_sunny.gif
 2025-09-01 15:01,15.9,25.3,0.0,0.0,1012.7,56.0,493.0,25.3,4.0,25.3,251.0,W,16.6,14.0,8000.0,DRY,,,Mostly Sunny,599.6405603252034,mostly_sunny.gif
@@ -63,3 +60,4 @@ timestamp,imedvode1_dewpoint,imedvode1_heat_index,imedvode1_precipitation_rate,i
 2025-09-02 12:17,17.2,18.7,0.0,8.1,1013.72,91.0,153.6,18.7,1.0,18.7,33.0,NE,3.6,2.2,9999.0,RAIN,LIGHT,,Cloudy,672.0240192059779,rain_light.gif
 2025-09-02 12:37,16.9,18.1,0.0,8.1,1013.0,93.0,179.8,18.1,1.0,18.1,52.0,NE,7.2,4.3,9999.0,RAIN,LIGHT,,Cloudy,681.0186636107555,rain_light.gif
 2025-09-02 12:52,17.2,18.4,0.0,8.1,1013.11,93.0,172.5,18.4,1.0,18.4,20.0,N,1.8,1.4,9999.0,DRY,,,Cloudy,684.3892761877032,cloudy.gif
+2025-09-02 13:33,17.4,18.9,1.8,8.41,1012.8,91.0,196.6,18.9,1.0,18.9,118.0,SE,1.8,1.8,9999.0,RAIN,LIGHT,,Cloudy,678.747784626156,rain_light.gif
