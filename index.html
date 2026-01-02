@@ -3,164 +3,336 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Medvode Weather</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Medvode Weather Station</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
+    :root {
+        --bg-primary: #121212;
+        --bg-secondary: #1a1a1a;
+        --bg-card: #1e1e1e;
+        --bg-card-hover: #252525;
+        --border-color: #2a2a2a;
+        --accent-green: #00e676;
+        --accent-blue: #29b6f6;
+        --accent-orange: #ff9800;
+        --accent-red: #ff5252;
+        --accent-yellow: #ffeb3b;
+        --accent-purple: #ab47bc;
+        --text-primary: #ffffff;
+        --text-secondary: #b0b0b0;
+        --text-muted: #707070;
+        --temp-hot: #ff5722;
+        --temp-warm: #ff9800;
+        --temp-cool: #29b6f6;
+        --temp-cold: #00bcd4;
+        --card-radius: 12px;
+        --transition: all 0.2s ease;
+    }
+
     * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
     }
     
+    html {
+        scroll-behavior: smooth;
+    }
+
     body {
-        font-family: 'Poppins', sans-serif;
-        background: #1a1a1a;
-        color: #fff;
+        font-family: 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
+        background: var(--bg-primary);
+        color: var(--text-primary);
         min-height: 100vh;
-        position: relative;
-        overflow-x: hidden;
+        line-height: 1.5;
     }
     
     .overlay {
-        position: fixed;
+        display: none;
+    }
+
+    /* Top Navigation Bar */
+    .top-bar {
+        background: linear-gradient(180deg, #1a1a1a 0%, #121212 100%);
+        border-bottom: 1px solid var(--border-color);
+        padding: 12px 24px;
+        position: sticky;
         top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.3);
-        z-index: -1;
+        z-index: 100;
     }
-    
-    .dashboard {
-        max-width: 1200px;
+
+    .top-bar-content {
+        max-width: 1600px;
         margin: 0 auto;
-        padding: 20px;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
-    }
-    
-    .header {
-        grid-column: 1 / -1;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 15px 20px;
-        background: rgba(255, 255, 255, 0.0);
-        border-radius: 1px;
-        backdrop-filter: blur(0px);
     }
-    
-    .location {
-        font-size: 40px;
+
+    .station-info {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .station-name {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--text-primary);
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .live-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        background: rgba(0, 230, 118, 0.15);
+        color: var(--accent-green);
+        padding: 4px 10px;
+        border-radius: 20px;
+        font-size: 0.7rem;
         font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+
+    .live-badge::before {
+        content: '';
+        width: 8px;
+        height: 8px;
+        background: var(--accent-green);
+        border-radius: 50%;
+        animation: blink 1.5s infinite;
+    }
+
+    @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.3; }
     }
 
     .astro-data {
         display: flex;
-        gap: 25px;
+        gap: 6px;
         align-items: center;
         flex-wrap: wrap;
-    }
-
-    .astro-text {
-        color: rgba(255, 255, 255, 0.7);
-        margin-right: 3px;
-    }
-    
-    .astro-item span:last-child {
-        color: #fff;
-        font-weight: 500;
     }
 
     .astro-item {
         display: flex;
         align-items: center;
-        gap: 8px;
-        font-size: 15px;
-        color: rgba(255, 255, 255, 0.9);
+        gap: 6px;
+        font-size: 0.8rem;
+        color: var(--text-secondary);
+        padding: 6px 12px;
+        background: var(--bg-card);
+        border-radius: 6px;
+        border: 1px solid var(--border-color);
+        transition: var(--transition);
+    }
+
+    .astro-item:hover {
+        background: var(--bg-card-hover);
+        border-color: var(--accent-blue);
+    }
+
+    .astro-text {
+        display: none;
+    }
+    
+    .astro-item span:last-child {
+        color: var(--text-primary);
+        font-weight: 500;
+        font-family: 'Roboto Mono', monospace;
     }
 
     .astro-item i {
-        color: #4CAF50;
-        width: 18px;
-        text-align: center;
+        font-size: 0.9rem;
+    }
+
+    .astro-item i.fa-sun {
+        color: var(--accent-yellow);
+    }
+
+    .astro-item i.fa-moon {
+        color: #b0bec5;
     }
     
-    .current-weather {
-        grid-column: 1 / -1;
-        display: flex;
-        align-items: center;
+    .dashboard {
+        max-width: 1600px;
+        margin: 0 auto;
         padding: 20px;
-        margin: 20px 0;
+        display: grid;
+        grid-template-columns: 340px 1fr 1fr 1fr;
+        gap: 16px;
     }
-    
+
+    /* Main Temperature Card */
+    .current-weather {
+        grid-column: 1;
+        grid-row: 1 / 4;
+        background: linear-gradient(145deg, #1e1e1e 0%, #252525 100%);
+        border: 1px solid var(--border-color);
+        border-radius: var(--card-radius);
+        padding: 28px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .current-weather::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 3px;
+        background: linear-gradient(90deg, var(--accent-blue), var(--accent-green));
+    }
+
     .weather-icon {
-        width: 200px;
-        height: 180px;
-        margin-right: 30px;
-        filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.2));
+        width: 140px;
+        height: 140px;
+        margin-bottom: 16px;
+        filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.5));
     }
-    
+
     .temperature {
         display: flex;
-        align-items: baseline;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .main-temp {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
     }
     
     .temp-number {
-        font-size: 120px;
-        font-weight: 700;
+        font-size: 5.5rem;
+        font-weight: 900;
         line-height: 1;
-        text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+        color: var(--text-primary);
+        font-family: 'Roboto', sans-serif;
+        letter-spacing: -3px;
     }
     
     .temp-unit {
-        font-size: 48px;
-        margin-left: 10px;
+        font-size: 2rem;
         font-weight: 300;
+        color: var(--text-secondary);
+        margin-top: 8px;
+        margin-left: 4px;
     }
         
     .feels-like {
         display: flex;
-        align-items: baseline;
-        gap: 4px;
-        font-size: 1.5rem;
-        color: rgba(255, 255, 255, 0.8);
-        margin-left: 20px;
-        margin-top: 0.5rem;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        font-size: 1rem;
+        color: var(--text-secondary);
+        margin-top: 12px;
+        padding: 10px 20px;
+        background: var(--bg-secondary);
+        border-radius: 8px;
+        border: 1px solid var(--border-color);
+        width: 100%;
     }
 
     .feels-label {
-        font-weight: 100;
-        margin-right: 4px;
+        color: var(--text-muted);
     }
 
     .feels-value {
         font-weight: 600;
-        color: #fff;
+        color: var(--text-primary);
+        font-family: 'Roboto Mono', monospace;
     }
 
     .feels-unit {
-        font-weight: 100;
-        font-size: 0.85em;
-        margin-left: 2px;
-        color: #fff;
-    }    
+        color: var(--text-secondary);
+    }
+
+    .temp-range {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 20px;
+        padding-top: 20px;
+        border-top: 1px solid var(--border-color);
+    }
+
+    .temp-range-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4px;
+    }
+
+    .temp-range-label {
+        font-size: 0.75rem;
+        color: var(--text-muted);
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+
+    .temp-range-value {
+        font-size: 1.5rem;
+        font-weight: 700;
+        font-family: 'Roboto Mono', monospace;
+    }
+
+    .temp-range-value.low {
+        color: var(--accent-blue);
+    }
+
+    .temp-range-value.high {
+        color: var(--accent-orange);
+    }
+
+    .temp-range-value.avg {
+        color: var(--text-primary);
+    }
     
+    /* Stats Cards */
     .stats-section {
-        background: rgba(255, 255, 255, 0.1);
-        border-radius: 15px;
+        background: var(--bg-card);
+        border: 1px solid var(--border-color);
+        border-radius: var(--card-radius);
         padding: 20px;
-        backdrop-filter: blur(5px);
-        height: fit-content;
+        transition: var(--transition);
+    }
+
+    .stats-section:hover {
+        border-color: #3a3a3a;
+        background: var(--bg-card-hover);
     }
     
     .stats-section h3 {
-        color: #4CAF50;
-        margin-bottom: 15px;
-        font-size: 18px;
+        color: var(--text-secondary);
+        margin-bottom: 16px;
+        font-size: 0.75rem;
         font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding-bottom: 12px;
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .stats-section h3 i {
+        color: var(--accent-blue);
+        font-size: 0.85rem;
     }
     
     .stat-item {
@@ -168,218 +340,376 @@
         justify-content: space-between;
         align-items: center;
         padding: 12px 0;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.03);
     }
     
     .stat-item:last-child {
         border-bottom: none;
+        padding-bottom: 0;
+    }
+
+    .stat-item:first-of-type {
+        padding-top: 4px;
     }
     
     .stat-label {
         display: flex;
         align-items: center;
         gap: 10px;
-        font-weight: 100;
+        color: var(--text-secondary);
+        font-size: 0.9rem;
+        font-weight: 400;
     }
     
     .stat-label i {
-        color: #4CAF50;
-        width: 20px;
+        color: var(--text-muted);
+        width: 18px;
         text-align: center;
+        font-size: 0.85rem;
     }
     
     .stat-value {
-        color: #fff;
-        font-weight: 500;
+        color: var(--text-primary);
+        font-weight: 600;
+        font-size: 0.95rem;
+        font-family: 'Roboto Mono', monospace;
     }
     
     .wind-direction {
         display: flex;
         align-items: center;
-        gap: 10px;
+        gap: 8px;
     }
     
     .wind-arrow {
         width: 20px;
         height: 20px;
+        filter: brightness(0) invert(0.7);
     }
 
     #min-temp {
-        color: #6ba3ff;
+        color: var(--accent-blue);
     }
 
     #max-temp {
-        color: #ffa500;
-    }
-
-    .stat-value {
-        transition: color 0.3s ease;
+        color: var(--accent-orange);
     }
 
     .pressure-arrow {
-        color: #4CAF50;
-        margin-right: 8px;
-        font-size: 0.9em;
-        vertical-align: middle;
+        margin-right: 4px;
+        font-size: 0.75em;
+    }
+
+    .pressure-arrow.fa-arrow-up {
+        color: var(--accent-green);
+    }
+
+    .pressure-arrow.fa-arrow-down {
+        color: var(--accent-red);
     }
     
     #curr-pressure span {
         vertical-align: middle;
     }
+
+    /* Gauge-style cards */
+    .gauge-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 24px;
+        text-align: center;
+    }
+
+    .gauge-value {
+        font-size: 2.5rem;
+        font-weight: 700;
+        font-family: 'Roboto Mono', monospace;
+        color: var(--text-primary);
+        margin: 12px 0 8px;
+    }
+
+    .gauge-label {
+        font-size: 0.8rem;
+        color: var(--text-muted);
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+
+    .gauge-unit {
+        font-size: 0.9rem;
+        color: var(--text-secondary);
+        font-weight: 400;
+    }
+
+    .gauge-icon {
+        font-size: 2rem;
+        color: var(--accent-blue);
+    }
+
+    /* UV Index color coding */
+    .uv-low { color: var(--accent-green); }
+    .uv-moderate { color: var(--accent-yellow); }
+    .uv-high { color: var(--accent-orange); }
+    .uv-very-high { color: var(--accent-red); }
+    .uv-extreme { color: var(--accent-purple); }
         
     .update-status {
         grid-column: 1 / -1;
         text-align: center;
-        color: rgba(255, 255, 255, 0.7);
-        padding: 10px;
-        background: rgba(0, 0, 0, 0.4);
-        border-radius: 10px;
-        backdrop-filter: blur(5px);
-        font-size: 0.9rem;
+        color: var(--text-muted);
+        padding: 12px 20px;
+        background: var(--bg-secondary);
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        font-size: 0.8rem;
+        font-family: 'Roboto Mono', monospace;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
     }
-    
-    @media (max-width: 1024px) {
+
+    .update-status i {
+        color: var(--accent-green);
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 1400px) {
         .dashboard {
-            grid-template-columns: repeat(2, 1fr);
-            padding: 15px;
+            grid-template-columns: 300px 1fr 1fr;
+        }
+        
+        .current-weather {
+            grid-row: 1 / 3;
+        }
+    }
+
+    @media (max-width: 1100px) {
+        .dashboard {
+            grid-template-columns: 1fr 1fr;
+        }
+        
+        .current-weather {
+            grid-column: 1 / -1;
+            grid-row: auto;
+            flex-direction: row;
+            justify-content: center;
+            gap: 40px;
+            padding: 32px;
+        }
+
+        .weather-icon {
+            margin-bottom: 0;
+        }
+
+        .temperature {
+            align-items: flex-start;
+            text-align: left;
+        }
+
+        .temp-range {
+            justify-content: flex-start;
+            gap: 40px;
+        }
+
+        .feels-like {
+            width: auto;
         }
     }
     
     @media (max-width: 768px) {
-        .dashboard {
-            grid-template-columns: 1fr;
-            padding: 10px;
-            gap: 15px;
-        }
-    
-        .header {
-            flex-direction: column;
-            gap: 15px;
-            text-align: center;
-            padding: 12px;
-        }
-    
-        .location {
-            font-size: 28px;
-        }
-    
-        .current-weather {
-            flex-direction: column;
-            text-align: center;
-            margin: 10px 0;
-        }
-    
-        .weather-icon {
-            width: 160px;
-            height: 140px;
-            margin: 0 0 15px 0;
-        }
-    
-        .temperature {
-            justify-content: center;
-        }
-    
-        .temp-number {
-            font-size: 80px;
-        }
-    
-        .temp-unit {
-            font-size: 36px;
+        .top-bar {
+            padding: 10px 16px;
         }
 
-        .feels-like {
-            font-size: 15px;
+        .top-bar-content {
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .station-name {
+            font-size: 1.2rem;
+        }
+
+        .astro-data {
+            justify-content: center;
+        }
+
+        .astro-item {
+            padding: 5px 10px;
+            font-size: 0.75rem;
+        }
+
+        .dashboard {
+            grid-template-columns: 1fr;
+            padding: 12px;
+            gap: 12px;
+        }
+        
+        .current-weather {
+            flex-direction: column;
+            gap: 20px;
+            padding: 24px;
+        }
+
+        .weather-icon {
+            width: 100px;
+            height: 100px;
+        }
+
+        .temp-number {
+            font-size: 4rem;
+        }
+
+        .temp-unit {
+            font-size: 1.5rem;
+        }
+
+        .temp-range {
+            justify-content: space-around;
+        }
+
+        .temp-range-value {
+            font-size: 1.25rem;
         }
     
         .stats-section {
-            padding: 15px;
+            padding: 16px;
+        }
+
+        .stats-section h3 {
+            font-size: 0.7rem;
         }
     
         .stat-item {
             padding: 10px 0;
         }
 
-        .astro-data {
-            gap: 15px;
-            justify-content: center;
+        .stat-label {
+            font-size: 0.85rem;
         }
-        
-        .astro-item {
-            font-size: 13px;
-        }
-    
-        .update-status {
-            font-size: 0.8rem;
-            margin-top: 10px;
+
+        .stat-value {
+            font-size: 0.9rem;
         }
     }
     
     @media (max-width: 480px) {
-        .dashboard {
-            padding: 8px;
-            gap: 10px;
-        }
-    
-        .temp-number {
-            font-size: 60px;
-        }
-    
-        .temp-unit {
-            font-size: 28px;
-        }
-    
-        .stats-section h3 {
-            font-size: 16px;
-        }
-    
-        .stat-label, .stat-value {
-            font-size: 0.9rem;
+        .astro-data {
+            gap: 4px;
         }
 
-        .astro-data {
-            gap: 10px;
-        }
-        
         .astro-item {
-            font-size: 12px;
+            padding: 4px 8px;
+            font-size: 0.7rem;
         }
+
+        .temp-number {
+            font-size: 3.5rem;
+            letter-spacing: -2px;
+        }
+
+        .temp-unit {
+            font-size: 1.25rem;
+        }
+
+        .gauge-value {
+            font-size: 2rem;
+        }
+    }
+
+    /* Touch targets for mobile */
+    @media (pointer: coarse) {
+        .astro-item, .stat-item {
+            min-height: 44px;
+        }
+    }
+
+    /* Data highlight animations */
+    @keyframes dataUpdate {
+        0% { background: rgba(0, 230, 118, 0.2); }
+        100% { background: transparent; }
+    }
+
+    .data-updated {
+        animation: dataUpdate 1s ease-out;
+    }
+
+    /* Wind compass */
+    .wind-compass {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 28px;
+        height: 28px;
+        background: var(--bg-secondary);
+        border-radius: 50%;
+        border: 2px solid var(--accent-blue);
+    }
+
+    .wind-compass i {
+        color: var(--accent-blue);
+        font-size: 0.75rem;
+    }
+
+    /* Hide original header since we moved to top bar */
+    .header {
+        display: none;
     }
     </style>
 </head>
 <body>
     <div class="overlay"></div>
+    
+    <!-- Top Navigation Bar -->
+    <div class="top-bar">
+        <div class="top-bar-content">
+            <div class="station-info">
+                <div class="station-name">
+                    <i class="fas fa-map-marker-alt" style="color: var(--accent-red);"></i>
+                    Medvode Weather Station
+                </div>
+                <span class="live-badge">Live</span>
+            </div>
+            <div class="astro-data">
+                <div class="astro-item">
+                    <i class="fas fa-sun"></i>
+                    <span class="astro-text">Sunrise </span>
+                    <span id="sunrise">--:--</span>
+                </div>
+                <div class="astro-item">
+                    <i class="fas fa-sun" style="color: #ff9800;"></i>
+                    <span class="astro-text">Sunset </span>
+                    <span id="sunset">--:--</span>
+                </div>
+                <div class="astro-item">
+                    <i class="fas fa-moon"></i>
+                    <span class="astro-text">Moonrise </span>
+                    <span id="moonrise">--:--</span>
+                </div>
+                <div class="astro-item">
+                    <i class="fas fa-moon" style="color: #78909c;"></i>
+                    <span class="astro-text">Moonset </span>
+                    <span id="moonset">--:--</span>
+                </div>
+                <div class="astro-item">
+                    <i class="fas" id="moon-status-icon"></i>
+                    <span class="astro-text">Moon </span>
+                    <span id="moon-illumination">🌕 --</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="dashboard">
+        <!-- Hidden original header for JS compatibility -->
         <div class="header">
             <div class="location">Medvode</div>
-            <!-- In the header section -->
-<div class="astro-data">
-    <div class="astro-item">
-        <i class="fas fa-sun" style="color: #FFD700;"></i>
-        <span class="astro-text">Sunrise </span>
-        <span id="sunrise">--:--</span>
-    </div>
-    <div class="astro-item">
-        <i class="fas fa-sun" style="color: #FFA500;"></i>
-        <span class="astro-text">Sunset </span>
-        <span id="sunset">--:--</span>
-    </div>
-    <div class="astro-item">
-        <i class="fas fa-moon"></i>
-        <span class="astro-text">Moonrise </span>
-        <span id="moonrise">--:--</span>
-    </div>
-    <div class="astro-item">
-        <i class="fas fa-moon"></i>
-        <span class="astro-text">Moonset </span>
-        <span id="moonset">--:--</span>
-    </div>
-    <div class="astro-item">
-        <i class="fas" id="moon-status-icon"></i>
-        <span class="astro-text">Moon </span>
-        <span id="moon-illumination">🌕 --</span>
-    </div>
-</div>
-</div>
+        </div>
+
+        <!-- Main Temperature Display -->
         <div class="current-weather">
             <img id="weather-icon" class="weather-icon" src="" alt="Weather Icon">
             <div class="temperature">
@@ -388,41 +718,41 @@
                     <span class="temp-unit">°C</span>
                 </div>
                 <div class="feels-like">
-                    <span class="feels-label">Feels</span>
+                    <span class="feels-label">Feels like</span>
                     <span class="feels-value" id="feels-value">--</span>
                     <span class="feels-unit">°C</span>
+                </div>
+                <div class="temp-range">
+                    <div class="temp-range-item">
+                        <span class="temp-range-label">Low</span>
+                        <span class="temp-range-value low" id="min-temp">--°C</span>
+                    </div>
+                    <div class="temp-range-item">
+                        <span class="temp-range-label">High</span>
+                        <span class="temp-range-value high" id="max-temp">--°C</span>
+                    </div>
+                    <div class="temp-range-item">
+                        <span class="temp-range-label">Avg</span>
+                        <span class="temp-range-value avg" id="avg-temp">--°C</span>
+                    </div>
                 </div>
             </div>
         </div>
 
+        <!-- Current Conditions -->
         <div class="stats-section">
-            <h3>Current Conditions</h3>
+            <h3><i class="fas fa-cloud-sun"></i> Conditions</h3>
             <div class="stat-item">
-                <span class="stat-label"><i class="fas fa-tint"></i> Dew Point</span>
+                <span class="stat-label"><i class="fas fa-temperature-half"></i> Dew Point</span>
                 <span class="stat-value" id="dew-point">-- °C</span>
             </div>
             <div class="stat-item">
-                <span class="stat-label"><i class="fas fa-tint"></i> Humidity</span>
+                <span class="stat-label"><i class="fas fa-droplet"></i> Humidity</span>
                 <span class="stat-value" id="curr-humidity">-- %</span>
             </div>
             <div class="stat-item">
-                <span class="stat-label"><i class="fas fa-tachometer-alt"></i> Pressure</span>
+                <span class="stat-label"><i class="fas fa-gauge-high"></i> Pressure</span>
                 <span class="stat-value" id="curr-pressure">-- hPa</span>
-            </div>
-            <div class="stat-item">
-                <span class="stat-label"><i class="fas fa-wind"></i> Wind</span>
-                <div class="wind-direction">
-                    <img id="wind-arrow" class="wind-arrow" src="arrow.png" alt="Wind Arrow">
-                    <span class="stat-value" id="curr-wind">-- km/h</span>
-                </div>
-            </div>
-            <div class="stat-item">
-                <span class="stat-label"><i class="fas fa-sun"></i> UV Index</span>
-                <span class="stat-value" id="uv-index">--</span>
-            </div>
-            <div class="stat-item">
-                <span class="stat-label"><i class="fas fa-sun"></i> Solar Radiation</span>
-                <span class="stat-value" id="solar-rad">-- W/m²</span>
             </div>
             <div class="stat-item">
                 <span class="stat-label"><i class="fas fa-eye"></i> Visibility</span>
@@ -430,47 +760,65 @@
             </div>
         </div>
 
+        <!-- Wind -->
         <div class="stats-section">
-            <h3>Temperature Analysis</h3>
+            <h3><i class="fas fa-wind"></i> Wind</h3>
             <div class="stat-item">
-                <span class="stat-label"><i class="fas fa-temperature-low"></i> Min</span>
-                <span class="stat-value" id="min-temp">--°C</span>
+                <span class="stat-label"><i class="fas fa-gauge"></i> Current</span>
+                <div class="wind-direction">
+                    <img id="wind-arrow" class="wind-arrow" src="arrow.png" alt="Wind Arrow">
+                    <span class="stat-value" id="curr-wind">-- km/h</span>
+                </div>
             </div>
             <div class="stat-item">
-                <span class="stat-label"><i class="fas fa-temperature-high"></i> Max</span>
-                <span class="stat-value" id="max-temp">--°C</span>
-            </div>
-            <div class="stat-item">
-                <span class="stat-label"><i class="fas fa-thermometer-half"></i> Average</span>
-                <span class="stat-value" id="avg-temp">--°C</span>
-            </div>
-        </div>
-
-        <div class="stats-section">
-            <h3>Daily Statistic</h3>
-            <div class="stat-item">
-                <span class="stat-label"><i class="fas fa-tint"></i> Average Humidity</span>
-                <span class="stat-value" id="avg-humidity">--%</span>
-            </div>
-            <div class="stat-item">
-                <span class="stat-label"><i class="fas fa-wind"></i> Max Wind Gust</span>
+                <span class="stat-label"><i class="fas fa-burst"></i> Max Gust</span>
                 <span class="stat-value" id="max-wind-gust">-- km/h</span>
             </div>
             <div class="stat-item">
-                <span class="stat-label"><i class="fas fa-cloud-rain"></i> Rainfall</span>
+                <span class="stat-label"><i class="fas fa-compass"></i> Direction</span>
+                <span class="stat-value" id="common-wind">--</span>
+            </div>
+        </div>
+
+        <!-- Solar -->
+        <div class="stats-section">
+            <h3><i class="fas fa-sun"></i> Solar</h3>
+            <div class="stat-item">
+                <span class="stat-label"><i class="fas fa-sun"></i> UV Index</span>
+                <span class="stat-value" id="uv-index">--</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label"><i class="fas fa-bolt"></i> Radiation</span>
+                <span class="stat-value" id="solar-rad">-- W/m²</span>
+            </div>
+        </div>
+
+        <!-- Precipitation -->
+        <div class="stats-section">
+            <h3><i class="fas fa-cloud-rain"></i> Precipitation</h3>
+            <div class="stat-item">
+                <span class="stat-label"><i class="fas fa-water"></i> Today</span>
                 <span class="stat-value" id="rainfall">-- mm</span>
             </div>
             <div class="stat-item">
-                <span class="stat-label"><i class="fas fa-compass"></i> Today's Wind Dir</span>
-                <span class="stat-value" id="common-wind">--</span>
+                <span class="stat-label"><i class="fas fa-droplet"></i> Avg Humidity</span>
+                <span class="stat-value" id="avg-humidity">--%</span>
             </div>
+        </div>
+
+        <!-- Sky Conditions -->
+        <div class="stats-section">
+            <h3><i class="fas fa-cloud"></i> Sky</h3>
             <div class="stat-item">
-                <span class="stat-label"><i class="fas fa-cloud"></i> Today's Sky</span>
+                <span class="stat-label"><i class="fas fa-cloud-sun"></i> Conditions</span>
                 <span class="stat-value" id="common-sky">--</span>
             </div>
         </div>
 
-        <div class="update-status" id="update-status">Last updated: --</div>
+        <div class="update-status" id="update-status">
+            <i class="fas fa-sync-alt"></i>
+            Last updated: --
+        </div>
     </div>
 
     <script>
